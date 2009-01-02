@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* ScreenSplitrAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 365}}";
+			sepNavSelRange = "{239, 72}";
+			sepNavVisRange = "{0, 625}";
+		};
+	};
+	1D3623250D0F684500981E51 /* ScreenSplitrAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 770}}";
+			sepNavSelRange = "{1195, 93}";
+			sepNavVisRange = "{584, 712}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* ScreenSplitr */ = {
+		activeExec = 0;
+		executables = (
+			E48CB35E0F0C33C10074D25B /* ScreenSplitr */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* ScreenSplitrViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 365}}";
+			sepNavSelRange = "{289, 0}";
+			sepNavVisRange = "{0, 318}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* ScreenSplitrViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 868}}";
+			sepNavSelRange = "{849, 0}";
+			sepNavVisRange = "{840, 588}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = E48CB35E0F0C33C10074D25B /* ScreenSplitr */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* ScreenSplitr */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* ScreenSplitr */,
+		);
+		breakpoints = (
+			E48CB3C70F0C3F1E0074D25B /* ScreenSplitrAppDelegate.m:34 */,
+			E48CB3EF0F0C41670074D25B /* ScreenSplitrScreenView.m:35 */,
+			E48CB3F30F0C419E0074D25B /* ScreenSplitrScreenView.m:27 */,
+			E48CB3F60F0C41A00074D25B /* ScreenSplitrScreenView.m:45 */,
+			E48CB3FE0F0C42340074D25B /* ScreenSplitrScreenView.m:46 */,
+		);
+		codeSenseManager = E48CB3620F0C33E00074D25B /* Code sense */;
+		executables = (
+			E48CB35E0F0C33C10074D25B /* ScreenSplitr */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					522,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					482,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 252620810;
+			PBXWorkspaceStateSaveDate = 252620810;
+		};
+		perUserProjectItems = {
+			E40543180F0E43FF00C5EF65 = E40543180F0E43FF00C5EF65 /* PBXTextBookmark */;
+			E40543230F0E441400C5EF65 = E40543230F0E441400C5EF65 /* PBXTextBookmark */;
+			E40543240F0E441400C5EF65 = E40543240F0E441400C5EF65 /* PBXTextBookmark */;
+			E40543250F0E441400C5EF65 = E40543250F0E441400C5EF65 /* PBXTextBookmark */;
+			E40543260F0E441400C5EF65 = E40543260F0E441400C5EF65 /* PBXTextBookmark */;
+			E40543270F0E441400C5EF65 = E40543270F0E441400C5EF65 /* PBXTextBookmark */;
+			E405438E0F0E4AB400C5EF65 = E405438E0F0E4AB400C5EF65 /* PBXTextBookmark */;
+			E414876A0F0E3AA100B5D7FB = E414876A0F0E3AA100B5D7FB /* PBXTextBookmark */;
+			E414876B0F0E3AA100B5D7FB = E414876B0F0E3AA100B5D7FB /* PlistBookmark */;
+			E414876C0F0E3AA100B5D7FB = E414876C0F0E3AA100B5D7FB /* PBXBookmark */;
+			E41487720F0E3AA100B5D7FB = E41487720F0E3AA100B5D7FB /* PBXBookmark */;
+			E414879C0F0E3EEC00B5D7FB = E414879C0F0E3EEC00B5D7FB /* PBXBookmark */;
+			E414879D0F0E3EEC00B5D7FB = E414879D0F0E3EEC00B5D7FB /* PBXBookmark */;
+			E440F25A0F0E11D100F1A510 = E440F25A0F0E11D100F1A510 /* PBXTextBookmark */;
+			E440F25B0F0E11D100F1A510 = E440F25B0F0E11D100F1A510 /* PBXTextBookmark */;
+			E48CB38B0F0C394B0074D25B = E48CB38B0F0C394B0074D25B /* PBXTextBookmark */;
+			E48CB38C0F0C394B0074D25B = E48CB38C0F0C394B0074D25B /* PBXTextBookmark */;
+			E48CB38D0F0C394B0074D25B = E48CB38D0F0C394B0074D25B /* PBXTextBookmark */;
+			E48CB38F0F0C394B0074D25B = E48CB38F0F0C394B0074D25B /* PBXTextBookmark */;
+			E48CB3970F0C394B0074D25B = E48CB3970F0C394B0074D25B /* PBXTextBookmark */;
+			E48CB3980F0C394B0074D25B = E48CB3980F0C394B0074D25B /* PlistBookmark */;
+			E48CB39A0F0C394B0074D25B = E48CB39A0F0C394B0074D25B /* PBXTextBookmark */;
+			E48CB39D0F0C394B0074D25B = E48CB39D0F0C394B0074D25B /* PBXTextBookmark */;
+			E48CB5740F0DFC770074D25B = E48CB5740F0DFC770074D25B /* PBXTextBookmark */;
+			E48CB57A0F0DFC770074D25B = E48CB57A0F0DFC770074D25B /* PBXTextBookmark */;
+			E4BBEA4E0F0E42AA00A5E353 = E4BBEA4E0F0E42AA00A5E353 /* PBXTextBookmark */;
+			E4BBEA4F0F0E42AA00A5E353 = E4BBEA4F0F0E42AA00A5E353 /* PBXTextBookmark */;
+			E4BBEA500F0E42AA00A5E353 = E4BBEA500F0E42AA00A5E353 /* PBXTextBookmark */;
+			E4BBEA510F0E42AA00A5E353 = E4BBEA510F0E42AA00A5E353 /* PBXTextBookmark */;
+			E4BBEA520F0E42AA00A5E353 = E4BBEA520F0E42AA00A5E353 /* PBXTextBookmark */;
+		};
+		sourceControlManager = E48CB3610F0C33E00074D25B /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = main.m;
+		path = /Users/sylvain/dev/Sylvain/iPhone/ScreenSplitr/main.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 388}}";
+			sepNavSelRange = "{349, 0}";
+			sepNavVisRange = "{0, 393}";
+		};
+	};
+	E40543180F0E43FF00C5EF65 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "warning: property 'timer' requires method '-timer' to be defined - use @synthesize, @dynamic or provide a method implementation";
+		fRef = E48CB58D0F0DFCD90074D25B /* ScreenSplitrApplication.m */;
+		rLen = 1;
+		rLoc = 70;
+		rType = 1;
+	};
+	E40543230F0E441400C5EF65 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E48CB3690F0C37060074D25B /* ScreenSplitrScreenView.m */;
+		name = "ScreenSplitrScreenView.m: 46";
+		rLen = 56;
+		rLoc = 975;
+		rType = 0;
+		vrLen = 748;
+		vrLoc = 663;
+	};
+	E40543240F0E441400C5EF65 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E48CB58C0F0DFCD90074D25B /* ScreenSplitrApplication.h */;
+		name = "ScreenSplitrApplication.h: 21";
+		rLen = 0;
+		rLoc = 558;
+		rType = 0;
+		vrLen = 566;
+		vrLoc = 0;
+	};
+	E40543250F0E441400C5EF65 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E48CB3690F0C37060074D25B /* ScreenSplitrScreenView.m */;
+		name = "ScreenSplitrScreenView.m: 46";
+		rLen = 56;
+		rLoc = 975;
+		rType = 0;
+		vrLen = 748;
+		vrLoc = 663;
+	};
+	E40543260F0E441400C5EF65 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E48CB58D0F0DFCD90074D25B /* ScreenSplitrApplication.m */;
+		name = "ScreenSplitrApplication.m: 40";
+		rLen = 5;
+		rLoc = 1076;
+		rType = 0;
+		vrLen = 870;
+		vrLoc = 669;
+	};
+	E40543270F0E441400C5EF65 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E48CB58C0F0DFCD90074D25B /* ScreenSplitrApplication.h */;
+		name = "ScreenSplitrApplication.h: 21";
+		rLen = 0;
+		rLoc = 558;
+		rType = 0;
+		vrLen = 566;
+		vrLoc = 0;
+	};
+	E405438E0F0E4AB400C5EF65 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E48CB58D0F0DFCD90074D25B /* ScreenSplitrApplication.m */;
+		name = "ScreenSplitrApplication.m: 36";
+		rLen = 0;
+		rLoc = 978;
+		rType = 0;
+		vrLen = 1128;
+		vrLoc = 425;
+	};
+	E414876A0F0E3AA100B5D7FB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 14";
+		rLen = 0;
+		rLoc = 349;
+		rType = 0;
+		vrLen = 393;
+		vrLoc = 0;
+	};
+	E414876B0F0E3AA100B5D7FB /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/sylvain/dev/Sylvain/iPhone/ScreenSplitr/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	E414876C0F0E3AA100B5D7FB /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E414867C0F0E2FED00B5D7FB /* icon.png */;
+	};
+	E41487720F0E3AA100B5D7FB /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E414867C0F0E2FED00B5D7FB /* icon.png */;
+	};
+	E414879C0F0E3EEC00B5D7FB /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E414867B0F0E2FED00B5D7FB /* Default.png */;
+	};
+	E414879D0F0E3EEC00B5D7FB /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = E414867B0F0E2FED00B5D7FB /* Default.png */;
+	};
+	E440F25A0F0E11D100F1A510 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E48CB58C0F0DFCD90074D25B /* ScreenSplitrApplication.h */;
+		name = "ScreenSplitrApplication.h: 18";
+		rLen = 0;
+		rLoc = 559;
+		rType = 0;
+		vrLen = 366;
+		vrLoc = 0;
+	};
+	E440F25B0F0E11D100F1A510 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E48CB58D0F0DFCD90074D25B /* ScreenSplitrApplication.m */;
+		name = "ScreenSplitrApplication.m: 27";
+		rLen = 0;
+		rLoc = 424;
+		rType = 0;
+		vrLen = 404;
+		vrLoc = 135;
+	};
+	E48CB35E0F0C33C10074D25B /* ScreenSplitr */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = ScreenSplitr;
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	E48CB3610F0C33E00074D25B /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	E48CB3620F0C33E00074D25B /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	E48CB3680F0C37060074D25B /* ScreenSplitrScreenView.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ScreenSplitrScreenView.h;
+		path = /Users/sylvain/dev/Sylvain/iPhone/ScreenSplitr/Classes/ScreenSplitrScreenView.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 365}}";
+			sepNavSelRange = "{249, 0}";
+			sepNavVisRange = "{0, 292}";
+		};
+	};
+	E48CB3690F0C37060074D25B /* ScreenSplitrScreenView.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ScreenSplitrScreenView.m;
+		path = /Users/sylvain/dev/Sylvain/iPhone/ScreenSplitr/Classes/ScreenSplitrScreenView.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 1202}}";
+			sepNavSelRange = "{975, 56}";
+			sepNavVisRange = "{663, 754}";
+			sepNavWindowFrame = "{{15, 89}, {1265, 784}}";
+		};
+	};
+	E48CB38B0F0C394B0074D25B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* ScreenSplitrAppDelegate.m */;
+		name = "ScreenSplitrAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 539;
+		vrLoc = 89;
+	};
+	E48CB38C0F0C394B0074D25B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* ScreenSplitrViewController.h */;
+		name = "ScreenSplitrViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 238;
+		vrLoc = 0;
+	};
+	E48CB38D0F0C394B0074D25B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* ScreenSplitrViewController.m */;
+		name = "ScreenSplitrViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 668;
+		vrLoc = 0;
+	};
+	E48CB38F0F0C394B0074D25B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* ScreenSplitrAppDelegate.h */;
+		name = "ScreenSplitrAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 494;
+		vrLoc = 0;
+	};
+	E48CB3970F0C394B0074D25B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 351;
+		vrLoc = 0;
+	};
+	E48CB3980F0C394B0074D25B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/sylvain/dev/Sylvain/iPhone/ScreenSplitr/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	E48CB39A0F0C394B0074D25B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E48CB3680F0C37060074D25B /* ScreenSplitrScreenView.h */;
+		name = "ScreenSplitrScreenView.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 292;
+		vrLoc = 0;
+	};
+	E48CB39D0F0C394B0074D25B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E48CB3690F0C37060074D25B /* ScreenSplitrScreenView.m */;
+		name = "ScreenSplitrScreenView.m: 2";
+		rLen = 0;
+		rLoc = 7;
+		rType = 0;
+		vrLen = 445;
+		vrLoc = 0;
+	};
+	E48CB3AB0F0C39EB0074D25B /* MPTVOutWindow.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = MPTVOutWindow.h;
+		path = /Users/sylvain/dev/Sylvain/iPhone/ScreenSplitr/MPTVOutWindow.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 406}}";
+			sepNavSelRange = "{502, 25}";
+			sepNavVisRange = "{0, 575}";
+		};
+	};
+	E48CB3C70F0C3F1E0074D25B /* ScreenSplitrAppDelegate.m:34 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* ScreenSplitrAppDelegate.m */;
+		functionName = "-applicationDidFinishLaunching:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 34;
+		location = ScreenSplitr;
+		modificationTime = 252593852.1085889;
+		state = 2;
+	};
+	E48CB3EF0F0C41670074D25B /* ScreenSplitrScreenView.m:35 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = E48CB3690F0C37060074D25B /* ScreenSplitrScreenView.m */;
+		functionName = "-initWithCoder:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 35;
+		location = ScreenSplitr;
+		modificationTime = 252593852.108613;
+		state = 2;
+	};
+	E48CB3F30F0C419E0074D25B /* ScreenSplitrScreenView.m:27 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = E48CB3690F0C37060074D25B /* ScreenSplitrScreenView.m */;
+		functionName = "-updateScreen";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 27;
+		location = ScreenSplitr;
+		modificationTime = 252593852.108626;
+		state = 2;
+	};
+	E48CB3F60F0C41A00074D25B /* ScreenSplitrScreenView.m:45 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = E48CB3690F0C37060074D25B /* ScreenSplitrScreenView.m */;
+		functionName = "-drawRect:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 45;
+		location = ScreenSplitr;
+		modificationTime = 252593852.108639;
+		state = 2;
+	};
+	E48CB3FE0F0C42340074D25B /* ScreenSplitrScreenView.m:46 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = E48CB3690F0C37060074D25B /* ScreenSplitrScreenView.m */;
+		functionName = "-drawRect:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 46;
+		location = ScreenSplitr;
+		modificationTime = 252593852.108652;
+		state = 2;
+	};
+	E48CB5740F0DFC770074D25B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E48CB3AB0F0C39EB0074D25B /* MPTVOutWindow.h */;
+		name = "MPTVOutWindow.h: 24";
+		rLen = 25;
+		rLoc = 502;
+		rType = 0;
+		vrLen = 575;
+		vrLoc = 0;
+	};
+	E48CB57A0F0DFC770074D25B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E48CB3AB0F0C39EB0074D25B /* MPTVOutWindow.h */;
+		name = "MPTVOutWindow.h: 24";
+		rLen = 25;
+		rLoc = 502;
+		rType = 0;
+		vrLen = 575;
+		vrLoc = 0;
+	};
+	E48CB58C0F0DFCD90074D25B /* ScreenSplitrApplication.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ScreenSplitrApplication.h;
+		path = /Users/sylvain/dev/Sylvain/iPhone/ScreenSplitr/Classes/ScreenSplitrApplication.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 365}}";
+			sepNavSelRange = "{558, 0}";
+			sepNavVisRange = "{0, 566}";
+		};
+	};
+	E48CB58D0F0DFCD90074D25B /* ScreenSplitrApplication.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ScreenSplitrApplication.m;
+		path = /Users/sylvain/dev/Sylvain/iPhone/ScreenSplitr/Classes/ScreenSplitrApplication.m;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 1008}}";
+			sepNavSelRange = "{978, 0}";
+			sepNavVisRange = "{425, 1128}";
+		};
+	};
+	E4BBEA4E0F0E42AA00A5E353 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* ScreenSplitrViewController.m */;
+		name = "ScreenSplitrViewController.m: 40";
+		rLen = 0;
+		rLoc = 849;
+		rType = 0;
+		vrLen = 588;
+		vrLoc = 840;
+	};
+	E4BBEA4F0F0E42AA00A5E353 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* ScreenSplitrViewController.h */;
+		name = "ScreenSplitrViewController.h: 15";
+		rLen = 0;
+		rLoc = 289;
+		rType = 0;
+		vrLen = 318;
+		vrLoc = 0;
+	};
+	E4BBEA500F0E42AA00A5E353 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* ScreenSplitrAppDelegate.m */;
+		name = "ScreenSplitrAppDelegate.m: 46";
+		rLen = 93;
+		rLoc = 1195;
+		rType = 0;
+		vrLen = 712;
+		vrLoc = 584;
+	};
+	E4BBEA510F0E42AA00A5E353 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* ScreenSplitrAppDelegate.h */;
+		name = "ScreenSplitrAppDelegate.h: 14";
+		rLen = 72;
+		rLoc = 239;
+		rType = 0;
+		vrLen = 625;
+		vrLoc = 0;
+	};
+	E4BBEA520F0E42AA00A5E353 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E48CB3680F0C37060074D25B /* ScreenSplitrScreenView.h */;
+		name = "ScreenSplitrScreenView.h: 14";
+		rLen = 0;
+		rLoc = 249;
+		rType = 0;
+		vrLen = 292;
+		vrLoc = 0;
+	};
+	E4D4F9BF0F0EB60C001B3381 /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 388}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 393}";
+		};
+	};
+	E4D4F9C10F0EB60C001B3381 /* ScreenSplitrApplication.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {700, 388}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 566}";
+		};
+	};
+}
