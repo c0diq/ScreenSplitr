@@ -1,6 +1,12 @@
 // !$*UTF8*$!
 {
 	1D3623240D0F684500981E51 /* ScreenSplitrAppDelegate.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ScreenSplitrAppDelegate.h;
+		path = /Users/sylvain/dev/ScreenSplitr/trunk/Classes/ScreenSplitrAppDelegate.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {700, 365}}";
 			sepNavSelRange = "{239, 72}";
@@ -8,6 +14,12 @@
 		};
 	};
 	1D3623250D0F684500981E51 /* ScreenSplitrAppDelegate.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ScreenSplitrAppDelegate.m;
+		path = /Users/sylvain/dev/ScreenSplitr/trunk/Classes/ScreenSplitrAppDelegate.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {700, 770}}";
 			sepNavSelRange = "{1195, 93}";
@@ -21,6 +33,12 @@
 		);
 	};
 	28D7ACF60DDB3853001CB0EB /* ScreenSplitrViewController.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = ScreenSplitrViewController.h;
+		path = /Users/sylvain/dev/ScreenSplitr/trunk/Classes/ScreenSplitrViewController.h;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {700, 365}}";
 			sepNavSelRange = "{289, 0}";
@@ -28,6 +46,12 @@
 		};
 	};
 	28D7ACF70DDB3853001CB0EB /* ScreenSplitrViewController.m */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.objc;
+		name = ScreenSplitrViewController.m;
+		path = /Users/sylvain/dev/ScreenSplitr/trunk/Classes/ScreenSplitrViewController.m;
+		sourceTree = "<absolute>";
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {700, 868}}";
 			sepNavSelRange = "{849, 0}";
@@ -97,8 +121,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 252620810;
-			PBXWorkspaceStateSaveDate = 252620810;
+			PBXPerProjectTemplateStateSaveDate = 252624634;
+			PBXWorkspaceStateSaveDate = 252624634;
 		};
 		perUserProjectItems = {
 			E40543180F0E43FF00C5EF65 = E40543180F0E43FF00C5EF65 /* PBXTextBookmark */;
@@ -143,11 +167,6 @@
 		name = main.m;
 		path = /Users/sylvain/dev/Sylvain/iPhone/ScreenSplitr/main.m;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {700, 388}}";
-			sepNavSelRange = "{349, 0}";
-			sepNavVisRange = "{0, 393}";
-		};
 	};
 	E40543180F0E43FF00C5EF65 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -320,11 +339,6 @@
 		name = ScreenSplitrScreenView.h;
 		path = /Users/sylvain/dev/Sylvain/iPhone/ScreenSplitr/Classes/ScreenSplitrScreenView.h;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {700, 365}}";
-			sepNavSelRange = "{249, 0}";
-			sepNavVisRange = "{0, 292}";
-		};
 	};
 	E48CB3690F0C37060074D25B /* ScreenSplitrScreenView.m */ = {
 		isa = PBXFileReference;
@@ -333,12 +347,6 @@
 		name = ScreenSplitrScreenView.m;
 		path = /Users/sylvain/dev/Sylvain/iPhone/ScreenSplitr/Classes/ScreenSplitrScreenView.m;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {700, 1202}}";
-			sepNavSelRange = "{975, 56}";
-			sepNavVisRange = "{663, 754}";
-			sepNavWindowFrame = "{{15, 89}, {1265, 784}}";
-		};
 	};
 	E48CB38B0F0C394B0074D25B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -428,11 +436,6 @@
 		name = MPTVOutWindow.h;
 		path = /Users/sylvain/dev/Sylvain/iPhone/ScreenSplitr/MPTVOutWindow.h;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {700, 406}}";
-			sepNavSelRange = "{502, 25}";
-			sepNavVisRange = "{0, 575}";
-		};
 	};
 	E48CB3C70F0C3F1E0074D25B /* ScreenSplitrAppDelegate.m:34 */ = {
 		isa = PBXFileBreakpoint;
@@ -546,11 +549,6 @@
 		name = ScreenSplitrApplication.h;
 		path = /Users/sylvain/dev/Sylvain/iPhone/ScreenSplitr/Classes/ScreenSplitrApplication.h;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {700, 365}}";
-			sepNavSelRange = "{558, 0}";
-			sepNavVisRange = "{0, 566}";
-		};
 	};
 	E48CB58D0F0DFCD90074D25B /* ScreenSplitrApplication.m */ = {
 		isa = PBXFileReference;
@@ -559,11 +557,6 @@
 		name = ScreenSplitrApplication.m;
 		path = /Users/sylvain/dev/Sylvain/iPhone/ScreenSplitr/Classes/ScreenSplitrApplication.m;
 		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {700, 1008}}";
-			sepNavSelRange = "{978, 0}";
-			sepNavVisRange = "{425, 1128}";
-		};
 	};
 	E4BBEA4E0F0E42AA00A5E353 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
