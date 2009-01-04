@@ -21,6 +21,7 @@ LDFLAGS += -framework CoreAudio
 LDFLAGS += -framework Celestial 
 LDFLAGS += -framework AudioToolbox 
 LDFLAGS += -framework MediaPlayer 
+LDFLAGS += -framework QuartzCore 
 LDFLAGS += -L"$(SDK)/usr/lib" 
 LDFLAGS += -F"$(SDK)/System/Library/Frameworks" 
 LDFLAGS += -F"$(SDK)/System/Library/PrivateFrameworks" 
@@ -65,6 +66,7 @@ $(ZIPNAME): $(PROJECTNAME) $(RESOURCES)
 	cp $(RESDIR)/* $(BUILDDIR)/$(PROJECTNAME).app
 	cp $(PROJECTNAME) $(BUILDDIR)/$(PROJECTNAME).app
 	find $(BUILDDIR) -type f -name .DS_Store -print0 | xargs -0 rm
+	find $(BUILDDIR) -name .svn -print0 | xargs -0 rm -rf
 	zip -r $(ZIPNAME) $(BUILDDIR)
 
 dist:	$(ZIPNAME)
