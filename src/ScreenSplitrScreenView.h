@@ -2,17 +2,22 @@
 //  ScreenSplitrScreenView.h
 //  ScreenSplitr
 //
-//  Created by Sylvain on 12/31/08.
-//  Copyright Veodia 2008. All rights reserved.
+//  Created by c0diq on 12/31/08.
+//  Copyright Plutinosoft 2008. All rights reserved.
 //
 
 
 #import <UIKit/UIKit.h>
 
 @interface ScreenSplitrScreenView : UIView {
-	CGImageRef screenImage;
-	CALayer   *_screenLayer;
-    NSTimer   *timer;
+	CALayer     *screenLayer;
+    int         lastValidOrientation;
 }
+
+- (id)initWithFrame:(CGRect)aRect;
+- (int)getOrientation;
+- (UIImage*)scaleAndRotateImage:(UIImage*)image inRect:(CGRect) rect;
+- (void)drawImage:(UIImage*)image centeredInRect:(CGRect)inRect;
+
 @end
 

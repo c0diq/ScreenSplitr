@@ -2,8 +2,8 @@
 //  main.m
 //  ScreenSplitr
 //
-//  Created by Sylvain on 12/31/08.
-//  Copyright Veodia 2008. All rights reserved.
+//  Created by c0diq on 12/31/08.
+//  Copyright Plutinosoft 2008. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

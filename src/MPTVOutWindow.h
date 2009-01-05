@@ -12,8 +12,7 @@
 - (id)initWithFrame:(struct CGRect)fp8;  
 @end
 
-@interface MPTVOutWindow : UIWindow
-{
+@interface MPTVOutWindow : UIWindow {
     NPTVOutBackgroundView *_backgroundView;
     MovieTVHUDView *_hudView;
     MPVideoView *_videoView;

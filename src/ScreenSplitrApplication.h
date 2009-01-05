@@ -2,8 +2,8 @@
 //  ScreenSplitrApplication.h
 //  ScreenSplitr
 //
-//  Created by Sylvain on 1/1/09.
-//  Copyright 2009 Veodia. All rights reserved.
+//  Created by c0diq on 1/1/09.
+//  Copyright 2009 Plutinosoft. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,6 +16,7 @@
     ScreenSplitrScreenView *screenView;
     NSTimer* timer;
 }
+- (void)deviceOrientationChanged:(struct __GSEvent *)event;
 - (void)applicationSuspend:(struct __GSEvent*)event;
 
 @property (nonatomic, retain) UIWindow *window;
