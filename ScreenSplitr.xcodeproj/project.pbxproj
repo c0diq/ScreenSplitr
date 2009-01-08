@@ -12,6 +12,7 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		E414867D0F0E2FED00B5D7FB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E414867B0F0E2FED00B5D7FB /* Default.png */; };
 		E414867E0F0E2FED00B5D7FB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E414867C0F0E2FED00B5D7FB /* icon.png */; };
+		E41664890F16BD8700FB3298 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* Info.plist */; };
 		E48CB3AF0F0C3A0A0074D25B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48CB3AE0F0C3A0A0074D25B /* QuartzCore.framework */; };
 		E48CB3B20F0C3A170074D25B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48CB3B10F0C3A170074D25B /* MediaPlayer.framework */; };
 		E4D4F9C50F0EB60C001B3381 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D4F9BF0F0EB60C001B3381 /* main.m */; };
@@ -117,6 +118,7 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				E4D4FA9D0F0F0572001B3381 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -151,10 +153,27 @@
 			files = (
 				E414867D0F0E2FED00B5D7FB /* Default.png in Resources */,
 				E414867E0F0E2FED00B5D7FB /* icon.png in Resources */,
+				E41664890F16BD8700FB3298 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4D4FA9D0F0F0572001B3381 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {
@@ -228,7 +247,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Sylvain Rebaud";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;

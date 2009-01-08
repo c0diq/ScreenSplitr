@@ -23,12 +23,16 @@
 
 - (void) applicationDidFinishLaunching: (id) unused
 {		
-    //[UIHardware _setStatusBarHeight: 0.0];
-    //[self setStatusBarMode:2 duration: 0];
+    [UIHardware _setStatusBarHeight: 0.0];
+    [self setStatusBarMode:2 duration: 0];
+    [self setStatusBarHidden:YES animated:NO];
     
    	struct CGRect rect = [UIHardware fullScreenApplicationContentRect];
-	//rect.origin.x = rect.origin.y = 0.0f;
     NSLog(@"Original size: %f, %f, %f, %f", rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
+    /* Make sure the rectangle is aligned correctly */
+	
+	//rect.origin.x = 0.0f;
+	//rect.origin.y = 0.0f;
     
 	MPVideoView *vidView = [[MPVideoView alloc] initWithFrame: rect];
     //[vidView toggleScaleMode: YES];  
@@ -43,44 +47,37 @@
 	[_tvWindow makeKeyAndVisible];
     
 	// Create window
-	window = [[UIWindow alloc] initWithContentRect: [UIHardware fullScreenApplicationContentRect]];
+	window = [[UIWindow alloc] initWithContentRect: rect];
     
 	// Set up content view
 	//[window setContentView: screenView];
     
+    splashView = [[UIImageView alloc] initWithFrame:rect]; //Add the image as the background view
+    splashView.image = [UIImage imageNamed:@"Default.png"];
+    [window addSubview: splashView];
+    
 	// Show window
 	[window makeKeyAndVisible];
 
-    timer = [NSTimer scheduledTimerWithTimeInterval: 0.1f
+    timer = [NSTimer scheduledTimerWithTimeInterval: .3f
                 target: screenView
                 selector: @selector(updateScreen)
                 userInfo: nil
                 repeats: true];
     
 	[self setApplicationBadge:@"On"];
-	[self performSelector: @selector(suspendWithAnimation:) withObject:nil afterDelay: 2 ];
+	[self performSelector: @selector(suspendWithAnimation:) withObject:nil afterDelay: 4 ];
 }
 
-/*
-- (void)centerView:(UIView*)view {
-    // Use the screen bounds to determine the center point of the window's content area.
-    CGRect screenBounds = [UIHardware fullScreenApplicationContentRect];
-    CGRect bounds = CGRectMake(0, 0, screenBounds.size.height, screenBounds.size.width);
-    CGPoint center = CGPointMake(bounds.size.height / 2.0, bounds.size.width / 2.0);
-
-    // Set the center point of the view to the center point of the window's content area.
-    //view.center = center;
+- (void)suspendWithAnimation:(BOOL)fp8
+{
+    if (splashView) {
+        [splashView removeFromSuperview];
+        [splashView release];
+    }
+	NSLog(@"Got suspendWithAnimation:");
+	[super suspendWithAnimation:fp8];
 }
-
-- (void)rotateView:(UIView*)view {
-    CGAffineTransform transform = view.transform;
-        
-    [self centerView: view];
-    
-    // Rotate the view 90 degrees around its new center point.
-    transform = CGAffineTransformRotate(transform, (M_PI / 2.0));
-    view.transform = transform;
-}*/
 
 - (void)deviceOrientationChanged:(struct __GSEvent *)event {
     int newOrientation = [ UIHardware deviceOrientation: YES ];

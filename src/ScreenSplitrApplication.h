@@ -14,6 +14,7 @@
     UIWindow *window;
     MPTVOutWindow *_tvWindow;
     ScreenSplitrScreenView *screenView;
+    UIImageView *splashView;
     NSTimer* timer;
 }
 - (void)deviceOrientationChanged:(struct __GSEvent *)event;
@@ -22,6 +23,7 @@
 @property (nonatomic, retain) UIWindow *window;
 @property (nonatomic, retain) MPTVOutWindow *_tvWindow;
 @property (nonatomic, retain) ScreenSplitrScreenView *screenView;
+@property (nonatomic, retain) UIImageView *splashView;
 @property (nonatomic, retain) NSTimer* timer;
 
 @end
