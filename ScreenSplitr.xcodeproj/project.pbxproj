@@ -12,7 +12,7 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		E414867D0F0E2FED00B5D7FB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E414867B0F0E2FED00B5D7FB /* Default.png */; };
 		E414867E0F0E2FED00B5D7FB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E414867C0F0E2FED00B5D7FB /* icon.png */; };
-		E41664890F16BD8700FB3298 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D1107310486CEB800E47090 /* Info.plist */; };
+		E46409DD0F188F4A001994EF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46409DC0F188F4A001994EF /* ImageIO.framework */; };
 		E48CB3AF0F0C3A0A0074D25B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48CB3AE0F0C3A0A0074D25B /* QuartzCore.framework */; };
 		E48CB3B20F0C3A170074D25B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48CB3B10F0C3A170074D25B /* MediaPlayer.framework */; };
 		E4D4F9C50F0EB60C001B3381 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D4F9BF0F0EB60C001B3381 /* main.m */; };
@@ -28,6 +28,7 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E414867B0F0E2FED00B5D7FB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = resources/Default.png; sourceTree = "<group>"; };
 		E414867C0F0E2FED00B5D7FB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = resources/icon.png; sourceTree = "<group>"; };
+		E46409DC0F188F4A001994EF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/PrivateFrameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		E48CB3AE0F0C3A0A0074D25B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E48CB3B10F0C3A170074D25B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		E4D4F9BF0F0EB60C001B3381 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = src/main.m; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				E48CB3AF0F0C3A0A0074D25B /* QuartzCore.framework in Frameworks */,
 				E48CB3B20F0C3A170074D25B /* MediaPlayer.framework in Frameworks */,
+				E46409DD0F188F4A001994EF /* ImageIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E46409DC0F188F4A001994EF /* ImageIO.framework */,
 				E48CB3B10F0C3A170074D25B /* MediaPlayer.framework */,
 				E48CB3AE0F0C3A0A0074D25B /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
@@ -153,7 +156,6 @@
 			files = (
 				E414867D0F0E2FED00B5D7FB /* Default.png in Resources */,
 				E414867E0F0E2FED00B5D7FB /* icon.png in Resources */,
-				E41664890F16BD8700FB3298 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +196,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -208,6 +214,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ScreenSplitr_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;

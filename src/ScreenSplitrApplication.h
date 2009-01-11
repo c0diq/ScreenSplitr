@@ -13,7 +13,6 @@
 @interface ScreenSplitrApplication : UIApplication {
     UIWindow *window;
     MPTVOutWindow *_tvWindow;
-    ScreenSplitrScreenView *screenView;
     UIImageView *splashView;
     NSTimer* timer;
 }
@@ -22,7 +21,6 @@
 
 @property (nonatomic, retain) UIWindow *window;
 @property (nonatomic, retain) MPTVOutWindow *_tvWindow;
-@property (nonatomic, retain) ScreenSplitrScreenView *screenView;
 @property (nonatomic, retain) UIImageView *splashView;
 @property (nonatomic, retain) NSTimer* timer;
 

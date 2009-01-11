@@ -22,6 +22,7 @@ LDFLAGS += -framework Celestial
 LDFLAGS += -framework AudioToolbox 
 LDFLAGS += -framework MediaPlayer 
 LDFLAGS += -framework QuartzCore 
+LDFLAGS += -framework ImageIO
 LDFLAGS += -L"$(SDK)/usr/lib" 
 LDFLAGS += -F"$(SDK)/System/Library/Frameworks" 
 LDFLAGS += -F"$(SDK)/System/Library/PrivateFrameworks" 

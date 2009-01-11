@@ -1,9 +1,9 @@
 Package: com.plutinosoft.screensplitr 
 Name: ScreenSplitr 
-Version: 1.0.1-4
+Version: 1.0.2-5
 Architecture: iphoneos-arm 
 Description: Share your iPhone screen on a TV 
- Plug a video cable to your iPhone
+ Plug a video cable into your iPhone
  and see everything you're doing on 
  both the iPhone and the TV.
 Homepage: http://www.plutinosoft.com/blog/projects/screensplitr 

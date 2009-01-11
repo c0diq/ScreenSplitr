@@ -8,14 +8,18 @@
 
 #import "ScreenSplitrScreenView.h"
 //#import <UIKit/UIView.h>
+//#include <ImageIO/CGImageDestination.h> 
 
-//#define USE_COREANIMATION 0
-//#define USE_COREGRAPHICS (!USE_COREANIMATION)
+#define USE_UIKIT         1
+#define USE_COREANIMATION (0)
+#define USE_COREGRAPHICS  (!USE_UIKIT && !USE_COREANIMATION)
 
 #if USE_COREANIMATION
 #import <QuartzCore/QuartzCore.h>
 #import <QuartzCore/CALayer.h>
 #endif
+
+//#define BENCHMARK
 
 CGImageRef UIGetScreenImage();
 
@@ -25,19 +29,134 @@ CGImageRef UIGetScreenImage();
     self = [super initWithFrame:frame];
     if (self != nil) {
         lastValidOrientation = kOrientationVertical;
+                
+        // create the view that will hold the image
+        imageView = [[UIImageView alloc] initWithFrame:frame];
+        [self addSubview:imageView];
+        [imageView release];
     }
     
     return self;
 }
 
+static struct timeval CalculateTimeinterval(struct timeval t) {
+    struct timeval now;
+    gettimeofday(&now, NULL);
+
+    now.tv_sec -= t.tv_sec;
+    now.tv_usec -= t.tv_usec;
+    if (now.tv_usec <= -1000000) {
+        now.tv_sec--;
+        now.tv_usec += 1000000;
+    } else if (now.tv_usec >= 1000000) {
+        now.tv_sec++;
+        now.tv_usec -= 1000000;
+    }
+    if (now.tv_usec < 0 && now.tv_sec > 0) {
+        now.tv_sec--;
+        now.tv_usec += 1000000;
+    }
+    return now;
+}
+
 - (void)updateScreen {
-	[self setNeedsDisplay];
+    NSLog(@"updateScreen");
+    
+#ifdef BENCHMARK    
+    struct timeval now, bench1, bench2;
+    gettimeofday(&now, NULL);
+#endif
+    
+    CGImageRef screen = UIGetScreenImage();
+    UIImage*   image  = [UIImage imageWithCGImage:screen];
+#ifdef BENCHMARK        
+    bench1 = CalculateTimeinterval(now);
+    NSLog(@"UIGetScreenImage took %d secs & %d ms", bench1.tv_sec, bench1.tv_usec/1000);
+    
+    gettimeofday(&now, NULL);
+#endif
+
+    [self scaleAndRotate:image inRect:self.frame];
+    //[self dumpImage:image];
+    CFRelease(screen);
+    
+#ifdef BENCHMARK    
+    bench2 = CalculateTimeinterval(now);
+    NSLog(@"rotation took %d secs & %d ms", bench2.tv_sec, bench2.tv_usec/1000);
+#endif
+    
+	//[self setNeedsDisplay];
+}
+
+
+#ifdef DRAW_RECT_IMAGEVIEW
+- (void)drawRect:(CGRect)rect {
+    NSLog(@"drawRect");
+    CGImageRef screen = UIGetScreenImage();
+    UIImage*   image  = [UIImage imageWithCGImage:screen];
+    
+    [self scaleAndRotate:image inRect:self.frame];
+    CFRelease(screen);
+}
+#endif
+
+- (void)scaleAndRotate:(UIImage*)image inRect:(CGRect) rect {
+    int orientation = [self getOrientation];
+    
+    // 'rotate' screen instead of image to calculate scale ratio
+    CGSize maxResolution = CGSizeMake(rect.size.width, rect.size.height);
+    if (orientation == kOrientationHorizontalLeft || orientation == kOrientationHorizontalRight) {
+        maxResolution = CGSizeMake(rect.size.height, rect.size.width);
+    }
+    NSLog(@"MaxResolution: %f, %f", maxResolution.width, maxResolution.height);
+	
+	float width  = image.size.width;
+	float height = image.size.height;
+	CGRect bounds = CGRectMake(0, 0, width, height);
+	if (width != maxResolution.width || height != maxResolution.height) {
+		float ratio = width/height;
+		if (ratio > 1) {
+			bounds.size.width = maxResolution.width;
+			bounds.size.height = bounds.size.width / ratio;
+		}
+		else {
+			bounds.size.height = maxResolution.height;
+			bounds.size.width = bounds.size.height * ratio;
+		}
+	}
+    
+    NSLog(@"Center: %f, %f", rect.size.width/2, rect.size.height/2);
+    [imageView setCenter: CGPointMake(rect.size.width/2, rect.size.height/2)];
+    NSLog(@"Bounds: %f, %f", bounds.size.width, bounds.size.height);
+    [imageView setBounds: bounds];
+    
+	switch(orientation) {
+		case kOrientationVertical:
+			[imageView setTransform: CGAffineTransformIdentity];
+			break;
+			
+		case kOrientationVerticalUpsideDown:
+			[imageView setTransform: CGAffineTransformMakeRotation(M_PI)];
+			break;
+			
+		case kOrientationHorizontalLeft:
+			[imageView setTransform: CGAffineTransformMakeRotation(3.0 * M_PI / 2.0)];
+			break;
+			
+		case kOrientationHorizontalRight:
+			[imageView setTransform: CGAffineTransformMakeRotation(M_PI / 2.0)];
+			break;
+			
+		default:
+			[NSException raise:NSInternalInconsistencyException format:@"Invalid image orientation"];
+			
+	}
+    [imageView setImage: image];
 }
 
 // draws the passed image into the passed rect, centered and scaled appropriately.
 // note that this method doesn't know anything about the current focus, so the focus must be locked outside this method
-- (void)drawImage:(UIImage*)image centeredInRect:(CGRect)inRect
-{
+- (void)drawImage:(UIImage*)image centeredInRect:(CGRect)inRect {
 		CGRect srcRect = CGRectZero;
 		srcRect.size = image.size;
 
@@ -80,6 +199,7 @@ CGImageRef UIGetScreenImage();
     int orientation = [self getOrientation];
     //NSLog(@"Orientation is %d", orientation);
     
+    // 'rotate' screen instead of image to calculate scale ratio
     CGSize maxResolution = CGSizeMake(rect.size.width, rect.size.height);
     if (orientation == kOrientationHorizontalLeft || orientation == kOrientationHorizontalRight) {
         maxResolution = CGSizeMake(rect.size.height, rect.size.width);
@@ -160,8 +280,8 @@ CGImageRef UIGetScreenImage();
     }
 	
     CGContextConcatCTM(context, transform);
-	CGContextDrawImage(UIGraphicsGetCurrentContext(), CGRectMake(0, 0, width, height), [image CGImage]);
-	UIImage *imageCopy = UIGraphicsGetImageFromCurrentImageContext();
+	CGContextDrawImage(context, CGRectMake(0, 0, width, height), [image CGImage]);
+	UIImage *imageCopy = (UIImage*)UIGraphicsGetImageFromCurrentImageContext();
     //NSLog(@"Image after transform: %f, %f", image.size.width, image.size.height);
 
 	UIGraphicsEndImageContext();
@@ -169,24 +289,27 @@ CGImageRef UIGetScreenImage();
 	return imageCopy;
 }
 
+#ifdef DRAW_RECT
 - (void)drawRect:(CGRect)rect {
+    //NSLog(@"drawRect");
+
+    //[[UIApplication sharedApplication] _dumpScreenContents: nil ];
+    /*UIGraphicsBeginImageContext(self.bounds.size);
+    [[self layer] renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage* image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();*/
+    
     CGImageRef screen = UIGetScreenImage();
     UIImage*   image  = [UIImage imageWithCGImage:screen];
-    //NSLog(@"Image %f,%f vs Screen %f,%f,%f,%f", image.size.width,image.size.height, rect.origin.x,rect.origin.y,rect.size.width,rect.size.height);
     
-#ifdef USE_COREANIMATION
-	CALayer* _screenLayer = [[CALayer layer] retain];
-	[_screenLayer setFrame: self.bounds];
-	
-	[_screenLayer setContents: image];
-	[_screenLayer setOpaque: YES];
-	if (screenLayer == nil) {
-        [[self layer] addSublayer: _screenLayer];
-    } else {
-        [[self layer] replaceSublayer: screenLayer with: _screenLayer];
-        [screenLayer release];
-    }
-    screenLayer = _screenLayer;
+    /*NSLog(@"Image %f,%f vs Screen %f,%f,%f,%f", 
+        image.size.width, image.size.height, 
+        rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);*/
+    
+#if USE_COREANIMATION
+	[screenLayer setFrame: self.bounds];
+    [screenLayer setContents: (id)screen];  
+
 #elif USE_COREGRAPHICS
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSaveGState(context);
@@ -198,47 +321,37 @@ CGImageRef UIGetScreenImage();
 #else
     UIImage* new_image = [self scaleAndRotateImage:image inRect:rect];
     [self drawImage:new_image centeredInRect: rect];
-
-    //[image drawAtPoint: CGPointMake(20,0)];
-    //[image drawInRect: rect];
-    
-    //UIImage *img_scale = [image _imageScaledToSize:newImageSize interpolationQuality:2];
-    //[img_scale drawAtPoint: CGPointMake(130,-20)];
-    //[self drawImage:image CenteredinRect: rect];
-
 #endif
 
     CFRelease(screen);
 }
+#endif
 
-- (void)setOrientation:(int)interfaceOrientation {
-	CGRect contentRect;
-    
-	switch (interfaceOrientation) {
-		case kOrientationHorizontalLeft:
-			self.transform = CGAffineTransformMakeRotation(-3.14159/2);
-            // Repositions and resizes the view.
-            contentRect = CGRectMake(-80, 80, 480, 320);
-            self.bounds = contentRect;
-			break;
-		case kOrientationHorizontalRight:
-			self.transform = CGAffineTransformMakeRotation(3.14159/2);
-            // Repositions and resizes the view.
-            contentRect = CGRectMake(-80, 80, 480, 320);
-			break;
-        case kOrientationVertical:
-            self.transform = CGAffineTransformIdentity;
-            contentRect = CGRectMake(0, 0, 320, 480);
+- (void)dumpImage:(UIImage*)image {
+    char buff[512];
 
-	}
-    self.bounds = contentRect;
+    // Make file name
+    snprintf( buff, sizeof(buff), "/tmp/ss_%d.png", (int)1/*[[NSDate date] timeIntervalSince1970] */); 
+    CFStringRef path = CFStringCreateWithCString( nil, buff, kCFStringEncodingASCII );
+    CFURLRef url = CFURLCreateWithFileSystemPath( nil, path, kCFURLPOSIXPathStyle, 0 );
+
+    // Make kUTTypePNG -> public.png
+    CFStringRef type = CFStringCreateWithCString( nil, "public.png", kCFStringEncodingASCII );
+    size_t count = 1; 
+    CFDictionaryRef options = NULL;
+
+    // Writing
+    CGImageDestinationRef dest = CGImageDestinationCreateWithURL(url, type, count, options);
+    CGImageDestinationAddImage(dest, [image CGImage], NULL);
+    CGImageDestinationFinalize(dest);
+
+    // Release
+    CFRelease(dest);
+    CFRelease(url);
+    CFRelease(type);
 }
 
 - (void)dealloc {    
-    if (screenLayer != nil) {
-        [screenLayer removeFromSuperlayer];
-        [screenLayer release];
-    }
 	[super dealloc];
 }
 

@@ -10,10 +10,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ScreenSplitrScreenView : UIView {
-	CALayer     *screenLayer;
-    int         lastValidOrientation;
+	CALayer*     screenLayer;
+    UIImageView* imageView;
+    int          lastValidOrientation;
 }
 
+- (void)updateScreen;
+- (void)scaleAndRotate:(UIImage*)image inRect:(CGRect) rect;
 - (id)initWithFrame:(CGRect)aRect;
 - (int)getOrientation;
 - (UIImage*)scaleAndRotateImage:(UIImage*)image inRect:(CGRect) rect;

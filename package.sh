@@ -2,7 +2,7 @@
 
 ip=$1
 if [ -z $ip ]; then
-    $ip="192.168.1.101"
+    ip=192.168.1.101
 fi
 
 cd package
