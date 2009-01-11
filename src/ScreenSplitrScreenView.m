@@ -60,7 +60,7 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
 }
 
 - (void)updateScreen {
-    NSLog(@"updateScreen");
+    //NSLog(@"updateScreen");
     
 #ifdef BENCHMARK    
     struct timeval now, bench1, bench2;
@@ -108,7 +108,7 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
     if (orientation == kOrientationHorizontalLeft || orientation == kOrientationHorizontalRight) {
         maxResolution = CGSizeMake(rect.size.height, rect.size.width);
     }
-    NSLog(@"MaxResolution: %f, %f", maxResolution.width, maxResolution.height);
+    //NSLog(@"MaxResolution: %f, %f", maxResolution.width, maxResolution.height);
 	
 	float width  = image.size.width;
 	float height = image.size.height;
@@ -125,9 +125,9 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
 		}
 	}
     
-    NSLog(@"Center: %f, %f", rect.size.width/2, rect.size.height/2);
+    //NSLog(@"Center: %f, %f", rect.size.width/2, rect.size.height/2);
     [imageView setCenter: CGPointMake(rect.size.width/2, rect.size.height/2)];
-    NSLog(@"Bounds: %f, %f", bounds.size.width, bounds.size.height);
+    //NSLog(@"Bounds: %f, %f", bounds.size.width, bounds.size.height);
     [imageView setBounds: bounds];
     
 	switch(orientation) {
