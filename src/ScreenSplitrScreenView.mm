@@ -362,7 +362,11 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
     CFRelease(type);
 }
 
-- (void)dealloc {    
+- (void)dealloc {   
+    
+    // force an empty frame to abort all waiting connections
+    frame_buffer_ref->SetNextFrame(NULL, 0);
+ 
 	[super dealloc];
 }
 

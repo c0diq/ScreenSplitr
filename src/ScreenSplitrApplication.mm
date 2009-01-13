@@ -166,7 +166,7 @@ PLT_FrameBuffer* frame_buffer_ref = NULL;
     [timer invalidate];
     [timer release];
     [_tvWindow release];
-    [window release];
+    [window release];    
     [super dealloc];
 }
 
