@@ -7,8 +7,16 @@
 //
 
 #import "ScreenSplitrApplication.h"
+#import "PltFrameBuffer.h"
+#import "Platinum.h"
+#import "PltFrameServer.h"
 
 #define TV_OUTPUT
+
+static PLT_FrameBuffer frame_buffer;
+static PLT_UPnP upnp;
+
+PLT_FrameBuffer* frame_buffer_ref = NULL;
 
 @implementation MPTVOutWindow (extended)
 - (BOOL)_canExistBeyondSuspension {
@@ -22,6 +30,10 @@
 }
 @end
 
+@interface ScreenSplitrApplication ()
+- (void) setup;
+@end
+
 @implementation ScreenSplitrApplication
 
 @synthesize window;
@@ -30,10 +42,12 @@
 @synthesize timer;
 
 - (void) applicationDidFinishLaunching: (id) unused {
+
+    frame_buffer_ref = &frame_buffer;
+    
     [UIHardware _setStatusBarHeight: 0.0];
     [self setStatusBarMode:2 duration: 0];
     [self setStatusBarHidden:YES animated:NO];
-    
    	struct CGRect rect = [UIHardware fullScreenApplicationContentRect];
     NSLog(@"Original size: %f, %f, %f, %f", rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
     /* Make sure the rectangle is aligned correctly */
@@ -81,24 +95,40 @@
                      userInfo: nil
                      repeats: true];
 
-    //[NSThread detachNewThreadSelector: @selector(run_update_thread:) toTarget:self withObject:self ];
-
 	[self setApplicationBadge:@"On"];
 	[self performSelector: @selector(suspendWithAnimation:) withObject:nil afterDelay: 2 ];
+
+    [self setup];
 }
 
-/*
-- (void) run_update_thread:(ScreenSplitrApplication*)sender {
-    NSAutoreleasePool*	pool = [ NSAutoreleasePool new ];
+- (void) setup {
+    // create our UPnP device
+    PLT_DeviceHostReference device(new PLT_FrameServer(frame_buffer, 
+                                                       "iPhone: FrameServer: ",
+                                                       false,
+                                                       NULL,
+                                                       8099));
+    upnp.AddDevice(device);
+    upnp.Start();
     
-    while (self.aborted == false) {
-		NSLog(@"animate");
-        [self.screenView performSelectorOnMainThread:@selector(updateScreen) withObject:nil waitUntilDone:YES];
-		usleep(200000);    
-    }
+	[advertiser release];
+	advertiser = nil;
     
-    [pool release];
-}*/
+	advertiser = [Advertiser new];
+	[advertiser setDelegate:self];
+	NSError* error;
+	if(advertiser == nil || ![advertiser start:device->GetPort()]) {
+		NSLog(@"Failed creating server: %@", error);
+		//[self _showAlert:@"Failed creating server"];
+		return;
+	}
+	
+	//Start advertising to clients, passing nil for the name to tell Bonjour to pick use default name
+	if(![advertiser enableBonjourWithDomain:@"local" applicationProtocol:[Advertiser bonjourTypeFromIdentifier:@"http"] name:nil]) {
+		//[self _showAlert:@"Failed advertising server"];
+		return;
+	}
+}
 
 - (void)suspendWithAnimation:(BOOL)fp8 {
     // Remove splash screen before suspending
@@ -141,3 +171,14 @@
 }
 
 @end
+
+
+@implementation ScreenSplitrApplication (AdvertiserDelegate)
+
+- (void) advertiserDidEnableBonjour:(Advertiser*)server withName:(NSString*)string
+{
+	NSLog(@"%s", _cmd);
+}
+
+@end
+

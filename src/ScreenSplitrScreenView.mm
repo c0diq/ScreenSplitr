@@ -5,10 +5,9 @@
 //  Created by c0diq on 12/31/08.
 //  Copyright Plutinosoft 2008. All rights reserved.
 //
-
+#import "ImageIO/CGImageDestination.h"
 #import "ScreenSplitrScreenView.h"
-//#import <UIKit/UIView.h>
-//#include <ImageIO/CGImageDestination.h> 
+#import "PltFrameBuffer.h"
 
 #define USE_UIKIT         1
 #define USE_COREANIMATION (0)
@@ -21,7 +20,10 @@
 
 //#define BENCHMARK
 
-CGImageRef UIGetScreenImage();
+extern "C" NSData *UIImageJPEGRepresentation(UIImage *, float quality);
+extern "C" CGImageRef UIGetScreenImage(); 
+
+extern "C" PLT_FrameBuffer* frame_buffer_ref;
 
 @implementation ScreenSplitrScreenView
 
@@ -39,6 +41,7 @@ CGImageRef UIGetScreenImage();
     return self;
 }
 
+#ifdef BENCHMARK  
 static struct timeval CalculateTimeinterval(struct timeval t) {
     struct timeval now;
     gettimeofday(&now, NULL);
@@ -58,6 +61,7 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
     }
     return now;
 }
+#endif
 
 - (void)updateScreen {
     //NSLog(@"updateScreen");
@@ -69,6 +73,7 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
     
     CGImageRef screen = UIGetScreenImage();
     UIImage*   image  = [UIImage imageWithCGImage:screen];
+
 #ifdef BENCHMARK        
     bench1 = CalculateTimeinterval(now);
     NSLog(@"UIGetScreenImage took %d secs & %d ms", bench1.tv_sec, bench1.tv_usec/1000);
@@ -77,6 +82,12 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
 #endif
 
     [self scaleAndRotate:image inRect:self.frame];
+    
+    NSData *jpg = UIImageJPEGRepresentation(image, 0.90f);
+    if (frame_buffer_ref) {
+        frame_buffer_ref->SetNextFrame((const NPT_Byte*)jpg.bytes, (NPT_Size)jpg.length);
+    }
+    
     //[self dumpImage:image];
     CFRelease(screen);
     
@@ -195,6 +206,7 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
     return orientation;
 }
 
+#ifdef DRAW_RECT
 - (UIImage*)scaleAndRotateImage:(UIImage*)image inRect:(CGRect) rect {
     int orientation = [self getOrientation];
     //NSLog(@"Orientation is %d", orientation);
@@ -289,7 +301,6 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
 	return imageCopy;
 }
 
-#ifdef DRAW_RECT
 - (void)drawRect:(CGRect)rect {
     //NSLog(@"drawRect");
 
@@ -342,7 +353,7 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
 
     // Writing
     CGImageDestinationRef dest = CGImageDestinationCreateWithURL(url, type, count, options);
-    CGImageDestinationAddImage(dest, [image CGImage], NULL);
+    CGImageDestinationAddImage(dest, image.imageRef, NULL);
     CGImageDestinationFinalize(dest);
 
     // Release
