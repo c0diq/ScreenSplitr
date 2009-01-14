@@ -47,7 +47,7 @@ OBJS += $(patsubst %.c,%.o,$(wildcard $(SRCDIR)/*.c))
 
 OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/Source/Core/*.cpp))
 OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/Source/Devices/MediaServer/*.cpp))
-OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/Source/Apps/FrameStreamer/*.cpp))
+OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/Source/Devices/FrameStreamer/*.cpp))
 OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/ThirdParty/Neptune/Source/Core/*.cpp))
 OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/ThirdParty/Neptune/Source/System/Bsd/*.cpp))
 OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/ThirdParty/Neptune/Source/System/Posix/*.cpp))
@@ -56,13 +56,13 @@ OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/ThirdParty/Neptune/So
 CFLAGS += -I"$(SRCDIR)/Platinum/ThirdParty/Neptune/Source/Core"
 CFLAGS += -I"$(SRCDIR)/Platinum/Source/Core"
 CFLAGS += -I"$(SRCDIR)/Platinum/Source/Devices/MediaServer"
-CFLAGS += -I"$(SRCDIR)/Platinum/Source/Apps/FrameStreamer" -isysroot $(SDK)
+CFLAGS += -I"$(SRCDIR)/Platinum/Source/Devices/FrameStreamer" -isysroot $(SDK)
 #CPPFLAGS = $(CFLAGS)
 
 RESOURCES = $(wildcard $(RESDIR)/*)
 ZIPNAME = $(PROJECTNAME).zip
 
-all:	clean dist
+all:	dist
 
 $(PROJECTNAME):	$(OBJS)
 	$(LD) $(LDFLAGS) -o $@ $^
@@ -80,7 +80,7 @@ $(ZIPNAME): $(PROJECTNAME) $(RESOURCES)
 	rm -rf $(BUILDDIR)
 	mkdir -p $(BUILDDIR)
 	cp -r $(PROJECTNAME).app $(BUILDDIR)
-	cp $(RESDIR)/* $(BUILDDIR)/$(PROJECTNAME).app
+	cp -r $(RESDIR)/* $(BUILDDIR)/$(PROJECTNAME).app
 	cp $(PROJECTNAME) $(BUILDDIR)/$(PROJECTNAME).app
 	find $(BUILDDIR) -type f -name .DS_Store -print0 | xargs -0 rm
 	find $(BUILDDIR) -name .svn -print0 | xargs -0 rm -rf

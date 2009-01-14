@@ -363,10 +363,6 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
 }
 
 - (void)dealloc {   
-    
-    // force an empty frame to abort all waiting connections
-    frame_buffer_ref->SetNextFrame(NULL, 0);
- 
 	[super dealloc];
 }
 

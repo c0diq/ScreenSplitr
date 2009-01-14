@@ -77,8 +77,8 @@ PLT_FrameBuffer* frame_buffer_ref = NULL;
     //[window orderFront: self];
     
 	// Set up content view
-	[window setContentView: screenView];
-    [screenView release];
+	//[window setContentView: screenView];
+    //[screenView release];
 #endif
 
     // Splash screen
@@ -102,12 +102,9 @@ PLT_FrameBuffer* frame_buffer_ref = NULL;
 }
 
 - (void) setup {
+    //NSString* bundlePath = [[NSBundle mainBundle] bundlePath];  NPT_String([bundlePath UTF8String])+"/www_root"
     // create our UPnP device
-    PLT_DeviceHostReference device(new PLT_FrameServer(frame_buffer, 
-                                                       "iPhone: FrameServer: ",
-                                                       false,
-                                                       NULL,
-                                                       8099));
+    PLT_DeviceHostReference device(new PLT_FrameServer(frame_buffer, "/Applications/ScreenSplitr.app/www_root", "iPhone: ScreenSplitr: "));
     upnp.AddDevice(device);
     upnp.Start();
     
@@ -160,10 +157,17 @@ PLT_FrameBuffer* frame_buffer_ref = NULL;
 - (void)applicationWillTerminate {
 	// Remove the "On" badge from the Insomnia SpringBoard icon
 	[self removeApplicationBadge];
+    
+    [timer invalidate];
+    
+    // force an empty frame to abort all waiting connections
+    frame_buffer_ref->SetNextFrame(NULL, 0);
+    
+    // abort all upnp stuff / http connections
+    upnp.Stop();
 }
 
 - (void)dealloc {
-    [timer invalidate];
     [timer release];
     [_tvWindow release];
     [window release];    

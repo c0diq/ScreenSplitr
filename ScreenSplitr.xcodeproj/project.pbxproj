@@ -90,11 +90,11 @@
 		E45AAF3A0F1C65A7009CEE37 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E45AAF370F1C65A7009CEE37 /* main.mm */; };
 		E45AAF3B0F1C65A7009CEE37 /* ScreenSplitrApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */; };
 		E45AAF3C0F1C65A7009CEE37 /* ScreenSplitrScreenView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */; };
-		E45AAF9F0F1C6B88009CEE37 /* PltFrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAF980F1C6B88009CEE37 /* PltFrameBuffer.cpp */; };
-		E45AAFA00F1C6B88009CEE37 /* PltFrameServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAF9A0F1C6B88009CEE37 /* PltFrameServer.cpp */; };
-		E45AAFA10F1C6B88009CEE37 /* PltFrameStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAF9C0F1C6B88009CEE37 /* PltFrameStream.cpp */; };
 		E45AB0320F1C98E4009CEE37 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45AB0310F1C98E4009CEE37 /* SystemConfiguration.framework */; };
 		E45AB0370F1C9A4A009CEE37 /* Bonjour.mm in Sources */ = {isa = PBXBuildFile; fileRef = E45AB0360F1C9A4A009CEE37 /* Bonjour.mm */; };
+		E45AB0D80F1CAC7B009CEE37 /* PltFrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AB0D20F1CAC7B009CEE37 /* PltFrameBuffer.cpp */; };
+		E45AB0D90F1CAC7B009CEE37 /* PltFrameServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AB0D40F1CAC7B009CEE37 /* PltFrameServer.cpp */; };
+		E45AB0DA0F1CAC7B009CEE37 /* PltFrameStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AB0D60F1CAC7B009CEE37 /* PltFrameStream.cpp */; };
 		E46409DD0F188F4A001994EF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46409DC0F188F4A001994EF /* ImageIO.framework */; };
 		E48CB3AF0F0C3A0A0074D25B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48CB3AE0F0C3A0A0074D25B /* QuartzCore.framework */; };
 		E48CB3B20F0C3A170074D25B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48CB3B10F0C3A170074D25B /* MediaPlayer.framework */; };
@@ -265,15 +265,15 @@
 		E45AAF370F1C65A7009CEE37 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = src/main.mm; sourceTree = "<group>"; };
 		E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ScreenSplitrApplication.mm; path = src/ScreenSplitrApplication.mm; sourceTree = "<group>"; };
 		E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ScreenSplitrScreenView.mm; path = src/ScreenSplitrScreenView.mm; sourceTree = "<group>"; };
-		E45AAF980F1C6B88009CEE37 /* PltFrameBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltFrameBuffer.cpp; path = src/Platinum/Source/Apps/FrameStreamer/PltFrameBuffer.cpp; sourceTree = "<group>"; };
-		E45AAF990F1C6B88009CEE37 /* PltFrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltFrameBuffer.h; path = src/Platinum/Source/Apps/FrameStreamer/PltFrameBuffer.h; sourceTree = "<group>"; };
-		E45AAF9A0F1C6B88009CEE37 /* PltFrameServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltFrameServer.cpp; path = src/Platinum/Source/Apps/FrameStreamer/PltFrameServer.cpp; sourceTree = "<group>"; };
-		E45AAF9B0F1C6B88009CEE37 /* PltFrameServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltFrameServer.h; path = src/Platinum/Source/Apps/FrameStreamer/PltFrameServer.h; sourceTree = "<group>"; };
-		E45AAF9C0F1C6B88009CEE37 /* PltFrameStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltFrameStream.cpp; path = src/Platinum/Source/Apps/FrameStreamer/PltFrameStream.cpp; sourceTree = "<group>"; };
-		E45AAF9D0F1C6B88009CEE37 /* PltFrameStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltFrameStream.h; path = src/Platinum/Source/Apps/FrameStreamer/PltFrameStream.h; sourceTree = "<group>"; };
 		E45AB0280F1C963F009CEE37 /* Bonjour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bonjour.h; path = src/Bonjour.h; sourceTree = "<group>"; };
 		E45AB0310F1C98E4009CEE37 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E45AB0360F1C9A4A009CEE37 /* Bonjour.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Bonjour.mm; path = src/Bonjour.mm; sourceTree = "<group>"; };
+		E45AB0D20F1CAC7B009CEE37 /* PltFrameBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltFrameBuffer.cpp; path = src/Platinum/Source/Devices/FrameStreamer/PltFrameBuffer.cpp; sourceTree = "<group>"; };
+		E45AB0D30F1CAC7B009CEE37 /* PltFrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltFrameBuffer.h; path = src/Platinum/Source/Devices/FrameStreamer/PltFrameBuffer.h; sourceTree = "<group>"; };
+		E45AB0D40F1CAC7B009CEE37 /* PltFrameServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltFrameServer.cpp; path = src/Platinum/Source/Devices/FrameStreamer/PltFrameServer.cpp; sourceTree = "<group>"; };
+		E45AB0D50F1CAC7B009CEE37 /* PltFrameServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltFrameServer.h; path = src/Platinum/Source/Devices/FrameStreamer/PltFrameServer.h; sourceTree = "<group>"; };
+		E45AB0D60F1CAC7B009CEE37 /* PltFrameStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltFrameStream.cpp; path = src/Platinum/Source/Devices/FrameStreamer/PltFrameStream.cpp; sourceTree = "<group>"; };
+		E45AB0D70F1CAC7B009CEE37 /* PltFrameStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltFrameStream.h; path = src/Platinum/Source/Devices/FrameStreamer/PltFrameStream.h; sourceTree = "<group>"; };
 		E46409DC0F188F4A001994EF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/PrivateFrameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		E48CB3AE0F0C3A0A0074D25B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E48CB3B10F0C3A170074D25B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -452,12 +452,6 @@
 		E45AAECA0F1C64DE009CEE37 /* Platinum */ = {
 			isa = PBXGroup;
 			children = (
-				E45AAF980F1C6B88009CEE37 /* PltFrameBuffer.cpp */,
-				E45AAF990F1C6B88009CEE37 /* PltFrameBuffer.h */,
-				E45AAF9A0F1C6B88009CEE37 /* PltFrameServer.cpp */,
-				E45AAF9B0F1C6B88009CEE37 /* PltFrameServer.h */,
-				E45AAF9C0F1C6B88009CEE37 /* PltFrameStream.cpp */,
-				E45AAF9D0F1C6B88009CEE37 /* PltFrameStream.h */,
 				E45AAF190F1C6508009CEE37 /* Devices */,
 				E45AAECB0F1C64E4009CEE37 /* Core */,
 			);
@@ -527,6 +521,12 @@
 		E45AAF190F1C6508009CEE37 /* Devices */ = {
 			isa = PBXGroup;
 			children = (
+				E45AB0D20F1CAC7B009CEE37 /* PltFrameBuffer.cpp */,
+				E45AB0D30F1CAC7B009CEE37 /* PltFrameBuffer.h */,
+				E45AB0D40F1CAC7B009CEE37 /* PltFrameServer.cpp */,
+				E45AB0D50F1CAC7B009CEE37 /* PltFrameServer.h */,
+				E45AB0D60F1CAC7B009CEE37 /* PltFrameStream.cpp */,
+				E45AB0D70F1CAC7B009CEE37 /* PltFrameStream.h */,
 				E45AAF1A0F1C652A009CEE37 /* PltDidl.cpp */,
 				E45AAF1B0F1C652A009CEE37 /* PltDidl.h */,
 				E45AAF1C0F1C652A009CEE37 /* PltFileMediaServer.cpp */,
@@ -715,10 +715,10 @@
 				E45AAF3A0F1C65A7009CEE37 /* main.mm in Sources */,
 				E45AAF3B0F1C65A7009CEE37 /* ScreenSplitrApplication.mm in Sources */,
 				E45AAF3C0F1C65A7009CEE37 /* ScreenSplitrScreenView.mm in Sources */,
-				E45AAF9F0F1C6B88009CEE37 /* PltFrameBuffer.cpp in Sources */,
-				E45AAFA00F1C6B88009CEE37 /* PltFrameServer.cpp in Sources */,
-				E45AAFA10F1C6B88009CEE37 /* PltFrameStream.cpp in Sources */,
 				E45AB0370F1C9A4A009CEE37 /* Bonjour.mm in Sources */,
+				E45AB0D80F1CAC7B009CEE37 /* PltFrameBuffer.cpp in Sources */,
+				E45AB0D90F1CAC7B009CEE37 /* PltFrameServer.cpp in Sources */,
+				E45AB0DA0F1CAC7B009CEE37 /* PltFrameStream.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
