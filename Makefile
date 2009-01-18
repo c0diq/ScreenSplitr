@@ -92,7 +92,7 @@ dist:	$(ZIPNAME)
 	@echo "size =" `ls -l $(ZIPNAME) | awk '{print $$5;}'`
 
 clean:
-	@find src -type f -name *.o -print0 | xargs rm
-	@find src -type f -name *.gch -print0 | xargs rm
+	@find src -type f -name *.o | xargs rm
+	@find src -type f -name *.gch | xargs rm
 	@rm -rf $(BUILDDIR)
 	@rm -f $(ZIPNAME)

@@ -6,5 +6,5 @@ if [ -z $ip ]; then
 fi
 make
 scp -r build/2.0/ScreenSplitr.app root@$ip:/Applications
-ssh root@$ip "ldid -S /Applications/ScreenSplitr.app/ScreenSplitr;respring"
+ssh root@$ip "ldid -S /Applications/ScreenSplitr.app/ScreenSplitr;restart"
 

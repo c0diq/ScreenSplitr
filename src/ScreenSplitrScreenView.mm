@@ -66,30 +66,44 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
 - (void)updateScreen {
     //NSLog(@"updateScreen");
     
+    // check to see if we plugged in a cable
+    // and if size of view got updated
+    UIView* superview = [self superview];
+    if (superview) {
+        //NSLog(@"Superview size: %f, %f, %f, %f", superview.frame.origin.x, superview.frame.origin.y, superview.frame.size.width, superview.frame.size.height);
+        self.frame = CGRectMake(superview.frame.origin.x+20, superview.frame.origin.y+15, superview.frame.size.width-40, superview.frame.size.height-30);
+    } else {
+        self.frame = CGRectMake(0, 0, 0, 0);
+    }
+    
 #ifdef BENCHMARK    
     struct timeval now, bench1, bench2;
     gettimeofday(&now, NULL);
 #endif
-    
-    CGImageRef screen = UIGetScreenImage();
-    UIImage*   image  = [UIImage imageWithCGImage:screen];
-
+    // only convert to jpeg if we have a connection (net or TV)
+    if (frame_buffer_ref->GetNbReaders() > 0 || self.frame.size.width > 0) {
+        CGImageRef screen = UIGetScreenImage();
+        UIImage*   image  = [UIImage imageWithCGImage:screen];
+        
 #ifdef BENCHMARK        
-    bench1 = CalculateTimeinterval(now);
-    NSLog(@"UIGetScreenImage took %d secs & %d ms", bench1.tv_sec, bench1.tv_usec/1000);
-    
-    gettimeofday(&now, NULL);
+        bench1 = CalculateTimeinterval(now);
+        NSLog(@"UIGetScreenImage took %d secs & %d ms", bench1.tv_sec, bench1.tv_usec/1000);
+        
+        gettimeofday(&now, NULL);
 #endif
-
-    [self scaleAndRotate:image inRect:self.frame];
-    
-    NSData *jpg = UIImageJPEGRepresentation(image, 0.90f);
-    if (frame_buffer_ref) {
-        frame_buffer_ref->SetNextFrame((const NPT_Byte*)jpg.bytes, (NPT_Size)jpg.length);
+        // only scale and rotate if we have a view (when connected to TV)
+        if (self.frame.size.width > 0) {
+            [self scaleAndRotate:image inRect:self.frame];
+        }
+        
+        if (frame_buffer_ref->GetNbReaders() > 0) {
+            NSData *jpg = UIImageJPEGRepresentation(image, 0.90f);
+            frame_buffer_ref->SetNextFrame((const NPT_Byte*)jpg.bytes, (NPT_Size)jpg.length);
+        }
+                
+        //[self dumpImage:image];
+        CFRelease(screen);
     }
-    
-    //[self dumpImage:image];
-    CFRelease(screen);
     
 #ifdef BENCHMARK    
     bench2 = CalculateTimeinterval(now);
@@ -168,32 +182,32 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
 // draws the passed image into the passed rect, centered and scaled appropriately.
 // note that this method doesn't know anything about the current focus, so the focus must be locked outside this method
 - (void)drawImage:(UIImage*)image centeredInRect:(CGRect)inRect {
-		CGRect srcRect = CGRectZero;
-		srcRect.size = image.size;
+    CGRect srcRect = CGRectZero;
+    srcRect.size = image.size;
 
-		// create a destination rect scaled to fit inside the frame
-		CGRect drawnRect = srcRect;
-		if (drawnRect.size.width > inRect.size.width) {
-			drawnRect.size.height *= inRect.size.width/drawnRect.size.width;
-			drawnRect.size.width = inRect.size.width;
-		}
+    // create a destination rect scaled to fit inside the frame
+    CGRect drawnRect = srcRect;
+    if (drawnRect.size.width > inRect.size.width) {
+        drawnRect.size.height *= inRect.size.width/drawnRect.size.width;
+        drawnRect.size.width = inRect.size.width;
+    }
 
-		if (drawnRect.size.height > inRect.size.height) {
-			drawnRect.size.width *= inRect.size.height/drawnRect.size.height;
-			drawnRect.size.height = inRect.size.height;
-		}
+    if (drawnRect.size.height > inRect.size.height) {
+        drawnRect.size.width *= inRect.size.height/drawnRect.size.height;
+        drawnRect.size.height = inRect.size.height;
+    }
 
-		drawnRect.origin = inRect.origin;
+    drawnRect.origin = inRect.origin;
 
-		// center it in the frame
-		drawnRect.origin.x += (inRect.size.width - drawnRect.size.width)/2;
-		drawnRect.origin.y += (inRect.size.height - drawnRect.size.height)/2;
+    // center it in the frame
+    drawnRect.origin.x += (inRect.size.width - drawnRect.size.width)/2;
+    drawnRect.origin.y += (inRect.size.height - drawnRect.size.height)/2;
 
-		[image drawInRect:drawnRect];
+    [image drawInRect:drawnRect];
 }
 
 - (int)getOrientation {
-    int orientation = [UIHardware deviceOrientation: YES];	
+    int orientation = lastValidOrientation;//[UIHardware deviceOrientation: YES];	
     switch(orientation) {
 		case kOrientationVertical:
 		case kOrientationVerticalUpsideDown:
@@ -285,8 +299,7 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
     if (orientation == kOrientationHorizontalLeft || orientation == kOrientationHorizontalRight) {
         CGContextScaleCTM(context, -scaleRatio, scaleRatio);
         CGContextTranslateCTM(context, -height, 0);
-    }
-    else {
+    } else {
         CGContextScaleCTM(context, scaleRatio, -scaleRatio);
         CGContextTranslateCTM(context, 0, -height);
     }

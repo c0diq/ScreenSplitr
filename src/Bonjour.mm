@@ -61,7 +61,7 @@ NSString * const AdvertiserErrorDomain = @"AdvertiserErrorDomain";
 	[self.netService setDelegate:self];
 	        
     // update root path
-    NSDictionary* txtRecordDataDictionary = [NSDictionary dictionaryWithObject:@"/screensplitr" forKey:@"path"];
+    NSDictionary* txtRecordDataDictionary = [NSDictionary dictionaryWithObject:@"/content/home.html" forKey:@"path"];
     [self.netService setTXTRecordData:[NSNetService dataFromTXTRecordDictionary:txtRecordDataDictionary]];
 
 	return YES;
