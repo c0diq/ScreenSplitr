@@ -27,18 +27,24 @@ extern "C" PLT_FrameBuffer* frame_buffer_ref;
 
 @implementation ScreenSplitrScreenView
 
+@synthesize imageView;
+
 - (id)initWithFrame:(CGRect)frame  {
     self = [super initWithFrame:frame];
     if (self != nil) {
         lastValidOrientation = kOrientationVertical;
+        tvOutputEnabled = false;
                 
         // create the view that will hold the image
         imageView = [[UIImageView alloc] initWithFrame:frame];
         [self addSubview:imageView];
-        [imageView release];
     }
     
     return self;
+}
+
+- (void)outputToTV:(bool)enabled {
+    tvOutputEnabled = enabled;
 }
 
 #ifdef BENCHMARK  
@@ -72,8 +78,6 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
     if (superview) {
         //NSLog(@"Superview size: %f, %f, %f, %f", superview.frame.origin.x, superview.frame.origin.y, superview.frame.size.width, superview.frame.size.height);
         self.frame = CGRectMake(superview.frame.origin.x+20, superview.frame.origin.y+15, superview.frame.size.width-40, superview.frame.size.height-30);
-    } else {
-        self.frame = CGRectMake(0, 0, 0, 0);
     }
     
 #ifdef BENCHMARK    
@@ -81,7 +85,7 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
     gettimeofday(&now, NULL);
 #endif
     // only convert to jpeg if we have a connection (net or TV)
-    if (frame_buffer_ref->GetNbReaders() > 0 || self.frame.size.width > 0) {
+    if (frame_buffer_ref->GetNbReaders() > 0 || tvOutputEnabled) {
         CGImageRef screen = UIGetScreenImage();
         UIImage*   image  = [UIImage imageWithCGImage:screen];
         
@@ -92,7 +96,7 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
         gettimeofday(&now, NULL);
 #endif
         // only scale and rotate if we have a view (when connected to TV)
-        if (self.frame.size.width > 0) {
+        if (tvOutputEnabled) {
             [self scaleAndRotate:image inRect:self.frame];
         }
         
@@ -180,6 +184,7 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
 }
 
 - (void)dealloc {   
+    [imageView release];
 	[super dealloc];
 }
 

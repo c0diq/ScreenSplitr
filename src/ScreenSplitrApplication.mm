@@ -6,15 +6,20 @@
 //  Copyright 2009 Plutinosoft. All rights reserved.
 //
 
-//#import <Foundation/NSObject.h>
-//#import <UIKit/UIKitDefines.h>
-//#import <UIKit/UIDevice.h>
 
 #import "ScreenSplitrApplication.h"
 #import "PltFrameBuffer.h"
 #import "Platinum.h"
 #import "PltFrameServer.h"
 #import <Celestial/AVSystemController.h>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIModalView.h>
+
+typedef enum {
+    SS_CLIENT_ON_HOLD,
+    SS_CLIENT_ACCEPT,
+    SS_CLIENT_REFUSE
+} SSNewClientAction;
 
 #define TV_OUTPUT
 
@@ -23,6 +28,7 @@ static PLT_FrameBuffer frame_buffer;
 static PLT_UPnP upnp;
 static ScreenSplitrApplication* instance = NULL;
 PLT_FrameBuffer* frame_buffer_ref = NULL;
+static NPT_SharedVariable action_(SS_CLIENT_ON_HOLD);
 
 /* stream request validator */
 class StreamValidator : public PLT_StreamValidator
@@ -31,7 +37,20 @@ public:
     bool OnNewRequestAccept(const NPT_HttpRequestContext& context) {
         NSLog(@"Received stream request from %s", context.GetRemoteAddress().GetIpAddress().ToString().GetChars());
         if (!instance) return false;
-        return true;
+        
+        {
+            NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+            
+            NSString* ip_ = [[NSString stringWithFormat:@"%s", context.GetRemoteAddress().GetIpAddress().ToString().GetChars()] retain];
+            [instance performSelectorOnMainThread:@selector(askForConnection:) withObject:ip_ waitUntilDone:NO];
+            action_.WaitWhileEquals(SS_CLIENT_ON_HOLD, 30000);
+            int action = action_.GetValue();
+            action_.SetValue(SS_CLIENT_ON_HOLD);    
+            
+            [pool release];
+            
+            return (action == SS_CLIENT_ACCEPT);
+        }
     }
 };
 
@@ -48,10 +67,6 @@ static StreamValidator validator;
 - (void) addSubview: (UIView *) aView {
     [super addSubview:aView]; 
 }
-@end
-
-@interface ScreenSplitrApplication ()
-- (void) setup;
 @end
 
 static void callback(CFNotificationCenterRef center, void *observer, CFStringRef name, const void *object, CFDictionaryRef userInfo) {
@@ -101,7 +116,8 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
     
 	// Create window
 	window = [[UIWindow alloc] initWithContentRect: rect];
-
+    //[window setContentView:screenView];
+    
     // Splash screen
     splashView = [[UIImageView alloc] initWithFrame:rect];
     splashView.image = [UIImage imageNamed:@"Default.png"];
@@ -110,8 +126,9 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 	// Show window
 	[window makeKeyAndVisible];
     
-     CFStringRef notif = CFSTR("com.apple.iapd.videoout.SettingsChanged");
-     CFNotificationCenterAddObserver(
+    // register videoout changes (thanks Erica Sadun!)
+    CFStringRef notif = CFSTR("com.apple.iapd.videoout.SettingsChanged");
+    CFNotificationCenterAddObserver(
                 CFNotificationCenterGetDarwinNotifyCenter(), //center
                 NULL, // observer
                 callback, // callback
@@ -120,6 +137,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
                 CFNotificationSuspensionBehaviorHold
              ); 
 
+    // start timer to capture screen
     timer = [NSTimer scheduledTimerWithTimeInterval: .3f
                      target: screenView
                      selector: @selector(updateScreen)
@@ -128,11 +146,50 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
     [self setup];
 	[self setApplicationBadge:@"On"];
     
-	[self performSelector: @selector(suspendWithAnimation:) withObject:nil afterDelay: 2 ];
+	[self performSelector: @selector(suspendWithAnimation:) withObject: nil afterDelay: 2 ];
+}
+
+- (void) askForConnection:(NSString *)ip {
+    NSLog(@"AskForConnection");
+
+    UIActionSheet *sheet = [[UIAlertSheet alloc] initWithFrame:
+        CGRectMake(0, 240, 320, 240)
+    ];
+    
+    [sheet setTitle:@"Remote View Request"];
+    [sheet setBodyText:[NSString stringWithFormat:@"ScreenSplitr\nby Sylvain Rebaud (c0diq)\nsylvain@plutinosoft.com\nhttp://www.plutinosoft.com/\n\nAccept connection from\n%s?", [ip UTF8String]]];
+    [sheet addButtonWithTitle:@"Accept"];
+    [sheet addButtonWithTitle:@"Reject"];
+    [sheet setDelegate: self];
+    
+    [sheet showInView: splashView];
+    //sheet.frame = CGRectMake(0, 240, 320, 240);
+    //sheet.origin = CGPointMake(0, 240);
+    //[screenView addSubview:sheet];
+    [ip release];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(int)buttonIndex
+{
+    NSLog(@"alertSheet with button %d", buttonIndex);
+    
+    switch (buttonIndex) {
+        case 0:
+            action_.SetValue(SS_CLIENT_ACCEPT);
+            break;
+
+        case 1:
+            action_.SetValue(SS_CLIENT_REFUSE);
+            break;
+    }
+
+    //[actionSheet removeFromSuperview];
+    [actionSheet release];
 }
 
 - (void)attachTV {
     NSLog(@"Attaching TV");
+    
     if (!_tvWindow) {
         MPVideoView *vidView = [[MPVideoView alloc] initWithFrame: [UIHardware fullScreenApplicationContentRect]];
         _tvWindow = [[MPTVOutWindow alloc] initWithVideoView: vidView];  
@@ -142,6 +199,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
         NSLog(@"vidView size: %f, %f, %f, %f", vidView.bounds.origin.x, vidView.bounds.origin.y, vidView.bounds.size.width, vidView.bounds.size.height);
 
         [vidView addSubview: screenView];
+        [screenView outputToTV: true];
         [_tvWindow makeKeyAndVisible];
     }
 }
@@ -150,6 +208,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
     NSLog(@"Detaching TV");
     
     if (_tvWindow) {
+        [screenView outputToTV: false];
         [screenView removeFromSuperview];
         [_tvWindow release];
         _tvWindow = nil;
@@ -194,9 +253,9 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 }
 
 - (void) routeChange: (NSNotification *) notification {
-    id nobj = [notification object];
     NSLog(@"routeChange");
     
+    id nobj = [notification object];
     if ([nobj isKindOfClass:NSClassFromString(@"AVSystemController")]) {
         NSString* cat = [[nobj routeForCategory:@"Ringtone"] description];
         NSLog(@"%s", [cat UTF8String]);
@@ -212,8 +271,9 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 - (void)suspendWithAnimation:(BOOL)fp8 {
     // Remove splash screen before suspending
     if (splashView) {
-        [splashView removeFromSuperview];
-        [splashView release];
+        //[splashView removeFromSuperview];
+        [splashView setHidden: true];
+        //[splashView release];
     }
     
 	NSLog(@"Got suspendWithAnimation:");
@@ -252,6 +312,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 - (void)dealloc {
     [timer release];
     if (_tvWindow) [_tvWindow release];
+    [splashView release];
     [window release];  
     [screenView release];  
     [super dealloc];

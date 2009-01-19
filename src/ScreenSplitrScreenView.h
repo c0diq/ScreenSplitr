@@ -13,12 +13,15 @@
 	CALayer*     screenLayer;
     UIImageView* imageView;
     int          lastValidOrientation;
+    bool         tvOutputEnabled;
 }
 
 - (void)updateScreen;
 - (void)scaleAndRotate:(UIImage*)image inRect:(CGRect) rect;
 - (id)initWithFrame:(CGRect)aRect;
 - (int)getOrientation;
+- (void)outputToTV:(bool)enabled;
 
+@property (nonatomic, retain) UIImageView *imageView;
 @end
 

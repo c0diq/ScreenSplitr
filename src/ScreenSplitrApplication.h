@@ -6,7 +6,6 @@
 //  Copyright 2009 Plutinosoft. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "ScreenSplitrScreenView.h"
 #import "MPTVOutWindow.h"
 #import "Bonjour.h"
@@ -25,6 +24,9 @@
 - (void)detachTV;
 - (void)deviceOrientationChanged:(struct __GSEvent *)event;
 - (void)applicationSuspend:(struct __GSEvent*)event;
+- (void)setup;
+- (void)askForConnection:(NSString*)ip;
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(int)buttonIndex;
 
 @property (nonatomic, retain) UIWindow *window;
 @property (nonatomic, retain) MPTVOutWindow *_tvWindow;
