@@ -30,14 +30,14 @@
 			E48CB3FE0F0C42340074D25B /* ScreenSplitrScreenView.m:46 */,
 			E4D4FA0D0F0EBFDD001B3381 /* ScreenSplitrScreenView.m:302 */,
 			E45AAFE40F1C879F009CEE37 /* ScreenSplitrScreenView.mm:7 */,
-			E40DC3C00F1F22C500A30899 /* PltFrameServer.cpp:295 */,
-			E40DC3D70F1F23AB00A30899 /* PltFrameServer.cpp:227 */,
-			E40DC3F60F1F250400A30899 /* PltFrameServer.cpp:286 */,
-			E40DC3F80F1F250500A30899 /* PltFrameServer.cpp:294 */,
-			E40DC3FA0F1F250800A30899 /* PltFrameServer.cpp:301 */,
-			E40DC4040F1F283100A30899 /* PltFrameServer.cpp:280 */,
+			E40DC3C00F1F22C500A30899 /* PltFrameServer.cpp:297 */,
+			E40DC3D70F1F23AB00A30899 /* PltFrameServer.cpp:229 */,
+			E40DC3F60F1F250400A30899 /* PltFrameServer.cpp:288 */,
+			E40DC3F80F1F250500A30899 /* PltFrameServer.cpp:296 */,
+			E40DC3FA0F1F250800A30899 /* PltFrameServer.cpp:303 */,
+			E40DC4040F1F283100A30899 /* PltFrameServer.cpp:282 */,
 			E40DC40B0F1F287800A30899 /* NptStreams.cpp:466 */,
-			E40DC4100F1F295800A30899 /* PltFrameServer.cpp:298 */,
+			E40DC4100F1F295800A30899 /* PltFrameServer.cpp:300 */,
 		);
 		codeSenseManager = E48CB3620F0C33E00074D25B /* Code sense */;
 		executables = (
@@ -233,6 +233,30 @@
 			E42A0F620F22B1BD009A5F55 /* PBXTextBookmark */ = E42A0F620F22B1BD009A5F55 /* PBXTextBookmark */;
 			E42A0F630F22B1BD009A5F55 /* PBXTextBookmark */ = E42A0F630F22B1BD009A5F55 /* PBXTextBookmark */;
 			E42A0F650F22B296009A5F55 /* PBXTextBookmark */ = E42A0F650F22B296009A5F55 /* PBXTextBookmark */;
+			E42A0F680F22BAF6009A5F55 /* PBXTextBookmark */ = E42A0F680F22BAF6009A5F55 /* PBXTextBookmark */;
+			E42A0F690F22BAF6009A5F55 /* PBXTextBookmark */ = E42A0F690F22BAF6009A5F55 /* PBXTextBookmark */;
+			E42A0F6A0F22BAF6009A5F55 /* PBXTextBookmark */ = E42A0F6A0F22BAF6009A5F55 /* PBXTextBookmark */;
+			E42A0F6B0F22BAF6009A5F55 /* PBXTextBookmark */ = E42A0F6B0F22BAF6009A5F55 /* PBXTextBookmark */;
+			E42A0F6C0F22BAF6009A5F55 /* PBXTextBookmark */ = E42A0F6C0F22BAF6009A5F55 /* PBXTextBookmark */;
+			E42A0F6D0F22BAF6009A5F55 /* PBXTextBookmark */ = E42A0F6D0F22BAF6009A5F55 /* PBXTextBookmark */;
+			E42A0F6E0F22BAF6009A5F55 /* PBXTextBookmark */ = E42A0F6E0F22BAF6009A5F55 /* PBXTextBookmark */;
+			E42A0F6F0F22BAF6009A5F55 /* PBXTextBookmark */ = E42A0F6F0F22BAF6009A5F55 /* PBXTextBookmark */;
+			E42A0F700F22BAF6009A5F55 /* PBXTextBookmark */ = E42A0F700F22BAF6009A5F55 /* PBXTextBookmark */;
+			E42A0F710F22BAF6009A5F55 /* PBXTextBookmark */ = E42A0F710F22BAF6009A5F55 /* PBXTextBookmark */;
+			E42A0F730F22BB46009A5F55 /* PBXTextBookmark */ = E42A0F730F22BB46009A5F55 /* PBXTextBookmark */;
+			E42A0F740F22BB46009A5F55 /* PBXTextBookmark */ = E42A0F740F22BB46009A5F55 /* PBXTextBookmark */;
+			E42A0F750F22BB46009A5F55 /* PBXTextBookmark */ = E42A0F750F22BB46009A5F55 /* PBXTextBookmark */;
+			E42A0F760F22BB46009A5F55 /* PBXTextBookmark */ = E42A0F760F22BB46009A5F55 /* PBXTextBookmark */;
+			E42A0F770F22BB46009A5F55 /* PBXTextBookmark */ = E42A0F770F22BB46009A5F55 /* PBXTextBookmark */;
+			E42A0F780F22BB46009A5F55 /* PBXTextBookmark */ = E42A0F780F22BB46009A5F55 /* PBXTextBookmark */;
+			E42A0F790F22BB46009A5F55 /* PBXTextBookmark */ = E42A0F790F22BB46009A5F55 /* PBXTextBookmark */;
+			E42A0F7B0F22BB69009A5F55 /* PBXTextBookmark */ = E42A0F7B0F22BB69009A5F55 /* PBXTextBookmark */;
+			E42A0F800F23CD46009A5F55 /* PBXTextBookmark */ = E42A0F800F23CD46009A5F55 /* PBXTextBookmark */;
+			E42A0F810F23CD46009A5F55 /* PBXTextBookmark */ = E42A0F810F23CD46009A5F55 /* PBXTextBookmark */;
+			E42A0F820F23CD46009A5F55 /* PBXTextBookmark */ = E42A0F820F23CD46009A5F55 /* PBXTextBookmark */;
+			E42A0F830F23CD46009A5F55 /* PBXTextBookmark */ = E42A0F830F23CD46009A5F55 /* PBXTextBookmark */;
+			E42A0F840F23CD46009A5F55 /* PBXTextBookmark */ = E42A0F840F23CD46009A5F55 /* PBXTextBookmark */;
+			E42A0F860F2405E4009A5F55 /* PBXTextBookmark */ = E42A0F860F2405E4009A5F55 /* PBXTextBookmark */;
 			E4E85CB90F1DAA3E00FBA740 = E4E85CB90F1DAA3E00FBA740 /* PBXTextBookmark */;
 			E4E85E850F1DEE6400FBA740 = E4E85E850F1DEE6400FBA740 /* PBXTextBookmark */;
 			E4E85E880F1DEE6400FBA740 = E4E85E880F1DEE6400FBA740 /* PBXTextBookmark */;
@@ -249,12 +273,12 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 196";
 		rLen = 10;
-		rLoc = 6696;
+		rLoc = 5313;
 		rType = 0;
 		vrLen = 1135;
 		vrLoc = 1640;
 	};
-	E40DC3C00F1F22C500A30899 /* PltFrameServer.cpp:295 */ = {
+	E40DC3C00F1F22C500A30899 /* PltFrameServer.cpp:297 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -266,11 +290,11 @@
 		functionName = "PLT_FrameServer::Replace(const char* input, NPT_MemoryStream& output)";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 295;
+		lineNumber = 297;
 		modificationTime = 253700661.191851;
 		state = 2;
 	};
-	E40DC3D70F1F23AB00A30899 /* PltFrameServer.cpp:227 */ = {
+	E40DC3D70F1F23AB00A30899 /* PltFrameServer.cpp:229 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -282,12 +306,12 @@
 		functionName = "PLT_FrameServer::ProcessTemplate(NPT_HttpRequest& request, const NPT_HttpRequestContext& context, NPT_HttpResponse& response)";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 227;
+		lineNumber = 229;
 		location = MediaConnect;
 		modificationTime = 253700668.176869;
 		state = 2;
 	};
-	E40DC3F60F1F250400A30899 /* PltFrameServer.cpp:286 */ = {
+	E40DC3F60F1F250400A30899 /* PltFrameServer.cpp:288 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -299,12 +323,12 @@
 		functionName = "PLT_FrameServer::Replace(const char* input, NPT_MemoryStream& output)";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 286;
+		lineNumber = 288;
 		location = MediaConnect;
 		modificationTime = 253700661.201905;
 		state = 2;
 	};
-	E40DC3F80F1F250500A30899 /* PltFrameServer.cpp:294 */ = {
+	E40DC3F80F1F250500A30899 /* PltFrameServer.cpp:296 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -316,12 +340,12 @@
 		functionName = "PLT_FrameServer::Replace(const char* input, NPT_MemoryStream& output)";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 294;
+		lineNumber = 296;
 		location = MediaConnect;
 		modificationTime = 253700661.202093;
 		state = 2;
 	};
-	E40DC3FA0F1F250800A30899 /* PltFrameServer.cpp:301 */ = {
+	E40DC3FA0F1F250800A30899 /* PltFrameServer.cpp:303 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -333,12 +357,12 @@
 		functionName = "PLT_FrameServer::Replace(const char* input, NPT_MemoryStream& output)";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 301;
+		lineNumber = 303;
 		location = MediaConnect;
 		modificationTime = 253700669.617392;
 		state = 1;
 	};
-	E40DC4040F1F283100A30899 /* PltFrameServer.cpp:280 */ = {
+	E40DC4040F1F283100A30899 /* PltFrameServer.cpp:282 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -350,7 +374,7 @@
 		functionName = "PLT_FrameServer::Replace(const char* input, NPT_MemoryStream& output)";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 280;
+		lineNumber = 282;
 		location = MediaConnect;
 		modificationTime = 253700661.20252;
 		state = 2;
@@ -372,7 +396,7 @@
 		modificationTime = 253700661.214704;
 		state = 2;
 	};
-	E40DC4100F1F295800A30899 /* PltFrameServer.cpp:298 */ = {
+	E40DC4100F1F295800A30899 /* PltFrameServer.cpp:300 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -384,7 +408,7 @@
 		functionName = "PLT_FrameServer::Replace(const char* input, NPT_MemoryStream& output)";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 298;
+		lineNumber = 300;
 		location = MediaConnect;
 		modificationTime = 253700661.214898;
 		state = 2;
@@ -394,7 +418,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 113";
 		rLen = 0;
-		rLoc = 4431;
+		rLoc = 4799;
 		rType = 0;
 		vrLen = 1506;
 		vrLoc = 2688;
@@ -424,7 +448,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 113";
 		rLen = 0;
-		rLoc = 4431;
+		rLoc = 4799;
 		rType = 0;
 		vrLen = 1522;
 		vrLoc = 3057;
@@ -444,7 +468,7 @@
 		fRef = E45AB0D40F1CAC7B009CEE37 /* PltFrameServer.cpp */;
 		name = "PltFrameServer.cpp: 290";
 		rLen = 0;
-		rLoc = 10662;
+		rLoc = 10799;
 		rType = 0;
 		vrLen = 1511;
 		vrLoc = 9499;
@@ -454,7 +478,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 196";
 		rLen = 10;
-		rLoc = 6696;
+		rLoc = 5313;
 		rType = 0;
 		vrLen = 1013;
 		vrLoc = 1518;
@@ -464,7 +488,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 116";
 		rLen = 0;
-		rLoc = 4615;
+		rLoc = 5050;
 		rType = 0;
 		vrLen = 1495;
 		vrLoc = 2876;
@@ -514,7 +538,7 @@
 		fRef = E45AB0D50F1CAC7B009CEE37 /* PltFrameServer.h */;
 		name = "PltFrameServer.h: 90";
 		rLen = 0;
-		rLoc = 4016;
+		rLoc = 4416;
 		rType = 0;
 		vrLen = 1964;
 		vrLoc = 2490;
@@ -564,7 +588,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 116";
 		rLen = 0;
-		rLoc = 4615;
+		rLoc = 5050;
 		rType = 0;
 		vrLen = 1495;
 		vrLoc = 2876;
@@ -594,7 +618,7 @@
 		fRef = E45AB0D40F1CAC7B009CEE37 /* PltFrameServer.cpp */;
 		name = "PltFrameServer.cpp: 292";
 		rLen = 0;
-		rLoc = 10758;
+		rLoc = 10895;
 		rType = 0;
 		vrLen = 1667;
 		vrLoc = 9900;
@@ -604,7 +628,7 @@
 		fRef = E45AB0D40F1CAC7B009CEE37 /* PltFrameServer.cpp */;
 		name = "PltFrameServer.cpp: 292";
 		rLen = 0;
-		rLoc = 10758;
+		rLoc = 10895;
 		rType = 0;
 		vrLen = 1667;
 		vrLoc = 9900;
@@ -624,7 +648,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 49";
 		rLen = 0;
-		rLoc = 1525;
+		rLoc = 1905;
 		rType = 0;
 		vrLen = 1377;
 		vrLoc = 685;
@@ -644,7 +668,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 109";
 		rLen = 0;
-		rLoc = 4095;
+		rLoc = 4475;
 		rType = 0;
 		vrLen = 1573;
 		vrLoc = 1095;
@@ -664,7 +688,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 109";
 		rLen = 0;
-		rLoc = 4095;
+		rLoc = 4475;
 		rType = 0;
 		vrLen = 1573;
 		vrLoc = 1095;
@@ -684,7 +708,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 56";
 		rLen = 105;
-		rLoc = 1822;
+		rLoc = 2202;
 		rType = 0;
 		vrLen = 1598;
 		vrLoc = 793;
@@ -714,7 +738,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 56";
 		rLen = 105;
-		rLoc = 1822;
+		rLoc = 2202;
 		rType = 0;
 		vrLen = 1598;
 		vrLoc = 793;
@@ -762,7 +786,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 64";
 		rLen = 0;
-		rLoc = 2058;
+		rLoc = 2438;
 		rType = 0;
 		vrLen = 1094;
 		vrLoc = 835;
@@ -792,7 +816,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 61";
 		rLen = 10;
-		rLoc = 2058;
+		rLoc = 2438;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 753;
@@ -812,7 +836,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 118";
 		rLen = 0;
-		rLoc = 4070;
+		rLoc = 4450;
 		rType = 0;
 		vrLen = 1187;
 		vrLoc = 1970;
@@ -822,7 +846,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 296";
 		rLen = 0;
-		rLoc = 9942;
+		rLoc = 5608;
 		rType = 0;
 		vrLen = 1439;
 		vrLoc = 3262;
@@ -832,7 +856,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 104";
 		rLen = 18;
-		rLoc = 3319;
+		rLoc = 3699;
 		rType = 0;
 		vrLen = 1010;
 		vrLoc = 2263;
@@ -852,7 +876,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 117";
 		rLen = 0;
-		rLoc = 3912;
+		rLoc = 4292;
 		rType = 0;
 		vrLen = 974;
 		vrLoc = 2303;
@@ -872,7 +896,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 64";
 		rLen = 0;
-		rLoc = 2058;
+		rLoc = 2438;
 		rType = 0;
 		vrLen = 1094;
 		vrLoc = 835;
@@ -922,7 +946,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 158";
 		rLen = 0;
-		rLoc = 6111;
+		rLoc = 6546;
 		rType = 0;
 		vrLen = 1200;
 		vrLoc = 3821;
@@ -952,7 +976,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 158";
 		rLen = 0;
-		rLoc = 6111;
+		rLoc = 6546;
 		rType = 0;
 		vrLen = 1200;
 		vrLoc = 3821;
@@ -972,7 +996,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 158";
 		rLen = 0;
-		rLoc = 6111;
+		rLoc = 6546;
 		rType = 0;
 		vrLen = 1200;
 		vrLoc = 3821;
@@ -982,7 +1006,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 163";
 		rLen = 0;
-		rLoc = 6111;
+		rLoc = 6546;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 4606;
@@ -992,7 +1016,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 165";
 		rLen = 0;
-		rLoc = 6111;
+		rLoc = 6546;
 		rType = 0;
 		vrLen = 1266;
 		vrLoc = 4323;
@@ -1002,7 +1026,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 121";
 		rLen = 0;
-		rLoc = 3968;
+		rLoc = 4348;
 		rType = 0;
 		vrLen = 1407;
 		vrLoc = 2664;
@@ -1012,7 +1036,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 236";
 		rLen = 0;
-		rLoc = 7512;
+		rLoc = 7947;
 		rType = 0;
 		vrLen = 795;
 		vrLoc = 5992;
@@ -1022,7 +1046,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 175";
 		rLen = 0;
-		rLoc = 6111;
+		rLoc = 6546;
 		rType = 0;
 		vrLen = 1306;
 		vrLoc = 4316;
@@ -1032,7 +1056,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 175";
 		rLen = 0;
-		rLoc = 6111;
+		rLoc = 6546;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 3217;
@@ -1042,7 +1066,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 175";
 		rLen = 0;
-		rLoc = 6111;
+		rLoc = 6546;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 3217;
@@ -1062,7 +1086,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 175";
 		rLen = 0;
-		rLoc = 6111;
+		rLoc = 6546;
 		rType = 0;
 		vrLen = 1315;
 		vrLoc = 3217;
@@ -1092,7 +1116,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 231";
 		rLen = 0;
-		rLoc = 7263;
+		rLoc = 7698;
 		rType = 0;
 		vrLen = 988;
 		vrLoc = 5779;
@@ -1122,7 +1146,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 130";
 		rLen = 0;
-		rLoc = 4072;
+		rLoc = 4452;
 		rType = 0;
 		vrLen = 1233;
 		vrLoc = 2423;
@@ -1142,7 +1166,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 231";
 		rLen = 0;
-		rLoc = 7263;
+		rLoc = 7698;
 		rType = 0;
 		vrLen = 988;
 		vrLoc = 5779;
@@ -1192,7 +1216,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 138";
 		rLen = 0;
-		rLoc = 4072;
+		rLoc = 4452;
 		rType = 0;
 		vrLen = 1150;
 		vrLoc = 3171;
@@ -1212,7 +1236,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 138";
 		rLen = 0;
-		rLoc = 4072;
+		rLoc = 4452;
 		rType = 0;
 		vrLen = 1234;
 		vrLoc = 3166;
@@ -1232,7 +1256,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 140";
 		rLen = 0;
-		rLoc = 4072;
+		rLoc = 4452;
 		rType = 0;
 		vrLen = 1390;
 		vrLoc = 4441;
@@ -1242,7 +1266,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 141";
 		rLen = 0;
-		rLoc = 4072;
+		rLoc = 4452;
 		rType = 0;
 		vrLen = 1248;
 		vrLoc = 3164;
@@ -1252,7 +1276,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 198";
 		rLen = 0;
-		rLoc = 6073;
+		rLoc = 6508;
 		rType = 0;
 		vrLen = 1583;
 		vrLoc = 4491;
@@ -1262,7 +1286,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 71";
 		rLen = 0;
-		rLoc = 2228;
+		rLoc = 2608;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 895;
@@ -1282,7 +1306,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 71";
 		rLen = 0;
-		rLoc = 2228;
+		rLoc = 2608;
 		rType = 0;
 		vrLen = 1068;
 		vrLoc = 895;
@@ -1322,7 +1346,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 198";
 		rLen = 0;
-		rLoc = 6090;
+		rLoc = 6525;
 		rType = 0;
 		vrLen = 1449;
 		vrLoc = 4959;
@@ -1342,7 +1366,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 198";
 		rLen = 0;
-		rLoc = 6090;
+		rLoc = 6525;
 		rType = 0;
 		vrLen = 1482;
 		vrLoc = 3788;
@@ -1352,7 +1376,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 198";
 		rLen = 0;
-		rLoc = 6090;
+		rLoc = 6525;
 		rType = 0;
 		vrLen = 1482;
 		vrLoc = 3788;
@@ -1372,7 +1396,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 189";
 		rLen = 0;
-		rLoc = 5576;
+		rLoc = 6011;
 		rType = 0;
 		vrLen = 1552;
 		vrLoc = 4476;
@@ -1382,7 +1406,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 110";
 		rLen = 0;
-		rLoc = 2587;
+		rLoc = 2967;
 		rType = 0;
 		vrLen = 936;
 		vrLoc = 815;
@@ -1392,7 +1416,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 53";
 		rLen = 0;
-		rLoc = 1273;
+		rLoc = 1653;
 		rType = 0;
 		vrLen = 1638;
 		vrLoc = 4817;
@@ -1402,7 +1426,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 144";
 		rLen = 0;
-		rLoc = 4072;
+		rLoc = 4452;
 		rType = 0;
 		vrLen = 1485;
 		vrLoc = 3503;
@@ -1422,7 +1446,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 208";
 		rLen = 0;
-		rLoc = 6695;
+		rLoc = 5312;
 		rType = 0;
 		vrLen = 1460;
 		vrLoc = 1231;
@@ -1432,7 +1456,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 53";
 		rLen = 0;
-		rLoc = 1273;
+		rLoc = 1653;
 		rType = 0;
 		vrLen = 1353;
 		vrLoc = 3920;
@@ -1442,7 +1466,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 208";
 		rLen = 0;
-		rLoc = 6695;
+		rLoc = 5312;
 		rType = 0;
 		vrLen = 1460;
 		vrLoc = 1231;
@@ -1452,7 +1476,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 148";
 		rLen = 0;
-		rLoc = 4072;
+		rLoc = 4452;
 		rType = 0;
 		vrLen = 1387;
 		vrLoc = 3694;
@@ -1472,7 +1496,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 144";
 		rLen = 0;
-		rLoc = 4072;
+		rLoc = 4452;
 		rType = 0;
 		vrLen = 1485;
 		vrLoc = 3503;
@@ -1507,6 +1531,246 @@
 		vrLen = 1656;
 		vrLoc = 1581;
 	};
+	E42A0F680F22BAF6009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4D4F9C30F0EB60C001B3381 /* ScreenSplitrScreenView.h */;
+		name = "ScreenSplitrScreenView.h: 21";
+		rLen = 0;
+		rLoc = 451;
+		rType = 0;
+		vrLen = 459;
+		vrLoc = 0;
+	};
+	E42A0F690F22BAF6009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
+		name = "ScreenSplitrScreenView.mm: 112";
+		rLen = 0;
+		rLoc = 3398;
+		rType = 0;
+		vrLen = 1084;
+		vrLoc = 0;
+	};
+	E42A0F6A0F22BAF6009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AB0D50F1CAC7B009CEE37 /* PltFrameServer.h */;
+		name = "PltFrameServer.h: 56";
+		rLen = 57;
+		rLoc = 2209;
+		rType = 0;
+		vrLen = 1640;
+		vrLoc = 1469;
+	};
+	E42A0F6B0F22BAF6009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AB0D40F1CAC7B009CEE37 /* PltFrameServer.cpp */;
+		name = "PltFrameServer.cpp: 325";
+		rLen = 0;
+		rLoc = 12058;
+		rType = 0;
+		vrLen = 1791;
+		vrLoc = 11208;
+	};
+	E42A0F6C0F22BAF6009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
+		name = "ScreenSplitrApplication.mm: 30";
+		rLen = 0;
+		rLoc = 954;
+		rType = 0;
+		vrLen = 905;
+		vrLoc = 33;
+	};
+	E42A0F6D0F22BAF6009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
+		name = "ScreenSplitrScreenView.mm: 112";
+		rLen = 0;
+		rLoc = 3398;
+		rType = 0;
+		vrLen = 1149;
+		vrLoc = 302;
+	};
+	E42A0F6E0F22BAF6009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4D4F9C30F0EB60C001B3381 /* ScreenSplitrScreenView.h */;
+		name = "ScreenSplitrScreenView.h: 21";
+		rLen = 0;
+		rLoc = 451;
+		rType = 0;
+		vrLen = 459;
+		vrLoc = 0;
+	};
+	E42A0F6F0F22BAF6009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
+		name = "ScreenSplitrApplication.mm: 144";
+		rLen = 0;
+		rLoc = 4452;
+		rType = 0;
+		vrLen = 1412;
+		vrLoc = 3604;
+	};
+	E42A0F700F22BAF6009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AB0D40F1CAC7B009CEE37 /* PltFrameServer.cpp */;
+		name = "PltFrameServer.cpp: 325";
+		rLen = 0;
+		rLoc = 12058;
+		rType = 0;
+		vrLen = 1791;
+		vrLoc = 11208;
+	};
+	E42A0F710F22BAF6009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
+		name = "ScreenSplitrApplication.mm: 165";
+		rLen = 0;
+		rLoc = 5050;
+		rType = 0;
+		vrLen = 1381;
+		vrLoc = 4074;
+	};
+	E42A0F730F22BB46009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAE630F1C642A009CEE37 /* NptHttp.h */;
+		name = "NptHttp.h: 407";
+		rLen = 17;
+		rLoc = 15512;
+		rType = 0;
+		vrLen = 1548;
+		vrLoc = 14423;
+	};
+	E42A0F740F22BB46009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAE7A0F1C642A009CEE37 /* NptSockets.h */;
+		name = "NptSockets.h: 76";
+		rLen = 39;
+		rLoc = 3724;
+		rType = 0;
+		vrLen = 1246;
+		vrLoc = 3394;
+	};
+	E42A0F750F22BB46009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
+		name = "ScreenSplitrApplication.mm: 31";
+		rLen = 0;
+		rLoc = 954;
+		rType = 0;
+		vrLen = 959;
+		vrLoc = 209;
+	};
+	E42A0F760F22BB46009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
+		name = "ScreenSplitrApplication.mm: 31";
+		rLen = 0;
+		rLoc = 954;
+		rType = 0;
+		vrLen = 959;
+		vrLoc = 209;
+	};
+	E42A0F770F22BB46009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAE630F1C642A009CEE37 /* NptHttp.h */;
+		name = "NptHttp.h: 407";
+		rLen = 17;
+		rLoc = 15512;
+		rType = 0;
+		vrLen = 1548;
+		vrLoc = 14423;
+	};
+	E42A0F780F22BB46009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAE7A0F1C642A009CEE37 /* NptSockets.h */;
+		name = "NptSockets.h: 76";
+		rLen = 39;
+		rLoc = 3724;
+		rType = 0;
+		vrLen = 1246;
+		vrLoc = 3394;
+	};
+	E42A0F790F22BB46009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
+		name = "ScreenSplitrApplication.mm: 32";
+		rLen = 0;
+		rLoc = 954;
+		rType = 0;
+		vrLen = 1016;
+		vrLoc = 209;
+	};
+	E42A0F7B0F22BB69009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
+		name = "ScreenSplitrApplication.mm: 36";
+		rLen = 0;
+		rLoc = 954;
+		rType = 0;
+		vrLen = 1016;
+		vrLoc = 209;
+	};
+	E42A0F800F23CD46009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4D4F9C10F0EB60C001B3381 /* ScreenSplitrApplication.h */;
+		name = "ScreenSplitrApplication.h: 13";
+		rLen = 0;
+		rLoc = 257;
+		rType = 0;
+		vrLen = 1309;
+		vrLoc = 53;
+	};
+	E42A0F810F23CD46009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
+		name = "ScreenSplitrApplication.mm: 19";
+		rLen = 0;
+		rLoc = 409;
+		rType = 0;
+		vrLen = 1026;
+		vrLoc = 209;
+	};
+	E42A0F820F23CD46009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
+		name = "ScreenSplitrApplication.mm: 19";
+		rLen = 0;
+		rLoc = 409;
+		rType = 0;
+		vrLen = 1026;
+		vrLoc = 209;
+	};
+	E42A0F830F23CD46009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E4D4F9C10F0EB60C001B3381 /* ScreenSplitrApplication.h */;
+		name = "ScreenSplitrApplication.h: 13";
+		rLen = 0;
+		rLoc = 257;
+		rType = 0;
+		vrLen = 1309;
+		vrLoc = 53;
+	};
+	E42A0F840F23CD46009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
+		name = "ScreenSplitrApplication.mm: 161";
+		rLen = 0;
+		rLoc = 4685;
+		rType = 0;
+		vrLen = 1555;
+		vrLoc = 4254;
+	};
+	E42A0F860F2405E4009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
+		name = "ScreenSplitrApplication.mm: 34";
+		rLen = 0;
+		rLoc = 910;
+		rType = 0;
+		vrLen = 1110;
+		vrLoc = 85;
+	};
 	E45AAE600F1C642A009CEE37 /* NptFile.cpp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {852, 4592}}";
@@ -1523,9 +1787,9 @@
 	};
 	E45AAE630F1C642A009CEE37 /* NptHttp.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {852, 8484}}";
-			sepNavSelRange = "{2613, 73}";
-			sepNavVisRange = "{1911, 1717}";
+			sepNavIntBoundsRect = "{{0, 0}, {1010, 8554}}";
+			sepNavSelRange = "{15512, 17}";
+			sepNavVisRange = "{14423, 1548}";
 		};
 	};
 	E45AAE680F1C642A009CEE37 /* NptLogging.h */ = {
@@ -1544,9 +1808,9 @@
 	};
 	E45AAE7A0F1C642A009CEE37 /* NptSockets.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1379, 4802}}";
-			sepNavSelRange = "{4414, 31}";
-			sepNavVisRange = "{4156, 692}";
+			sepNavIntBoundsRect = "{{0, 0}, {1010, 4648}}";
+			sepNavSelRange = "{3724, 39}";
+			sepNavVisRange = "{3394, 1246}";
 		};
 	};
 	E45AAE7C0F1C642A009CEE37 /* NptStreams.cpp */ = {
@@ -1680,17 +1944,17 @@
 	};
 	E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1206, 3722}}";
-			sepNavSelRange = "{5442, 0}";
-			sepNavVisRange = "{6607, 937}";
+			sepNavIntBoundsRect = "{{0, 0}, {1010, 3696}}";
+			sepNavSelRange = "{910, 0}";
+			sepNavVisRange = "{85, 1110}";
 			sepNavWindowFrame = "{{15, 89}, {1265, 784}}";
 		};
 	};
 	E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1010, 5514}}";
-			sepNavSelRange = "{3167, 0}";
-			sepNavVisRange = "{1581, 1656}";
+			sepNavIntBoundsRect = "{{0, 0}, {1010, 2560}}";
+			sepNavSelRange = "{3398, 0}";
+			sepNavVisRange = "{0, 1084}";
 			sepNavWindowFrame = "{{15, 89}, {1265, 784}}";
 		};
 	};
@@ -1739,16 +2003,16 @@
 	};
 	E45AB0D40F1CAC7B009CEE37 /* PltFrameServer.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {852, 7154}}";
-			sepNavSelRange = "{10758, 0}";
-			sepNavVisRange = "{9900, 1667}";
+			sepNavIntBoundsRect = "{{0, 0}, {1010, 7126}}";
+			sepNavSelRange = "{12058, 0}";
+			sepNavVisRange = "{11208, 1791}";
 		};
 	};
 	E45AB0D50F1CAC7B009CEE37 /* PltFrameServer.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {852, 1442}}";
-			sepNavSelRange = "{4016, 0}";
-			sepNavVisRange = "{2490, 1964}";
+			sepNavIntBoundsRect = "{{0, 0}, {1010, 1680}}";
+			sepNavSelRange = "{2209, 57}";
+			sepNavVisRange = "{1469, 1640}";
 		};
 	};
 	E45AB0D60F1CAC7B009CEE37 /* PltFrameStream.cpp */ = {
@@ -1900,16 +2164,16 @@
 	E4D4F9C10F0EB60C001B3381 /* ScreenSplitrApplication.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1010, 686}}";
-			sepNavSelRange = "{680, 0}";
-			sepNavVisRange = "{85, 1277}";
+			sepNavSelRange = "{257, 0}";
+			sepNavVisRange = "{53, 1309}";
 			sepNavWindowFrame = "{{15, 89}, {1265, 784}}";
 		};
 	};
 	E4D4F9C30F0EB60C001B3381 /* ScreenSplitrScreenView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {852, 536}}";
-			sepNavSelRange = "{431, 0}";
-			sepNavVisRange = "{0, 598}";
+			sepNavIntBoundsRect = "{{0, 0}, {1010, 604}}";
+			sepNavSelRange = "{451, 0}";
+			sepNavVisRange = "{0, 459}";
 		};
 	};
 	E4D4F9C40F0EB60C001B3381 /* ScreenSplitrScreenView.m */ = {
@@ -1968,7 +2232,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 110";
 		rLen = 8;
-		rLoc = 4389;
+		rLoc = 4757;
 		rType = 0;
 		vrLen = 1538;
 		vrLoc = 2471;

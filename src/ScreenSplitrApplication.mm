@@ -24,6 +24,19 @@ static PLT_UPnP upnp;
 static ScreenSplitrApplication* instance = NULL;
 PLT_FrameBuffer* frame_buffer_ref = NULL;
 
+/* stream request validator */
+class StreamValidator : public PLT_StreamValidator
+{
+public:
+    bool OnNewRequestAccept(const NPT_HttpRequestContext& context) {
+        NSLog(@"Received stream request from %s", context.GetRemoteAddress().GetIpAddress().ToString().GetChars());
+        if (!instance) return false;
+        return true;
+    }
+};
+
+static StreamValidator validator;
+
 /* undocumented classes */
 @implementation MPTVOutWindow (extended)
 - (BOOL)_canExistBeyondSuspension {
@@ -146,11 +159,12 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 - (void) setup {
     // create our UPnP device
     PLT_DeviceHostReference device(new PLT_FrameServer(frame_buffer, 
-                                                       NPT_String([[[NSBundle mainBundle] bundlePath] UTF8String])+"/www_root", 
+                                                       NPT_String([[[NSBundle mainBundle] bundlePath] UTF8String]), 
                                                        NPT_String([[[UIDevice currentDevice] name] UTF8String]),
                                                        false,
                                                        NULL,
-                                                       8099));
+                                                       8099,
+                                                       &validator));
     upnp.AddDevice(device);
     upnp.Start();
     

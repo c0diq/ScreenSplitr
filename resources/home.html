@@ -10,26 +10,17 @@
 
 </head>
 <body>
-    Welcome,
-    <br><br>
-    You've connected to "$name".
+    <img src="Default.png"></img>
+    <script type="text/javascript">
+        function reload(){
+            document.location.href="http://$host:$port/screensplitr";
+        }
+        
+        // schedule to update body
+        setTimeout("reload()", 3000);
+
+    </script>
     <br>
-    <br>
-    Click below if you only want to view the iPhone screen:
-    <br>
-    <a href="/screensplitr">For your eyes only!</a>
-    <br>
-    <br>
-    EXPERIMENTAL!
-    <br>
-    Click below if you want to control the iPhone remotely:
-    <br>
-    <a href="http://$host:$port/content/viewer/FLViewer_t.html">I am a control freak!</a>
-    <br>
-    <br>
-    <br>
-    ScreenSplit responsively.
-    <br>
-    <br>
+    <a href="http://$host:$port/content/viewer/FLViewer_t.html">Experimental</a>
 </body>
 </html>

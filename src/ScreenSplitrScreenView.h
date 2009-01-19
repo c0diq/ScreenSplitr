@@ -19,8 +19,6 @@
 - (void)scaleAndRotate:(UIImage*)image inRect:(CGRect) rect;
 - (id)initWithFrame:(CGRect)aRect;
 - (int)getOrientation;
-//- (UIImage*)scaleAndRotateImage:(UIImage*)image inRect:(CGRect) rect;
-//- (void)drawImage:(UIImage*)image centeredInRect:(CGRect)inRect;
 
 @end
 
