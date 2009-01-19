@@ -1,11 +1,12 @@
 Package: com.plutinosoft.screensplitr 
 Name: ScreenSplitr 
-Version: 1.0.4-8
+Version: 1.0.5-10
 Architecture: iphoneos-arm 
-Description: Share your iPhone screen on a TV or a Computer (and optionally control your iPhone from your browser!). 
+Description: Share your iPhone screen on a TV or a Computer 
  1. Plug a video cable into your iPhone and see everything you're doing on 
  both the iPhone and the TV.
- 2. Start Safari on your computer. Open the Bookmarks Sidebar & click on Bonjour. Select your iphone & decide to only view the screen or view and control the iPhone (use Cmd/Ctrl-Click for the Home button).
+ 2. Start Safari on your computer. Open the All Bookmarks Sidebar & click on Bonjour. Select the iPhone and accept the connection on your iPhone. You can now see the iPhone screen inside Safari.
+ 3. Click the "Experimental link" in Safari at the bottom of the ScreenSplitr splash screen to not only view but control the iPhone (use Cmd/Ctrl-Click for the Home button).
 Homepage: http://www.plutinosoft.com/blog/projects/screensplitr 
 Depiction: 
 Maintainer: Sylvain Rebaud <sylvain@plutinosoft.com> 
