@@ -76,8 +76,13 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
     // and if size of view got updated
     UIView* superview = [self superview];
     if (superview) {
+        int orientation = [self getOrientation];
+        if (orientation == kOrientationHorizontalLeft || orientation == kOrientationHorizontalRight) {
+            self.frame = CGRectMake(superview.frame.origin.x+30, superview.frame.origin.y+40, superview.frame.size.width-60, superview.frame.size.height-80);
+        } else {
+            self.frame = CGRectMake(superview.frame.origin.x+20, superview.frame.origin.y+15, superview.frame.size.width-40, superview.frame.size.height-30);
+        }
         //NSLog(@"Superview size: %f, %f, %f, %f", superview.frame.origin.x, superview.frame.origin.y, superview.frame.size.width, superview.frame.size.height);
-        self.frame = CGRectMake(superview.frame.origin.x+20, superview.frame.origin.y+15, superview.frame.size.width-40, superview.frame.size.height-30);
     }
     
 #ifdef BENCHMARK    
@@ -180,6 +185,7 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
 		default:
             return lastValidOrientation;
 	}
+    lastValidOrientation = orientation;
     return orientation;
 }
 

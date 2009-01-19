@@ -357,6 +357,13 @@
 			E42A125B0F2485D2009A5F55 /* PBXTextBookmark */ = E42A125B0F2485D2009A5F55 /* PBXTextBookmark */;
 			E42A125D0F2485D2009A5F55 /* PBXTextBookmark */ = E42A125D0F2485D2009A5F55 /* PBXTextBookmark */;
 			E42A125E0F2485D2009A5F55 /* PBXTextBookmark */ = E42A125E0F2485D2009A5F55 /* PBXTextBookmark */;
+			E42A12600F248750009A5F55 /* PBXTextBookmark */ = E42A12600F248750009A5F55 /* PBXTextBookmark */;
+			E42A12610F248750009A5F55 /* PBXTextBookmark */ = E42A12610F248750009A5F55 /* PBXTextBookmark */;
+			E42A12620F248750009A5F55 /* PBXTextBookmark */ = E42A12620F248750009A5F55 /* PBXTextBookmark */;
+			E42A12640F24883E009A5F55 /* PBXTextBookmark */ = E42A12640F24883E009A5F55 /* PBXTextBookmark */;
+			E42A12650F24883E009A5F55 /* PBXTextBookmark */ = E42A12650F24883E009A5F55 /* PBXTextBookmark */;
+			E42A12660F24883E009A5F55 /* PBXTextBookmark */ = E42A12660F24883E009A5F55 /* PBXTextBookmark */;
+			E42A12670F24883E009A5F55 /* PBXTextBookmark */ = E42A12670F24883E009A5F55 /* PBXTextBookmark */;
 			E4E85CB90F1DAA3E00FBA740 = E4E85CB90F1DAA3E00FBA740 /* PBXTextBookmark */;
 		};
 		sourceControlManager = E48CB3610F0C33E00074D25B /* Source Control */;
@@ -573,7 +580,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 72";
 		rLen = 0;
-		rLoc = 1883;
+		rLoc = 2210;
 		rType = 0;
 		vrLen = 1403;
 		vrLoc = 1451;
@@ -583,7 +590,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 296";
 		rLen = 0;
-		rLoc = 5627;
+		rLoc = 6008;
 		rType = 0;
 		vrLen = 1439;
 		vrLoc = 3262;
@@ -593,7 +600,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 77";
 		rLen = 0;
-		rLoc = 2204;
+		rLoc = 2545;
 		rType = 0;
 		vrLen = 1046;
 		vrLoc = 272;
@@ -613,7 +620,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 98";
 		rLen = 0;
-		rLoc = 3006;
+		rLoc = 3347;
 		rType = 0;
 		vrLen = 1417;
 		vrLoc = 1766;
@@ -623,7 +630,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 83";
 		rLen = 0;
-		rLoc = 2371;
+		rLoc = 2712;
 		rType = 0;
 		vrLen = 911;
 		vrLoc = 4746;
@@ -633,7 +640,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 208";
 		rLen = 0;
-		rLoc = 5331;
+		rLoc = 5672;
 		rType = 0;
 		vrLen = 1460;
 		vrLoc = 1231;
@@ -643,7 +650,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 112";
 		rLen = 0;
-		rLoc = 3417;
+		rLoc = 3758;
 		rType = 0;
 		vrLen = 1084;
 		vrLoc = 0;
@@ -673,7 +680,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 112";
 		rLen = 0;
-		rLoc = 3417;
+		rLoc = 3758;
 		rType = 0;
 		vrLen = 1149;
 		vrLoc = 302;
@@ -1566,7 +1573,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 98";
 		rLen = 0;
-		rLoc = 2873;
+		rLoc = 3214;
 		rType = 0;
 		vrLen = 1560;
 		vrLoc = 2215;
@@ -1656,7 +1663,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 98";
 		rLen = 0;
-		rLoc = 2873;
+		rLoc = 3214;
 		rType = 0;
 		vrLen = 1560;
 		vrLoc = 2215;
@@ -2816,7 +2823,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 98";
 		rLen = 0;
-		rLoc = 2873;
+		rLoc = 3214;
 		rType = 0;
 		vrLen = 720;
 		vrLoc = 0;
@@ -2966,7 +2973,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 274";
 		rLen = 0;
-		rLoc = 8718;
+		rLoc = 8707;
 		rType = 0;
 		vrLen = 968;
 		vrLoc = 8364;
@@ -2976,7 +2983,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 275";
 		rLen = 0;
-		rLoc = 8789;
+		rLoc = 8745;
 		rType = 0;
 		vrLen = 932;
 		vrLoc = 7938;
@@ -3006,7 +3013,7 @@
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 275";
 		rLen = 9;
-		rLoc = 8772;
+		rLoc = 8728;
 		rType = 0;
 		vrLen = 782;
 		vrLoc = 8590;
@@ -3024,13 +3031,18 @@
 		name = CALayer.h;
 		path = /Developer/SDKs/iPhoneOS.sdk/Versions/iPhoneOS2.0.sdk/include/QuartzCore/CALayer.h;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1010, 2254}}";
+			sepNavSelRange = "{2472, 32}";
+			sepNavVisRange = "{554, 1072}";
+		};
 	};
 	E42A125D0F2485D2009A5F55 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
 		name = "ScreenSplitrApplication.mm: 275";
 		rLen = 9;
-		rLoc = 8772;
+		rLoc = 8728;
 		rType = 0;
 		vrLen = 782;
 		vrLoc = 8590;
@@ -3050,6 +3062,76 @@
 		name = CALayer.h;
 		path = /Developer/SDKs/iPhoneOS.sdk/Versions/iPhoneOS2.0.sdk/include/QuartzCore/CALayer.h;
 		sourceTree = "<absolute>";
+	};
+	E42A12600F248750009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E42A125C0F2485D2009A5F55 /* CALayer.h */;
+		name = "CALayer.h: 98";
+		rLen = 32;
+		rLoc = 2472;
+		rType = 0;
+		vrLen = 1072;
+		vrLoc = 554;
+	};
+	E42A12610F248750009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E42A125C0F2485D2009A5F55 /* CALayer.h */;
+		name = "CALayer.h: 98";
+		rLen = 32;
+		rLoc = 2472;
+		rType = 0;
+		vrLen = 1072;
+		vrLoc = 554;
+	};
+	E42A12620F248750009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
+		name = "ScreenSplitrApplication.mm: 275";
+		rLen = 0;
+		rLoc = 8750;
+		rType = 0;
+		vrLen = 727;
+		vrLoc = 8590;
+	};
+	E42A12640F24883E009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
+		name = "ScreenSplitrApplication.mm: 275";
+		rLen = 0;
+		rLoc = 8750;
+		rType = 0;
+		vrLen = 727;
+		vrLoc = 8590;
+	};
+	E42A12650F24883E009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
+		name = "ScreenSplitrScreenView.mm: 40";
+		rLen = 0;
+		rLoc = 1061;
+		rType = 0;
+		vrLen = 730;
+		vrLoc = 363;
+	};
+	E42A12660F24883E009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */;
+		name = "ScreenSplitrApplication.mm: 275";
+		rLen = 0;
+		rLoc = 8750;
+		rType = 0;
+		vrLen = 727;
+		vrLoc = 8590;
+	};
+	E42A12670F24883E009A5F55 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
+		name = "ScreenSplitrScreenView.mm: 85";
+		rLen = 0;
+		rLoc = 2539;
+		rType = 0;
+		vrLen = 1355;
+		vrLoc = 1863;
 	};
 	E45AAE600F1C642A009CEE37 /* NptFile.cpp */ = {
 		uiCtxt = {
@@ -3224,17 +3306,17 @@
 	};
 	E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1010, 4676}}";
-			sepNavSelRange = "{8772, 9}";
-			sepNavVisRange = "{8598, 796}";
+			sepNavIntBoundsRect = "{{0, 0}, {1010, 4648}}";
+			sepNavSelRange = "{8750, 0}";
+			sepNavVisRange = "{8598, 848}";
 			sepNavWindowFrame = "{{15, 89}, {1265, 784}}";
 		};
 	};
 	E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1010, 2770}}";
-			sepNavSelRange = "{1061, 0}";
-			sepNavVisRange = "{364, 729}";
+			sepNavIntBoundsRect = "{{0, 0}, {1010, 2868}}";
+			sepNavSelRange = "{2539, 0}";
+			sepNavVisRange = "{1863, 1355}";
 			sepNavWindowFrame = "{{15, 89}, {1265, 784}}";
 		};
 	};
@@ -3485,7 +3567,7 @@
 		fRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */;
 		name = "ScreenSplitrScreenView.mm: 95";
 		rLen = 0;
-		rLoc = 3328;
+		rLoc = 3669;
 		rType = 0;
 		vrLen = 1083;
 		vrLoc = 1787;

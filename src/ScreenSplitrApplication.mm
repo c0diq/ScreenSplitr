@@ -271,9 +271,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 - (void)suspendWithAnimation:(BOOL)fp8 {
     // Remove splash screen before suspending
     if (splashView) {
-        //[splashView removeFromSuperview];
         [splashView setHidden: true];
-        //[splashView release];
     }
     
 	NSLog(@"Got suspendWithAnimation:");
