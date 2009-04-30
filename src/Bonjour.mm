@@ -51,7 +51,6 @@ NSString * const AdvertiserErrorDomain = @"AdvertiserErrorDomain";
 	if(!protocol || ![protocol length])
 		return NO;
 	
-
 	self.netService = [[NSNetService alloc] initWithDomain:domain type:protocol name:name port:self.port];
 	if(self.netService == nil)
 		return NO;
