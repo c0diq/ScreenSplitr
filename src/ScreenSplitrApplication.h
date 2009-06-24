@@ -17,6 +17,8 @@
     ScreenSplitrScreenView* screenView;
     NSTimer* timer;
 	Advertiser* advertiser;
+    BOOL abort;
+    BOOL askForConnectionPending;
 }
 
 - (void)routeChange:(NSNotification *)notification;
@@ -24,7 +26,7 @@
 - (void)detachTV;
 - (void)deviceOrientationChanged:(struct __GSEvent *)event;
 - (void)applicationSuspend:(struct __GSEvent*)event;
-- (void)setup;
+- (void)startNetwork;
 - (void)askForConnection:(NSString*)ip;
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(int)buttonIndex;
 
@@ -33,18 +35,15 @@
 @property (nonatomic, retain) UIImageView *splashView;
 @property (nonatomic, retain) ScreenSplitrScreenView* screenView;
 @property (nonatomic, retain) NSTimer* timer;
+@property (nonatomic) BOOL abort;
+@property (nonatomic) BOOL askForConnectionPending;
 
 @end
 
-@interface UIDevice {
+@interface ScreenSplitrActionSheet : UIActionSheet {
+    NSTimer* watchdog;
 }
 
-+ (UIDevice *)currentDevice;
-
-@property(nonatomic,readonly,retain) NSString    *name;              // e.g. "My iPhone"
-
-@property(nonatomic,readonly,getter=isGeneratingDeviceOrientationNotifications) BOOL generatesDeviceOrientationNotifications;
-- (void)beginGeneratingDeviceOrientationNotifications;      // nestable
-- (void)endGeneratingDeviceOrientationNotifications;
+@property (nonatomic, retain) NSTimer* watchdog;
 
 @end

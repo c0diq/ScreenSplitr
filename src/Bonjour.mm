@@ -41,14 +41,14 @@ NSString * const AdvertiserErrorDomain = @"AdvertiserErrorDomain";
     return YES;
 }
 
-- (BOOL) enableBonjourWithDomain:(NSString*)domain applicationProtocol:(NSString*)protocol name:(NSString*)name
+- (BOOL) enableBonjourWithDomain:(NSString*)domain applicationProtocol:(NSString*)protocol name:(NSString*)name path:(NSString*)path
 {
 	if(![domain length])
 		domain = @""; //Will use default Bonjour registration doamins, typically just ".local"
 	if(![name length])
 		name = @""; //Will use default Bonjour name, e.g. the name assigned to the device in iTunes
 	
-	if(!protocol || ![protocol length])
+	if(!protocol || ![protocol length] || !path || ![path length])
 		return NO;
 	
 	self.netService = [[NSNetService alloc] initWithDomain:domain type:protocol name:name port:self.port];

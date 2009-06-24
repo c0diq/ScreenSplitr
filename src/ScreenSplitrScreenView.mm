@@ -5,9 +5,10 @@
 //  Created by c0diq on 12/31/08.
 //  Copyright Plutinosoft 2008. All rights reserved.
 //
-#import "ImageIO/CGImageDestination.h"
+//#import "ImageIO/CGImageDestination.h"
 #import "ScreenSplitrScreenView.h"
 #import "PltFrameBuffer.h"
+#import "UIHardware.h"
 
 #define USE_UIKIT         1
 #define USE_COREANIMATION (0)

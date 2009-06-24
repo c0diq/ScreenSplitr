@@ -50,7 +50,6 @@
 		E45AAEBC0F1C6444009CEE37 /* NptSelectableMessageQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEB50F1C6444009CEE37 /* NptSelectableMessageQueue.cpp */; };
 		E45AAEBF0F1C647E009CEE37 /* NptBsdNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEBD0F1C647E009CEE37 /* NptBsdNetwork.cpp */; };
 		E45AAEC00F1C647E009CEE37 /* NptBsdSockets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEBE0F1C647E009CEE37 /* NptBsdSockets.cpp */; };
-		E45AAEC50F1C64AE009CEE37 /* NptStdcConsole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEC10F1C64AE009CEE37 /* NptStdcConsole.cpp */; };
 		E45AAEC60F1C64AE009CEE37 /* NptStdcDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEC20F1C64AE009CEE37 /* NptStdcDebug.cpp */; };
 		E45AAEC70F1C64AE009CEE37 /* NptStdcEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEC30F1C64AE009CEE37 /* NptStdcEnvironment.cpp */; };
 		E45AAEC80F1C64AE009CEE37 /* NptStdcFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEC40F1C64AE009CEE37 /* NptStdcFile.cpp */; };
@@ -89,14 +88,16 @@
 		E45AAF340F1C652A009CEE37 /* PltSyncMediaBrowser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAF2A0F1C652A009CEE37 /* PltSyncMediaBrowser.cpp */; };
 		E45AAF3A0F1C65A7009CEE37 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E45AAF370F1C65A7009CEE37 /* main.mm */; };
 		E45AAF3B0F1C65A7009CEE37 /* ScreenSplitrApplication.mm in Sources */ = {isa = PBXBuildFile; fileRef = E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */; };
-		E45AAF3C0F1C65A7009CEE37 /* ScreenSplitrScreenView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */; };
 		E45AB0320F1C98E4009CEE37 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45AB0310F1C98E4009CEE37 /* SystemConfiguration.framework */; };
 		E45AB0370F1C9A4A009CEE37 /* Bonjour.mm in Sources */ = {isa = PBXBuildFile; fileRef = E45AB0360F1C9A4A009CEE37 /* Bonjour.mm */; };
 		E45AB0D80F1CAC7B009CEE37 /* PltFrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AB0D20F1CAC7B009CEE37 /* PltFrameBuffer.cpp */; };
 		E45AB0D90F1CAC7B009CEE37 /* PltFrameServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AB0D40F1CAC7B009CEE37 /* PltFrameServer.cpp */; };
 		E45AB0DA0F1CAC7B009CEE37 /* PltFrameStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AB0D60F1CAC7B009CEE37 /* PltFrameStream.cpp */; };
-		E46409DD0F188F4A001994EF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46409DC0F188F4A001994EF /* ImageIO.framework */; };
 		E48CB3B20F0C3A170074D25B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48CB3B10F0C3A170074D25B /* MediaPlayer.framework */; };
+		E4E0A0680FE9FE5B00CA6E83 /* PltConstants.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4E0A0650FE9FE5B00CA6E83 /* PltConstants.cpp */; };
+		E4E0A0690FE9FE5B00CA6E83 /* PltIconsData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4E0A0670FE9FE5B00CA6E83 /* PltIconsData.cpp */; };
+		E4EA43FC0FF0B26900EE694B /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = E4EA43FB0FF0B26900EE694B /* home.html */; };
+		E4EA44720FF0BADE00EE694B /* ScreenSplitrScreenView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,7 +187,6 @@
 		E45AAEB50F1C6444009CEE37 /* NptSelectableMessageQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptSelectableMessageQueue.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/Posix/NptSelectableMessageQueue.cpp; sourceTree = "<group>"; };
 		E45AAEBD0F1C647E009CEE37 /* NptBsdNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptBsdNetwork.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/Bsd/NptBsdNetwork.cpp; sourceTree = "<group>"; };
 		E45AAEBE0F1C647E009CEE37 /* NptBsdSockets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptBsdSockets.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/Bsd/NptBsdSockets.cpp; sourceTree = "<group>"; };
-		E45AAEC10F1C64AE009CEE37 /* NptStdcConsole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptStdcConsole.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/StdC/NptStdcConsole.cpp; sourceTree = "<group>"; };
 		E45AAEC20F1C64AE009CEE37 /* NptStdcDebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptStdcDebug.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/StdC/NptStdcDebug.cpp; sourceTree = "<group>"; };
 		E45AAEC30F1C64AE009CEE37 /* NptStdcEnvironment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptStdcEnvironment.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/StdC/NptStdcEnvironment.cpp; sourceTree = "<group>"; };
 		E45AAEC40F1C64AE009CEE37 /* NptStdcFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptStdcFile.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/StdC/NptStdcFile.cpp; sourceTree = "<group>"; };
@@ -249,7 +249,6 @@
 		E45AAF1D0F1C652A009CEE37 /* PltFileMediaServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltFileMediaServer.h; path = src/Platinum/Source/Devices/MediaServer/PltFileMediaServer.h; sourceTree = "<group>"; };
 		E45AAF1E0F1C652A009CEE37 /* PltMediaBrowser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltMediaBrowser.cpp; path = src/Platinum/Source/Devices/MediaServer/PltMediaBrowser.cpp; sourceTree = "<group>"; };
 		E45AAF1F0F1C652A009CEE37 /* PltMediaBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltMediaBrowser.h; path = src/Platinum/Source/Devices/MediaServer/PltMediaBrowser.h; sourceTree = "<group>"; };
-		E45AAF200F1C652A009CEE37 /* PltMediaBrowserListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltMediaBrowserListener.h; path = src/Platinum/Source/Devices/MediaServer/PltMediaBrowserListener.h; sourceTree = "<group>"; };
 		E45AAF210F1C652A009CEE37 /* PltMediaCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltMediaCache.cpp; path = src/Platinum/Source/Devices/MediaServer/PltMediaCache.cpp; sourceTree = "<group>"; };
 		E45AAF220F1C652A009CEE37 /* PltMediaCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltMediaCache.h; path = src/Platinum/Source/Devices/MediaServer/PltMediaCache.h; sourceTree = "<group>"; };
 		E45AAF230F1C652A009CEE37 /* PltMediaItem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltMediaItem.cpp; path = src/Platinum/Source/Devices/MediaServer/PltMediaItem.cpp; sourceTree = "<group>"; };
@@ -273,11 +272,18 @@
 		E45AB0D50F1CAC7B009CEE37 /* PltFrameServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltFrameServer.h; path = src/Platinum/Source/Devices/FrameStreamer/PltFrameServer.h; sourceTree = "<group>"; };
 		E45AB0D60F1CAC7B009CEE37 /* PltFrameStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltFrameStream.cpp; path = src/Platinum/Source/Devices/FrameStreamer/PltFrameStream.cpp; sourceTree = "<group>"; };
 		E45AB0D70F1CAC7B009CEE37 /* PltFrameStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltFrameStream.h; path = src/Platinum/Source/Devices/FrameStreamer/PltFrameStream.h; sourceTree = "<group>"; };
-		E46409DC0F188F4A001994EF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/PrivateFrameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E47F20550FF0DA6F0051A77C /* UIModalViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIModalViewDelegate-Protocol.h"; path = "../../../Headers/Frameworks/UIKit/UIModalViewDelegate-Protocol.h"; sourceTree = SOURCE_ROOT; };
+		E47F205C0FF0DA970051A77C /* UIModalView-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIModalView-Private.h"; path = "../../../Headers/Frameworks/UIKit/UIModalView-Private.h"; sourceTree = SOURCE_ROOT; };
+		E47F20D40FF0E1360051A77C /* UIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIAlertView.h; path = ../../../Headers/Frameworks/UIKit/UIAlertView.h; sourceTree = SOURCE_ROOT; };
 		E48CB3B10F0C3A170074D25B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		E4D4F9C00F0EB60C001B3381 /* MPTVOutWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPTVOutWindow.h; path = src/MPTVOutWindow.h; sourceTree = "<group>"; };
 		E4D4F9C10F0EB60C001B3381 /* ScreenSplitrApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScreenSplitrApplication.h; path = src/ScreenSplitrApplication.h; sourceTree = "<group>"; };
 		E4D4F9C30F0EB60C001B3381 /* ScreenSplitrScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScreenSplitrScreenView.h; path = src/ScreenSplitrScreenView.h; sourceTree = "<group>"; };
+		E4E0A0650FE9FE5B00CA6E83 /* PltConstants.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltConstants.cpp; path = src/Platinum/Source/Core/PltConstants.cpp; sourceTree = "<group>"; };
+		E4E0A0660FE9FE5B00CA6E83 /* PltConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltConstants.h; path = src/Platinum/Source/Core/PltConstants.h; sourceTree = "<group>"; };
+		E4E0A0670FE9FE5B00CA6E83 /* PltIconsData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltIconsData.cpp; path = src/Platinum/Source/Core/PltIconsData.cpp; sourceTree = "<group>"; };
+		E4EA43FB0FF0B26900EE694B /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = home.html; path = resources/home.html; sourceTree = "<group>"; };
+		E4EA452F0FF0D75700EE694B /* UIModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIModalView.h; path = ../../../Headers/Frameworks/UIKit/UIModalView.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,7 +295,6 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				E48CB3B20F0C3A170074D25B /* MediaPlayer.framework in Frameworks */,
-				E46409DD0F188F4A001994EF /* ImageIO.framework in Frameworks */,
 				E45AB0320F1C98E4009CEE37 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +324,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E4EA43FB0FF0B26900EE694B /* home.html */,
 				E414867B0F0E2FED00B5D7FB /* Default.png */,
 				E414867C0F0E2FED00B5D7FB /* icon.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
@@ -329,8 +335,11 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E47F20D40FF0E1360051A77C /* UIAlertView.h */,
+				E47F205C0FF0DA970051A77C /* UIModalView-Private.h */,
+				E47F20550FF0DA6F0051A77C /* UIModalViewDelegate-Protocol.h */,
+				E4EA452F0FF0D75700EE694B /* UIModalView.h */,
 				E45AB0310F1C98E4009CEE37 /* SystemConfiguration.framework */,
-				E46409DC0F188F4A001994EF /* ImageIO.framework */,
 				E48CB3B10F0C3A170074D25B /* MediaPlayer.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
@@ -428,7 +437,6 @@
 		E45AAE4B0F1C640C009CEE37 /* System */ = {
 			isa = PBXGroup;
 			children = (
-				E45AAEC10F1C64AE009CEE37 /* NptStdcConsole.cpp */,
 				E45AAEC20F1C64AE009CEE37 /* NptStdcDebug.cpp */,
 				E45AAEC30F1C64AE009CEE37 /* NptStdcEnvironment.cpp */,
 				E45AAEC40F1C64AE009CEE37 /* NptStdcFile.cpp */,
@@ -457,6 +465,9 @@
 		E45AAECB0F1C64E4009CEE37 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E4E0A0650FE9FE5B00CA6E83 /* PltConstants.cpp */,
+				E4E0A0660FE9FE5B00CA6E83 /* PltConstants.h */,
+				E4E0A0670FE9FE5B00CA6E83 /* PltIconsData.cpp */,
 				E45AAECC0F1C64FA009CEE37 /* Platinum.cpp */,
 				E45AAECD0F1C64FA009CEE37 /* Platinum.h */,
 				E45AAECE0F1C64FA009CEE37 /* PltAction.cpp */,
@@ -529,7 +540,6 @@
 				E45AAF1D0F1C652A009CEE37 /* PltFileMediaServer.h */,
 				E45AAF1E0F1C652A009CEE37 /* PltMediaBrowser.cpp */,
 				E45AAF1F0F1C652A009CEE37 /* PltMediaBrowser.h */,
-				E45AAF200F1C652A009CEE37 /* PltMediaBrowserListener.h */,
 				E45AAF210F1C652A009CEE37 /* PltMediaCache.cpp */,
 				E45AAF220F1C652A009CEE37 /* PltMediaCache.h */,
 				E45AAF230F1C652A009CEE37 /* PltMediaItem.cpp */,
@@ -548,16 +558,16 @@
 		E4D4F9BE0F0EB5F4001B3381 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				E45AB0360F1C9A4A009CEE37 /* Bonjour.mm */,
 				E45AB0280F1C963F009CEE37 /* Bonjour.h */,
+				E45AB0360F1C9A4A009CEE37 /* Bonjour.mm */,
 				E45AAF370F1C65A7009CEE37 /* main.mm */,
-				E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */,
-				E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */,
-				E45AAECA0F1C64DE009CEE37 /* Platinum */,
-				E45AAE490F1C6391009CEE37 /* Neptune */,
 				E4D4F9C00F0EB60C001B3381 /* MPTVOutWindow.h */,
+				E45AAE490F1C6391009CEE37 /* Neptune */,
+				E45AAECA0F1C64DE009CEE37 /* Platinum */,
 				E4D4F9C10F0EB60C001B3381 /* ScreenSplitrApplication.h */,
+				E45AAF380F1C65A7009CEE37 /* ScreenSplitrApplication.mm */,
 				E4D4F9C30F0EB60C001B3381 /* ScreenSplitrScreenView.h */,
+				E45AAF390F1C65A7009CEE37 /* ScreenSplitrScreenView.mm */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -607,6 +617,7 @@
 			files = (
 				E414867D0F0E2FED00B5D7FB /* Default.png in Resources */,
 				E414867E0F0E2FED00B5D7FB /* icon.png in Resources */,
+				E4EA43FC0FF0B26900EE694B /* home.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,7 +682,6 @@
 				E45AAEBC0F1C6444009CEE37 /* NptSelectableMessageQueue.cpp in Sources */,
 				E45AAEBF0F1C647E009CEE37 /* NptBsdNetwork.cpp in Sources */,
 				E45AAEC00F1C647E009CEE37 /* NptBsdSockets.cpp in Sources */,
-				E45AAEC50F1C64AE009CEE37 /* NptStdcConsole.cpp in Sources */,
 				E45AAEC60F1C64AE009CEE37 /* NptStdcDebug.cpp in Sources */,
 				E45AAEC70F1C64AE009CEE37 /* NptStdcEnvironment.cpp in Sources */,
 				E45AAEC80F1C64AE009CEE37 /* NptStdcFile.cpp in Sources */,
@@ -710,11 +720,13 @@
 				E45AAF340F1C652A009CEE37 /* PltSyncMediaBrowser.cpp in Sources */,
 				E45AAF3A0F1C65A7009CEE37 /* main.mm in Sources */,
 				E45AAF3B0F1C65A7009CEE37 /* ScreenSplitrApplication.mm in Sources */,
-				E45AAF3C0F1C65A7009CEE37 /* ScreenSplitrScreenView.mm in Sources */,
 				E45AB0370F1C9A4A009CEE37 /* Bonjour.mm in Sources */,
 				E45AB0D80F1CAC7B009CEE37 /* PltFrameBuffer.cpp in Sources */,
 				E45AB0D90F1CAC7B009CEE37 /* PltFrameServer.cpp in Sources */,
 				E45AB0DA0F1CAC7B009CEE37 /* PltFrameStream.cpp in Sources */,
+				E4E0A0680FE9FE5B00CA6E83 /* PltConstants.cpp in Sources */,
+				E4E0A0690FE9FE5B00CA6E83 /* PltIconsData.cpp in Sources */,
+				E4EA44720FF0BADE00EE694B /* ScreenSplitrScreenView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,17 +737,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sylvain Rebaud (6P38YKF298)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
 				);
-				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ScreenSplitr_Prefix.pch;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = 4.0;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 2.2;
+				OTHER_CFLAGS = (
+					"-I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/usr/include",
+					"-I/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/gcc/arm-apple-darwin9/4.0.1/include",
+					"-F/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/PrivateFrameworks",
+				);
 				PRODUCT_NAME = ScreenSplitr;
+				PROVISIONING_PROFILE = "D2A6ED37-FFE3-4E68-BC23-38125317E2AB";
+				SDKROOT = iphoneos3.0;
 			};
 			name = Debug;
 		};
@@ -743,6 +770,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sylvain Rebaud (6P38YKF298)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -751,7 +779,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ScreenSplitr_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
+				OTHER_CFLAGS = (
+					"-I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/usr/include",
+					"-I/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/gcc/arm-apple-darwin9/4.0.1/include",
+					"-F/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/PrivateFrameworks",
+				);
 				PRODUCT_NAME = ScreenSplitr;
+				PROVISIONING_PROFILE = "D2A6ED37-FFE3-4E68-BC23-38125317E2AB";
 			};
 			name = Release;
 		};
@@ -760,26 +794,36 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sylvain Rebaud (6P38YKF298)";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NPT_CONFIG_ENABLE_LOGGING,
+					NPT_DEBUG,
+				);
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				GCC_VERSION = 4.0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 2.2;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
-					"-I/Developer/SDKs/iPhoneOS.sdk/Versions/iPhoneOS2.0.sdk/include",
-					"-I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.0.sdk/usr/include",
+					"-I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/usr/include",
 					"-I/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/gcc/arm-apple-darwin9/4.0.1/include",
-					"-F/System/Library/Frameworks",
-					"-F/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.0.sdk/System/Library/Frameworks",
-					"-F/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.0.sdk/System/Library/PrivateFrameworks",
-					"-DMAC_OS_X_VERSION_MAX_ALLOWED=1050",
-					"-DASPEN",
-					"-DDEBUG",
-					"-DVERSION='\"2.1.0\"'",
-					"-O3",
-					"-funroll-loops",
+					"-F/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/PrivateFrameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-undefined",
+					suppress,
+					"-force_flat_namespace",
 				);
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.0;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
+				PROVISIONING_PROFILE = "D2A6ED37-FFE3-4E68-BC23-38125317E2AB";
+				SDKROOT = iphoneos3.0;
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -787,28 +831,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sylvain Rebaud (6P38YKF298)";
 				CODE_SIGN_RESOURCE_RULES_PATH = "";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_VERSION = 4.0;
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 2.2;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
-					"-I/Developer/SDKs/iPhoneOS.sdk/Versions/iPhoneOS2.0.sdk/include",
-					"-I/Developer/SDKs/iPhoneOS.sdk/Versions/iPhoneOS2.0.sdk/include/Foundation",
-					"-I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.0.sdk/usr/include",
+					"-I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/usr/include",
 					"-I/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/gcc/arm-apple-darwin9/4.0.1/include",
-					"-F/System/Library/Frameworks",
-					"-F/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.0.sdk/System/Library/Frameworks",
-					"-F/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.0.sdk/System/Library/PrivateFrameworks",
-					"-F/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.2.sdk/System/Library/PrivateFrameworks",
-					"-DASPEN",
-					"-DDEBUG",
-					"-DVERSION='\"2.1.0\"'",
-					"-O3",
-					"-funroll-loops",
-					"-DMAC_OS_X_VERSION_MAX_ALLOWED=1050",
+					"-F/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/PrivateFrameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-undefined",
+					suppress,
+					"-force_flat_namespace",
 				);
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.0;
+				PROVISIONING_PROFILE = "D2A6ED37-FFE3-4E68-BC23-38125317E2AB";
+				SDKROOT = iphoneos3.0;
 			};
 			name = Release;
 		};

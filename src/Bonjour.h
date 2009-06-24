@@ -34,7 +34,7 @@ extern NSString * const AdvertiserErrorDomain;
 	
 - (BOOL)start:(uint16_t)port;
 - (BOOL)stop;
-- (BOOL) enableBonjourWithDomain:(NSString*)domain applicationProtocol:(NSString*)protocol name:(NSString*)name; //Pass "nil" for the default local domain - Pass only the application protocol for "protocol" e.g. "myApp"
+- (BOOL) enableBonjourWithDomain:(NSString*)domain applicationProtocol:(NSString*)protocol name:(NSString*)name path:(NSString*)path; //Pass "nil" for the default local domain - Pass only the application protocol for "protocol" e.g. "myApp"
 - (void) disableBonjour;
 
 @property(assign) id<AdvertiserDelegate> delegate;
