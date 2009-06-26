@@ -28,7 +28,7 @@
 - (void)applicationSuspend:(struct __GSEvent*)event;
 - (void)startNetwork;
 - (void)askForConnection:(NSString*)ip;
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(int)buttonIndex;
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(int)buttonIndex;
 
 @property (nonatomic, retain) UIWindow *window;
 @property (nonatomic, retain) MPTVOutWindow *_tvWindow;
@@ -40,7 +40,7 @@
 
 @end
 
-@interface ScreenSplitrActionSheet : UIActionSheet {
+@interface ScreenSplitrAlertView : UIAlertView {
     NSTimer* watchdog;
 }
 

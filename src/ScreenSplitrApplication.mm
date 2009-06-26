@@ -57,7 +57,7 @@ public:
             
             NSString* ip_ = [[NSString stringWithFormat:@"%s", context.GetRemoteAddress().GetIpAddress().ToString().GetChars()] retain];
             [instance performSelectorOnMainThread:@selector(askForConnection:) withObject:ip_ waitUntilDone:NO];
-            action_.WaitWhileEquals(SS_CLIENT_ON_HOLD, 10000);
+            action_.WaitWhileEquals(SS_CLIENT_ON_HOLD, 40000);
 
             int action = action_.GetValue();
             // reset action_ for next time
@@ -98,8 +98,8 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
     return;
 }
 
-/* our own implementation of UIActionSheet with a watchdog */
-@implementation ScreenSplitrActionSheet
+/* our own implementation of UIAlertView with a watchdog */
+@implementation ScreenSplitrAlertView
 
 @synthesize watchdog;
 
@@ -227,16 +227,16 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 	}
     
     // check if veency is running by trying to bind the port which should fail if in use
-    NPT_TcpServerSocket socket;
+    /*NPT_TcpServerSocket socket;
     NPT_IpAddress localhost; localhost.Parse("127.0.0.1");
     NPT_Result result = socket.Bind(NPT_SocketAddress(localhost, 5900), false);
-    NSLog(@"Binding to 127.0.0.1:5900 returned %d", result);
+    NSLog(@"Binding to 127.0.0.1:5900 returned %d", result);*/
 	
 	//Start advertising to clients, passing nil for the name to tell Bonjour to pick use default name
 	if (![advertiser enableBonjourWithDomain:@"local" 
                          applicationProtocol:[Advertiser bonjourTypeFromIdentifier:@"http"] 
                                         name:nil
-                                        path:NPT_SUCCEEDED(result)?@"/content/home.html":@"/content/home.html?veency_port=5900"]) {
+                                        path:@"/content/home.html"]) {
 		NSLog(@"Failed creating bonjour advertiser");
 		return;
 	}
@@ -251,34 +251,34 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
     NSLog(@"Launching ourselves %s", identifier);
     [[UIApplication sharedApplication] launchApplicationWithIdentifier:identifier suspended:NO];
             
-    ScreenSplitrActionSheet *sheet = [[ScreenSplitrActionSheet alloc] initWithFrame:CGRectMake(0, 240, 320, 240)];
-    [sheet setTitle:@"Remote View Request"];
-    [sheet setBodyText:[NSString stringWithFormat:@"ScreenSplitr\nby c0diq\nc0diq@screensplitr.com\nhttp://www.screensplitr.com/\n\nAccept connection from\n%s?", [ip UTF8String]]];
-    [sheet addButtonWithTitle:@"Accept"];
-    [sheet addButtonWithTitle:@"Reject"];
-    [sheet setDelegate: self];
+    ScreenSplitrAlertView *view = [[ScreenSplitrAlertView alloc] initWithFrame:CGRectMake(0, 240, 320, 240)];
+    [view setTitle:@"Remote View Request"];
+    [view setMessage:[NSString stringWithFormat:@"\nAccept connection from\n%s?\n\nScreenSplitr\nby Sylvain Rebaud (c0diq)\nc0diq@screensplitr.com\nhttp://www.screensplitr.com\n", [ip UTF8String]]];
+    [view addButtonWithTitle:@"Accept"];
+    [view addButtonWithTitle:@"Reject"];
+    [view setDelegate: self];
     
     // init watchdog timer
 	id aSignature;
 	id anInvocation;
-	aSignature = [self methodSignatureForSelector:@selector(dismissActionSheet:)];
+	aSignature = [self methodSignatureForSelector:@selector(dismissAlert:)];
 	anInvocation = [NSInvocation invocationWithMethodSignature:aSignature];
-	[anInvocation setSelector:@selector(dismissActionSheet:)];
+	[anInvocation setSelector:@selector(dismissAlert:)];
 	[anInvocation setTarget:self];
-    [anInvocation setArgument:&sheet atIndex:2];
+    [anInvocation setArgument:&view atIndex:2];
 
-	sheet.watchdog = [NSTimer scheduledTimerWithTimeInterval:10 
+	view.watchdog = [NSTimer scheduledTimerWithTimeInterval:30 
 		invocation:anInvocation 
 		repeats:NO];
     
     // show alert
-    [sheet showInView: splashView];
+    [view show];
     [ip release];
 }
 
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(int)buttonIndex
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(int)buttonIndex
 {
-    NSLog(@"alertSheet with button %d", buttonIndex);
+    NSLog(@"alertView with button %d", buttonIndex);
     
     switch (buttonIndex) {
         case 0:
@@ -291,18 +291,18 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
     }
 
     //[actionSheet removeFromSuperview];
-    [actionSheet release];
+    [alertView release];
     
     // suspend app again
     self.askForConnectionPending = NO;
 	[self performSelector: @selector(suspendApp) withObject: nil afterDelay: 0];
 }
 
-- (void)dismissActionSheet:(UIActionSheet *)actionSheet
+- (void)dismissAlert:(UIAlertView *)alertView
 {
-    [actionSheet dismissWithClickedButtonIndex:1 animated:NO];
+    [alertView dismissWithClickedButtonIndex:1 animated:NO];
     action_.SetValue(SS_CLIENT_REFUSE);
-    [actionSheet release];
+    [alertView release];
     self.askForConnectionPending = NO;
 	[self performSelector: @selector(suspendApp) withObject: nil afterDelay: 0];
 }
@@ -382,7 +382,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 	NSLog(@"Got applicationDidResume:");
     
     // make sure we're not resuming because of pending connection
-    // request to display alert sheet before suspending for good
+    // request to display alert view before suspending for good
     if (self.askForConnectionPending == NO) {
         // On the second launch terminate to turn ScreenSplitr off
         self.abort = YES;
