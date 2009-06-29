@@ -1,8 +1,8 @@
 Package: com.screensplitr.screensplitr 
 Name: ScreenSplitr 
-Version: 1.1.0-14
+Version: 1.1.0-15
 Architecture: iphoneos-arm 
-Description: Show your iPhone screen on a TV using an A/V Cable or a Computer using Safari Bonjour or DemoGod app. Now compatible with iPhone OS 3.0.
+Description: Show your iPhone screen on a TV using an A/V Cable or on a Computer using Safari Bonjour or DemoGod app. Now compatible with iPhone OS 3.0.
 Homepage: http://www.screensplitr.com 
 Depiction: 
 Maintainer: Sylvain Rebaud <c0diq@screensplitr.com> 
