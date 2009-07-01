@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>ScreenSplitr</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.plutinosoft.screensplitr</string>
+	<string>com.screensplitr.screensplitr</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -20,8 +20,6 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>SignerIdentity</key>
-	<string>Apple iPhone OS Application Signing</string>
 	<key>UIStatusBarHidden</key>
 	<true/>
 </dict>
