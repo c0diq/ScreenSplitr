@@ -403,7 +403,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
         upnp.Stop();
         
         // suspend for good
-        [self performSelector: @selector(suspendApp) withObject: nil afterDelay: 0 ];
+        [self performSelector: @selector(suspendApp) withObject: nil afterDelay: 2 ];
     } else {
         [splashView setHidden: false];
     }
