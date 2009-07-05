@@ -109,6 +109,13 @@ install: dist
 	#ssh root@$(IPHONE_IP) 'ldid -S /Applications/$(INSTALLFOLDER)/ScreenSplitr;restart'
 	ssh root@$(IPHONE_IP) 'restart'
 
+package: dist
+	./package.sh
+
+deploy: package
+	scp package/Packages.bz2 soothe@plutinosoft.com:~/plutinosoft.com/cydia
+	scp -r package/deb soothe@plutinosoft.com:~/plutinosoft.com/cydia
+
 uninstall:
 	ping -t 3 -c 1 $(IPHONE_IP)
 	ssh root@$(IPHONE_IP) 'rm -fr /Applications/$(INSTALLFOLDER); restart'

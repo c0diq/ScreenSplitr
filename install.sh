@@ -2,7 +2,7 @@
 
 ip=$1
 if [ -z $ip ]; then
-    ip=192.168.1.200
+    ip=192.168.1.197
 fi
 make
 scp -r build/2.0/ScreenSplitr.app root@$ip:/Applications

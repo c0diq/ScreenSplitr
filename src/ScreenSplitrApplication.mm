@@ -253,7 +253,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
             
     ScreenSplitrAlertView *view = [[ScreenSplitrAlertView alloc] initWithFrame:CGRectMake(0, 240, 320, 240)];
     [view setTitle:@"Remote View Request"];
-    [view setMessage:[NSString stringWithFormat:@"\nAccept connection from\n%s?\n\nScreenSplitr\nby Sylvain Rebaud (c0diq)\nc0diq@screensplitr.com\nhttp://www.screensplitr.com\n", [ip UTF8String]]];
+    [view setMessage:[NSString stringWithFormat:@"\nAccept connection from\n%s?\n\nScreenSplitr\nby c0diq\nc0diq@screensplitr.com\nhttp://www.screensplitr.com\n", [ip UTF8String]]];
     [view addButtonWithTitle:@"Accept"];
     [view addButtonWithTitle:@"Reject"];
     [view setDelegate: self];
