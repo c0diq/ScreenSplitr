@@ -272,8 +272,6 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>E4D4F9BE0F0EB5F4001B3381</string>
-								<string>E45AAE490F1C6391009CEE37</string>
-								<string>E45AAECA0F1C64DE009CEE37</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
@@ -284,8 +282,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>23</integer>
-									<integer>22</integer>
+									<integer>2</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -325,7 +323,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ScreenSplitrApplication.mm</string>
+								<string>Bonjour.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -333,66 +331,76 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ScreenSplitrApplication.mm</string>
+										<string>Bonjour.h</string>
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>E4A3DB0310620FBD004F0475</string>
+										<string>E4A3DB6210621163004F0475</string>
 										<key>history</key>
 										<array>
-											<string>E4BA0D37101A871D0030A766</string>
-											<string>E4BA0D38101A871D0030A766</string>
-											<string>E4A54E25103919D20051411A</string>
-											<string>E4A54E6F10391F720051411A</string>
-											<string>E4A3DAE110620FBD004F0475</string>
 											<string>E4A3DAE210620FBD004F0475</string>
 											<string>E4A3DAE310620FBD004F0475</string>
-											<string>E4A3DAE410620FBD004F0475</string>
-											<string>E4A3DAE510620FBD004F0475</string>
-											<string>E4A3DAE610620FBD004F0475</string>
-											<string>E4A3DAE710620FBD004F0475</string>
-											<string>E4A3DAE810620FBD004F0475</string>
-											<string>E4A3DAE910620FBD004F0475</string>
-											<string>E4A3DAEA10620FBD004F0475</string>
-											<string>E4A3DAEB10620FBD004F0475</string>
-											<string>E4A3DAEC10620FBD004F0475</string>
-											<string>E4A3DAED10620FBD004F0475</string>
-											<string>E4A3DAEE10620FBD004F0475</string>
-											<string>E4A3DAEF10620FBD004F0475</string>
-											<string>E4A3DAD710620FB1004F0475</string>
+											<string>E4A3DB2E1062110B004F0475</string>
+											<string>E4A3DB2F1062110B004F0475</string>
+											<string>E4A3DB351062110B004F0475</string>
+											<string>E4A3DB361062110B004F0475</string>
+											<string>E4A3DB371062110B004F0475</string>
+											<string>E4A3DB4A10621163004F0475</string>
+											<string>E4A3DB4B10621163004F0475</string>
+											<string>E4A3DB4C10621163004F0475</string>
+											<string>E4A3DB4D10621163004F0475</string>
+											<string>E4A3DB4E10621163004F0475</string>
+											<string>E4A3DB4F10621163004F0475</string>
+											<string>E4A3DB5010621163004F0475</string>
+											<string>E4A3DB5110621163004F0475</string>
+											<string>E4A3DB5210621163004F0475</string>
+											<string>E4A3DB5310621163004F0475</string>
+											<string>E4A3DB5410621163004F0475</string>
+											<string>E4A3DB5510621163004F0475</string>
+											<string>E4A3DB311062110B004F0475</string>
 										</array>
 										<key>prevStack</key>
 										<array>
 											<string>E47F209F0FF0DD350051A77C</string>
-											<string>E47F20CF0FF0E05D0051A77C</string>
 											<string>E47F216D0FF142C00051A77C</string>
 											<string>E407AD360FF1EE200055BA65</string>
 											<string>E407AECB0FF213E50055BA65</string>
 											<string>E407AEF90FF2277E0055BA65</string>
 											<string>E45156AE0FF4BE4500797673</string>
 											<string>E463D8E10FFBC71300CF3BF0</string>
-											<string>E4BA0D3C101A871D0030A766</string>
-											<string>E4BA0D3D101A871D0030A766</string>
-											<string>E4BA0D3E101A871D0030A766</string>
-											<string>E4A3DAF010620FBD004F0475</string>
 											<string>E4A3DAF110620FBD004F0475</string>
 											<string>E4A3DAF210620FBD004F0475</string>
 											<string>E4A3DAF310620FBD004F0475</string>
-											<string>E4A3DAF410620FBD004F0475</string>
-											<string>E4A3DAF510620FBD004F0475</string>
 											<string>E4A3DAF610620FBD004F0475</string>
 											<string>E4A3DAF710620FBD004F0475</string>
-											<string>E4A3DAF810620FBD004F0475</string>
-											<string>E4A3DAF910620FBD004F0475</string>
-											<string>E4A3DAFA10620FBD004F0475</string>
-											<string>E4A3DAFB10620FBD004F0475</string>
-											<string>E4A3DAFC10620FBD004F0475</string>
-											<string>E4A3DAFD10620FBD004F0475</string>
 											<string>E4A3DAFE10620FBD004F0475</string>
 											<string>E4A3DAFF10620FBD004F0475</string>
 											<string>E4A3DB0010620FBD004F0475</string>
-											<string>E4A3DB0110620FBD004F0475</string>
-											<string>E4A3DB0210620FBD004F0475</string>
+											<string>E4A3DB391062110B004F0475</string>
+											<string>E4A3DB3A1062110B004F0475</string>
+											<string>E4A3DB3B1062110B004F0475</string>
+											<string>E4A3DB3C1062110B004F0475</string>
+											<string>E4A3DB3D1062110B004F0475</string>
+											<string>E4A3DB3E1062110B004F0475</string>
+											<string>E4A3DB3F1062110B004F0475</string>
+											<string>E4A3DB401062110B004F0475</string>
+											<string>E4A3DB411062110B004F0475</string>
+											<string>E4A3DB421062110B004F0475</string>
+											<string>E4A3DB431062110B004F0475</string>
+											<string>E4A3DB441062110B004F0475</string>
+											<string>E4A3DB451062110B004F0475</string>
+											<string>E4A3DB5610621163004F0475</string>
+											<string>E4A3DB5710621163004F0475</string>
+											<string>E4A3DB5810621163004F0475</string>
+											<string>E4A3DB5910621163004F0475</string>
+											<string>E4A3DB5A10621163004F0475</string>
+											<string>E4A3DB5B10621163004F0475</string>
+											<string>E4A3DB5C10621163004F0475</string>
+											<string>E4A3DB5D10621163004F0475</string>
+											<string>E4A3DB5E10621163004F0475</string>
+											<string>E4A3DB5F10621163004F0475</string>
+											<string>E4A3DB6010621163004F0475</string>
+											<string>E4A3DB6110621163004F0475</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -450,9 +458,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>E4A3DB0410620FBD004F0475</string>
+				<string>E4A3DB471062110B004F0475</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>E4A3DB0510620FBD004F0475</string>
+				<string>E4A3DB481062110B004F0475</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -586,7 +594,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>E48CB37E0F0C39080074D25B</string>
 		<string>/Volumes/IOMEGA_HDD/dev/iPhone/ScreenSplitr/trunk/ScreenSplitr.xcodeproj</string>
 	</array>
@@ -607,14 +614,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ScreenSplitrApplication.mm</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -634,7 +639,7 @@
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXBuildLogShowsTranscriptDefaultKey</key>
-								<string>{{0, 211}, {1440, 236}}</string>
+								<string>{{0, 162}, {1440, 285}}</string>
 								<key>PBXProjectModuleGUID</key>
 								<string>XCMainBuildResultsModuleGUID</string>
 								<key>PBXProjectModuleLabel</key>
@@ -672,7 +677,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>E48CB37E0F0C39080074D25B</string>
-				<string>E4A3DAD910620FB1004F0475</string>
+				<string>E4A3DB6310621163004F0475</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
