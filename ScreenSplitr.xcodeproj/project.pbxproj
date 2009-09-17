@@ -12,48 +12,47 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		E414867D0F0E2FED00B5D7FB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E414867B0F0E2FED00B5D7FB /* Default.png */; };
 		E414867E0F0E2FED00B5D7FB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E414867C0F0E2FED00B5D7FB /* icon.png */; };
-		E45AAE920F1C642A009CEE37 /* Neptune.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE4C0F1C642A009CEE37 /* Neptune.cpp */; };
-		E45AAE930F1C642A009CEE37 /* NptBase64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE4F0F1C642A009CEE37 /* NptBase64.cpp */; };
-		E45AAE940F1C642A009CEE37 /* NptBufferedStreams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE510F1C642A009CEE37 /* NptBufferedStreams.cpp */; };
-		E45AAE950F1C642A009CEE37 /* NptCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE530F1C642A009CEE37 /* NptCommon.cpp */; };
-		E45AAE960F1C642A009CEE37 /* NptConsole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE560F1C642A009CEE37 /* NptConsole.cpp */; };
-		E45AAE970F1C642A009CEE37 /* NptDataBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE590F1C642A009CEE37 /* NptDataBuffer.cpp */; };
-		E45AAE980F1C642A009CEE37 /* NptDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE5B0F1C642A009CEE37 /* NptDebug.cpp */; };
-		E45AAE990F1C642A009CEE37 /* NptDynamicLibraries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE5E0F1C642A009CEE37 /* NptDynamicLibraries.cpp */; };
-		E45AAE9A0F1C642A009CEE37 /* NptFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE600F1C642A009CEE37 /* NptFile.cpp */; };
-		E45AAE9B0F1C642A009CEE37 /* NptHttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE620F1C642A009CEE37 /* NptHttp.cpp */; };
-		E45AAE9C0F1C642A009CEE37 /* NptList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE650F1C642A009CEE37 /* NptList.cpp */; };
-		E45AAE9D0F1C642A009CEE37 /* NptLogging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE670F1C642A009CEE37 /* NptLogging.cpp */; };
-		E45AAE9E0F1C642A009CEE37 /* NptMessaging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE6A0F1C642A009CEE37 /* NptMessaging.cpp */; };
-		E45AAE9F0F1C642A009CEE37 /* NptNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE6C0F1C642A009CEE37 /* NptNetwork.cpp */; };
-		E45AAEA00F1C642A009CEE37 /* NptQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE6E0F1C642A009CEE37 /* NptQueue.cpp */; };
-		E45AAEA10F1C642A009CEE37 /* NptResults.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE710F1C642A009CEE37 /* NptResults.cpp */; };
-		E45AAEA20F1C642A009CEE37 /* NptRingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE730F1C642A009CEE37 /* NptRingBuffer.cpp */; };
-		E45AAEA30F1C642A009CEE37 /* NptSimpleMessageQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE770F1C642A009CEE37 /* NptSimpleMessageQueue.cpp */; };
-		E45AAEA40F1C642A009CEE37 /* NptSockets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE790F1C642A009CEE37 /* NptSockets.cpp */; };
-		E45AAEA50F1C642A009CEE37 /* NptStreams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE7C0F1C642A009CEE37 /* NptStreams.cpp */; };
-		E45AAEA60F1C642A009CEE37 /* NptStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE7E0F1C642A009CEE37 /* NptStrings.cpp */; };
-		E45AAEA70F1C642A009CEE37 /* NptSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE800F1C642A009CEE37 /* NptSystem.cpp */; };
-		E45AAEA80F1C642A009CEE37 /* NptThreads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE820F1C642A009CEE37 /* NptThreads.cpp */; };
-		E45AAEA90F1C642A009CEE37 /* NptTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE840F1C642A009CEE37 /* NptTime.cpp */; };
-		E45AAEAA0F1C642A009CEE37 /* NptTls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE860F1C642A009CEE37 /* NptTls.cpp */; };
-		E45AAEAB0F1C642A009CEE37 /* NptUri.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE890F1C642A009CEE37 /* NptUri.cpp */; };
-		E45AAEAC0F1C642A009CEE37 /* NptUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE8B0F1C642A009CEE37 /* NptUtils.cpp */; };
-		E45AAEAD0F1C642A009CEE37 /* NptXml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE8E0F1C642A009CEE37 /* NptXml.cpp */; };
-		E45AAEAE0F1C642A009CEE37 /* NptZip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAE900F1C642A009CEE37 /* NptZip.cpp */; };
-		E45AAEB60F1C6444009CEE37 /* NptPosixDynamicLibraries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEAF0F1C6444009CEE37 /* NptPosixDynamicLibraries.cpp */; };
-		E45AAEB70F1C6444009CEE37 /* NptPosixFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEB00F1C6444009CEE37 /* NptPosixFile.cpp */; };
-		E45AAEB80F1C6444009CEE37 /* NptPosixNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEB10F1C6444009CEE37 /* NptPosixNetwork.cpp */; };
-		E45AAEB90F1C6444009CEE37 /* NptPosixQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEB20F1C6444009CEE37 /* NptPosixQueue.cpp */; };
-		E45AAEBA0F1C6444009CEE37 /* NptPosixSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEB30F1C6444009CEE37 /* NptPosixSystem.cpp */; };
-		E45AAEBB0F1C6444009CEE37 /* NptPosixThreads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEB40F1C6444009CEE37 /* NptPosixThreads.cpp */; };
-		E45AAEBC0F1C6444009CEE37 /* NptSelectableMessageQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEB50F1C6444009CEE37 /* NptSelectableMessageQueue.cpp */; };
-		E45AAEBF0F1C647E009CEE37 /* NptBsdNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEBD0F1C647E009CEE37 /* NptBsdNetwork.cpp */; };
-		E45AAEC00F1C647E009CEE37 /* NptBsdSockets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEBE0F1C647E009CEE37 /* NptBsdSockets.cpp */; };
-		E45AAEC60F1C64AE009CEE37 /* NptStdcDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEC20F1C64AE009CEE37 /* NptStdcDebug.cpp */; };
-		E45AAEC70F1C64AE009CEE37 /* NptStdcEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEC30F1C64AE009CEE37 /* NptStdcEnvironment.cpp */; };
-		E45AAEC80F1C64AE009CEE37 /* NptStdcFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAEC40F1C64AE009CEE37 /* NptStdcFile.cpp */; };
-		E45AAF010F1C64FA009CEE37 /* Platinum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAECC0F1C64FA009CEE37 /* Platinum.cpp */; };
+		E43EF122101E2312007A9CE7 /* Neptune.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF09C101E2312007A9CE7 /* Neptune.cpp */; };
+		E43EF123101E2312007A9CE7 /* NptBase64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF09F101E2312007A9CE7 /* NptBase64.cpp */; };
+		E43EF124101E2312007A9CE7 /* NptBufferedStreams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0A1101E2312007A9CE7 /* NptBufferedStreams.cpp */; };
+		E43EF125101E2312007A9CE7 /* NptCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0A3101E2312007A9CE7 /* NptCommon.cpp */; };
+		E43EF126101E2312007A9CE7 /* NptConsole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0A6101E2312007A9CE7 /* NptConsole.cpp */; };
+		E43EF127101E2312007A9CE7 /* NptDataBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0A9101E2312007A9CE7 /* NptDataBuffer.cpp */; };
+		E43EF128101E2312007A9CE7 /* NptDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0AB101E2312007A9CE7 /* NptDebug.cpp */; };
+		E43EF129101E2312007A9CE7 /* NptDynamicLibraries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0AF101E2312007A9CE7 /* NptDynamicLibraries.cpp */; };
+		E43EF12A101E2312007A9CE7 /* NptFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0B1101E2312007A9CE7 /* NptFile.cpp */; };
+		E43EF12B101E2312007A9CE7 /* NptHttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0B3101E2312007A9CE7 /* NptHttp.cpp */; };
+		E43EF12C101E2312007A9CE7 /* NptList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0B6101E2312007A9CE7 /* NptList.cpp */; };
+		E43EF12D101E2312007A9CE7 /* NptLogging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0B8101E2312007A9CE7 /* NptLogging.cpp */; };
+		E43EF12E101E2312007A9CE7 /* NptMessaging.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0BB101E2312007A9CE7 /* NptMessaging.cpp */; };
+		E43EF12F101E2312007A9CE7 /* NptNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0BD101E2312007A9CE7 /* NptNetwork.cpp */; };
+		E43EF130101E2312007A9CE7 /* NptQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0BF101E2312007A9CE7 /* NptQueue.cpp */; };
+		E43EF131101E2312007A9CE7 /* NptResults.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0C2101E2312007A9CE7 /* NptResults.cpp */; };
+		E43EF132101E2312007A9CE7 /* NptRingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0C4101E2312007A9CE7 /* NptRingBuffer.cpp */; };
+		E43EF133101E2312007A9CE7 /* NptSimpleMessageQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0C8101E2312007A9CE7 /* NptSimpleMessageQueue.cpp */; };
+		E43EF134101E2312007A9CE7 /* NptSockets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0CA101E2312007A9CE7 /* NptSockets.cpp */; };
+		E43EF135101E2312007A9CE7 /* NptStreams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0CD101E2312007A9CE7 /* NptStreams.cpp */; };
+		E43EF136101E2312007A9CE7 /* NptStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0CF101E2312007A9CE7 /* NptStrings.cpp */; };
+		E43EF137101E2312007A9CE7 /* NptSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0D1101E2312007A9CE7 /* NptSystem.cpp */; };
+		E43EF138101E2312007A9CE7 /* NptThreads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0D3101E2312007A9CE7 /* NptThreads.cpp */; };
+		E43EF139101E2312007A9CE7 /* NptTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0D5101E2312007A9CE7 /* NptTime.cpp */; };
+		E43EF13A101E2312007A9CE7 /* NptTls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0D7101E2312007A9CE7 /* NptTls.cpp */; };
+		E43EF13B101E2312007A9CE7 /* NptUri.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0DA101E2312007A9CE7 /* NptUri.cpp */; };
+		E43EF13C101E2312007A9CE7 /* NptUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0DC101E2312007A9CE7 /* NptUtils.cpp */; };
+		E43EF13D101E2312007A9CE7 /* NptXml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0DF101E2312007A9CE7 /* NptXml.cpp */; };
+		E43EF13E101E2312007A9CE7 /* NptZip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0E1101E2312007A9CE7 /* NptZip.cpp */; };
+		E43EF140101E2312007A9CE7 /* NptBsdNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0E7101E2312007A9CE7 /* NptBsdNetwork.cpp */; };
+		E43EF141101E2312007A9CE7 /* NptBsdSockets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0E8101E2312007A9CE7 /* NptBsdSockets.cpp */; };
+		E43EF149101E2312007A9CE7 /* NptPosixDynamicLibraries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0F4101E2312007A9CE7 /* NptPosixDynamicLibraries.cpp */; };
+		E43EF14A101E2312007A9CE7 /* NptPosixFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0F5101E2312007A9CE7 /* NptPosixFile.cpp */; };
+		E43EF14B101E2312007A9CE7 /* NptPosixNetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0F6101E2312007A9CE7 /* NptPosixNetwork.cpp */; };
+		E43EF14C101E2312007A9CE7 /* NptPosixQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0F7101E2312007A9CE7 /* NptPosixQueue.cpp */; };
+		E43EF14D101E2312007A9CE7 /* NptPosixSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0F8101E2312007A9CE7 /* NptPosixSystem.cpp */; };
+		E43EF14E101E2312007A9CE7 /* NptPosixThreads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0F9101E2312007A9CE7 /* NptPosixThreads.cpp */; };
+		E43EF14F101E2312007A9CE7 /* NptSelectableMessageQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF0FA101E2312007A9CE7 /* NptSelectableMessageQueue.cpp */; };
+		E43EF158101E2312007A9CE7 /* NptStdcDebug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF106101E2312007A9CE7 /* NptStdcDebug.cpp */; };
+		E43EF159101E2312007A9CE7 /* NptStdcEnvironment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF107101E2312007A9CE7 /* NptStdcEnvironment.cpp */; };
+		E43EF15A101E2312007A9CE7 /* NptStdcFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43EF108101E2312007A9CE7 /* NptStdcFile.cpp */; };
 		E45AAF020F1C64FA009CEE37 /* PltAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAECE0F1C64FA009CEE37 /* PltAction.cpp */; };
 		E45AAF030F1C64FA009CEE37 /* PltArgument.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAED00F1C64FA009CEE37 /* PltArgument.cpp */; };
 		E45AAF040F1C64FA009CEE37 /* PltCtrlPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E45AAED20F1C64FA009CEE37 /* PltCtrlPoint.cpp */; };
@@ -108,90 +107,92 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E414867B0F0E2FED00B5D7FB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = resources/Default.png; sourceTree = "<group>"; };
 		E414867C0F0E2FED00B5D7FB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = resources/icon.png; sourceTree = "<group>"; };
-		E45AAE4C0F1C642A009CEE37 /* Neptune.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Neptune.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/Neptune.cpp; sourceTree = "<group>"; };
-		E45AAE4D0F1C642A009CEE37 /* Neptune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Neptune.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/Neptune.h; sourceTree = "<group>"; };
-		E45AAE4E0F1C642A009CEE37 /* NptArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptArray.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptArray.h; sourceTree = "<group>"; };
-		E45AAE4F0F1C642A009CEE37 /* NptBase64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptBase64.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptBase64.cpp; sourceTree = "<group>"; };
-		E45AAE500F1C642A009CEE37 /* NptBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptBase64.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptBase64.h; sourceTree = "<group>"; };
-		E45AAE510F1C642A009CEE37 /* NptBufferedStreams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptBufferedStreams.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptBufferedStreams.cpp; sourceTree = "<group>"; };
-		E45AAE520F1C642A009CEE37 /* NptBufferedStreams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptBufferedStreams.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptBufferedStreams.h; sourceTree = "<group>"; };
-		E45AAE530F1C642A009CEE37 /* NptCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptCommon.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptCommon.cpp; sourceTree = "<group>"; };
-		E45AAE540F1C642A009CEE37 /* NptCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptCommon.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptCommon.h; sourceTree = "<group>"; };
-		E45AAE550F1C642A009CEE37 /* NptConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptConfig.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptConfig.h; sourceTree = "<group>"; };
-		E45AAE560F1C642A009CEE37 /* NptConsole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptConsole.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptConsole.cpp; sourceTree = "<group>"; };
-		E45AAE570F1C642A009CEE37 /* NptConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptConsole.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptConsole.h; sourceTree = "<group>"; };
-		E45AAE580F1C642A009CEE37 /* NptConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptConstants.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptConstants.h; sourceTree = "<group>"; };
-		E45AAE590F1C642A009CEE37 /* NptDataBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptDataBuffer.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptDataBuffer.cpp; sourceTree = "<group>"; };
-		E45AAE5A0F1C642A009CEE37 /* NptDataBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptDataBuffer.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptDataBuffer.h; sourceTree = "<group>"; };
-		E45AAE5B0F1C642A009CEE37 /* NptDebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptDebug.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptDebug.cpp; sourceTree = "<group>"; };
-		E45AAE5C0F1C642A009CEE37 /* NptDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptDebug.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptDebug.h; sourceTree = "<group>"; };
-		E45AAE5D0F1C642A009CEE37 /* NptDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptDefs.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptDefs.h; sourceTree = "<group>"; };
-		E45AAE5E0F1C642A009CEE37 /* NptDynamicLibraries.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptDynamicLibraries.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptDynamicLibraries.cpp; sourceTree = "<group>"; };
-		E45AAE5F0F1C642A009CEE37 /* NptDynamicLibraries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptDynamicLibraries.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptDynamicLibraries.h; sourceTree = "<group>"; };
-		E45AAE600F1C642A009CEE37 /* NptFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptFile.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptFile.cpp; sourceTree = "<group>"; };
-		E45AAE610F1C642A009CEE37 /* NptFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptFile.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptFile.h; sourceTree = "<group>"; };
-		E45AAE620F1C642A009CEE37 /* NptHttp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptHttp.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptHttp.cpp; sourceTree = "<group>"; };
-		E45AAE630F1C642A009CEE37 /* NptHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptHttp.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptHttp.h; sourceTree = "<group>"; };
-		E45AAE640F1C642A009CEE37 /* NptInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptInterfaces.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptInterfaces.h; sourceTree = "<group>"; };
-		E45AAE650F1C642A009CEE37 /* NptList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptList.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptList.cpp; sourceTree = "<group>"; };
-		E45AAE660F1C642A009CEE37 /* NptList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptList.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptList.h; sourceTree = "<group>"; };
-		E45AAE670F1C642A009CEE37 /* NptLogging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptLogging.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptLogging.cpp; sourceTree = "<group>"; };
-		E45AAE680F1C642A009CEE37 /* NptLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptLogging.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptLogging.h; sourceTree = "<group>"; };
-		E45AAE690F1C642A009CEE37 /* NptMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptMap.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptMap.h; sourceTree = "<group>"; };
-		E45AAE6A0F1C642A009CEE37 /* NptMessaging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptMessaging.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptMessaging.cpp; sourceTree = "<group>"; };
-		E45AAE6B0F1C642A009CEE37 /* NptMessaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptMessaging.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptMessaging.h; sourceTree = "<group>"; };
-		E45AAE6C0F1C642A009CEE37 /* NptNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptNetwork.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptNetwork.cpp; sourceTree = "<group>"; };
-		E45AAE6D0F1C642A009CEE37 /* NptNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptNetwork.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptNetwork.h; sourceTree = "<group>"; };
-		E45AAE6E0F1C642A009CEE37 /* NptQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptQueue.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptQueue.cpp; sourceTree = "<group>"; };
-		E45AAE6F0F1C642A009CEE37 /* NptQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptQueue.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptQueue.h; sourceTree = "<group>"; };
-		E45AAE700F1C642A009CEE37 /* NptReferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptReferences.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptReferences.h; sourceTree = "<group>"; };
-		E45AAE710F1C642A009CEE37 /* NptResults.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptResults.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptResults.cpp; sourceTree = "<group>"; };
-		E45AAE720F1C642A009CEE37 /* NptResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptResults.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptResults.h; sourceTree = "<group>"; };
-		E45AAE730F1C642A009CEE37 /* NptRingBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptRingBuffer.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptRingBuffer.cpp; sourceTree = "<group>"; };
-		E45AAE740F1C642A009CEE37 /* NptRingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptRingBuffer.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptRingBuffer.h; sourceTree = "<group>"; };
-		E45AAE750F1C642A009CEE37 /* NptSelectableMessageQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptSelectableMessageQueue.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptSelectableMessageQueue.h; sourceTree = "<group>"; };
-		E45AAE760F1C642A009CEE37 /* NptSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptSerialPort.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptSerialPort.h; sourceTree = "<group>"; };
-		E45AAE770F1C642A009CEE37 /* NptSimpleMessageQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptSimpleMessageQueue.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptSimpleMessageQueue.cpp; sourceTree = "<group>"; };
-		E45AAE780F1C642A009CEE37 /* NptSimpleMessageQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptSimpleMessageQueue.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptSimpleMessageQueue.h; sourceTree = "<group>"; };
-		E45AAE790F1C642A009CEE37 /* NptSockets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptSockets.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptSockets.cpp; sourceTree = "<group>"; };
-		E45AAE7A0F1C642A009CEE37 /* NptSockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptSockets.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptSockets.h; sourceTree = "<group>"; };
-		E45AAE7B0F1C642A009CEE37 /* NptStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptStack.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptStack.h; sourceTree = "<group>"; };
-		E45AAE7C0F1C642A009CEE37 /* NptStreams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptStreams.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptStreams.cpp; sourceTree = "<group>"; };
-		E45AAE7D0F1C642A009CEE37 /* NptStreams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptStreams.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptStreams.h; sourceTree = "<group>"; };
-		E45AAE7E0F1C642A009CEE37 /* NptStrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptStrings.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptStrings.cpp; sourceTree = "<group>"; };
-		E45AAE7F0F1C642A009CEE37 /* NptStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptStrings.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptStrings.h; sourceTree = "<group>"; };
-		E45AAE800F1C642A009CEE37 /* NptSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptSystem.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptSystem.cpp; sourceTree = "<group>"; };
-		E45AAE810F1C642A009CEE37 /* NptSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptSystem.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptSystem.h; sourceTree = "<group>"; };
-		E45AAE820F1C642A009CEE37 /* NptThreads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptThreads.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptThreads.cpp; sourceTree = "<group>"; };
-		E45AAE830F1C642A009CEE37 /* NptThreads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptThreads.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptThreads.h; sourceTree = "<group>"; };
-		E45AAE840F1C642A009CEE37 /* NptTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptTime.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptTime.cpp; sourceTree = "<group>"; };
-		E45AAE850F1C642A009CEE37 /* NptTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptTime.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptTime.h; sourceTree = "<group>"; };
-		E45AAE860F1C642A009CEE37 /* NptTls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptTls.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptTls.cpp; sourceTree = "<group>"; };
-		E45AAE870F1C642A009CEE37 /* NptTls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptTls.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptTls.h; sourceTree = "<group>"; };
-		E45AAE880F1C642A009CEE37 /* NptTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptTypes.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptTypes.h; sourceTree = "<group>"; };
-		E45AAE890F1C642A009CEE37 /* NptUri.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptUri.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptUri.cpp; sourceTree = "<group>"; };
-		E45AAE8A0F1C642A009CEE37 /* NptUri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptUri.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptUri.h; sourceTree = "<group>"; };
-		E45AAE8B0F1C642A009CEE37 /* NptUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptUtils.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptUtils.cpp; sourceTree = "<group>"; };
-		E45AAE8C0F1C642A009CEE37 /* NptUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptUtils.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptUtils.h; sourceTree = "<group>"; };
-		E45AAE8D0F1C642A009CEE37 /* NptVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptVersion.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptVersion.h; sourceTree = "<group>"; };
-		E45AAE8E0F1C642A009CEE37 /* NptXml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptXml.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptXml.cpp; sourceTree = "<group>"; };
-		E45AAE8F0F1C642A009CEE37 /* NptXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptXml.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptXml.h; sourceTree = "<group>"; };
-		E45AAE900F1C642A009CEE37 /* NptZip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptZip.cpp; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptZip.cpp; sourceTree = "<group>"; };
-		E45AAE910F1C642A009CEE37 /* NptZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NptZip.h; path = src/Platinum/ThirdParty/Neptune/Source/Core/NptZip.h; sourceTree = "<group>"; };
-		E45AAEAF0F1C6444009CEE37 /* NptPosixDynamicLibraries.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptPosixDynamicLibraries.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/Posix/NptPosixDynamicLibraries.cpp; sourceTree = "<group>"; };
-		E45AAEB00F1C6444009CEE37 /* NptPosixFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptPosixFile.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/Posix/NptPosixFile.cpp; sourceTree = "<group>"; };
-		E45AAEB10F1C6444009CEE37 /* NptPosixNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptPosixNetwork.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/Posix/NptPosixNetwork.cpp; sourceTree = "<group>"; };
-		E45AAEB20F1C6444009CEE37 /* NptPosixQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptPosixQueue.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/Posix/NptPosixQueue.cpp; sourceTree = "<group>"; };
-		E45AAEB30F1C6444009CEE37 /* NptPosixSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptPosixSystem.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/Posix/NptPosixSystem.cpp; sourceTree = "<group>"; };
-		E45AAEB40F1C6444009CEE37 /* NptPosixThreads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptPosixThreads.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/Posix/NptPosixThreads.cpp; sourceTree = "<group>"; };
-		E45AAEB50F1C6444009CEE37 /* NptSelectableMessageQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptSelectableMessageQueue.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/Posix/NptSelectableMessageQueue.cpp; sourceTree = "<group>"; };
-		E45AAEBD0F1C647E009CEE37 /* NptBsdNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptBsdNetwork.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/Bsd/NptBsdNetwork.cpp; sourceTree = "<group>"; };
-		E45AAEBE0F1C647E009CEE37 /* NptBsdSockets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptBsdSockets.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/Bsd/NptBsdSockets.cpp; sourceTree = "<group>"; };
-		E45AAEC20F1C64AE009CEE37 /* NptStdcDebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptStdcDebug.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/StdC/NptStdcDebug.cpp; sourceTree = "<group>"; };
-		E45AAEC30F1C64AE009CEE37 /* NptStdcEnvironment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptStdcEnvironment.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/StdC/NptStdcEnvironment.cpp; sourceTree = "<group>"; };
-		E45AAEC40F1C64AE009CEE37 /* NptStdcFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NptStdcFile.cpp; path = src/Platinum/ThirdParty/Neptune/Source/System/StdC/NptStdcFile.cpp; sourceTree = "<group>"; };
-		E45AAECC0F1C64FA009CEE37 /* Platinum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Platinum.cpp; path = src/Platinum/Source/Core/Platinum.cpp; sourceTree = "<group>"; };
-		E45AAECD0F1C64FA009CEE37 /* Platinum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Platinum.h; path = src/Platinum/Source/Core/Platinum.h; sourceTree = "<group>"; };
+		E43EEF57101E221F007A9CE7 /* Platinum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Platinum.h; sourceTree = "<group>"; };
+		E43EEF58101E221F007A9CE7 /* PltSvnVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PltSvnVersion.h; sourceTree = "<group>"; };
+		E43EEF59101E221F007A9CE7 /* PltVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PltVersion.h; sourceTree = "<group>"; };
+		E43EF09C101E2312007A9CE7 /* Neptune.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Neptune.cpp; sourceTree = "<group>"; };
+		E43EF09D101E2312007A9CE7 /* Neptune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neptune.h; sourceTree = "<group>"; };
+		E43EF09E101E2312007A9CE7 /* NptArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptArray.h; sourceTree = "<group>"; };
+		E43EF09F101E2312007A9CE7 /* NptBase64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptBase64.cpp; sourceTree = "<group>"; };
+		E43EF0A0101E2312007A9CE7 /* NptBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptBase64.h; sourceTree = "<group>"; };
+		E43EF0A1101E2312007A9CE7 /* NptBufferedStreams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptBufferedStreams.cpp; sourceTree = "<group>"; };
+		E43EF0A2101E2312007A9CE7 /* NptBufferedStreams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptBufferedStreams.h; sourceTree = "<group>"; };
+		E43EF0A3101E2312007A9CE7 /* NptCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptCommon.cpp; sourceTree = "<group>"; };
+		E43EF0A4101E2312007A9CE7 /* NptCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptCommon.h; sourceTree = "<group>"; };
+		E43EF0A5101E2312007A9CE7 /* NptConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptConfig.h; sourceTree = "<group>"; };
+		E43EF0A6101E2312007A9CE7 /* NptConsole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptConsole.cpp; sourceTree = "<group>"; };
+		E43EF0A7101E2312007A9CE7 /* NptConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptConsole.h; sourceTree = "<group>"; };
+		E43EF0A8101E2312007A9CE7 /* NptConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptConstants.h; sourceTree = "<group>"; };
+		E43EF0A9101E2312007A9CE7 /* NptDataBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptDataBuffer.cpp; sourceTree = "<group>"; };
+		E43EF0AA101E2312007A9CE7 /* NptDataBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptDataBuffer.h; sourceTree = "<group>"; };
+		E43EF0AB101E2312007A9CE7 /* NptDebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptDebug.cpp; sourceTree = "<group>"; };
+		E43EF0AC101E2312007A9CE7 /* NptDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptDebug.h; sourceTree = "<group>"; };
+		E43EF0AD101E2312007A9CE7 /* NptDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptDefs.h; sourceTree = "<group>"; };
+		E43EF0AE101E2312007A9CE7 /* NptDynamicCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptDynamicCast.h; sourceTree = "<group>"; };
+		E43EF0AF101E2312007A9CE7 /* NptDynamicLibraries.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptDynamicLibraries.cpp; sourceTree = "<group>"; };
+		E43EF0B0101E2312007A9CE7 /* NptDynamicLibraries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptDynamicLibraries.h; sourceTree = "<group>"; };
+		E43EF0B1101E2312007A9CE7 /* NptFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptFile.cpp; sourceTree = "<group>"; };
+		E43EF0B2101E2312007A9CE7 /* NptFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptFile.h; sourceTree = "<group>"; };
+		E43EF0B3101E2312007A9CE7 /* NptHttp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptHttp.cpp; sourceTree = "<group>"; };
+		E43EF0B4101E2312007A9CE7 /* NptHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptHttp.h; sourceTree = "<group>"; };
+		E43EF0B5101E2312007A9CE7 /* NptInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptInterfaces.h; sourceTree = "<group>"; };
+		E43EF0B6101E2312007A9CE7 /* NptList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptList.cpp; sourceTree = "<group>"; };
+		E43EF0B7101E2312007A9CE7 /* NptList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptList.h; sourceTree = "<group>"; };
+		E43EF0B8101E2312007A9CE7 /* NptLogging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptLogging.cpp; sourceTree = "<group>"; };
+		E43EF0B9101E2312007A9CE7 /* NptLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptLogging.h; sourceTree = "<group>"; };
+		E43EF0BA101E2312007A9CE7 /* NptMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptMap.h; sourceTree = "<group>"; };
+		E43EF0BB101E2312007A9CE7 /* NptMessaging.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptMessaging.cpp; sourceTree = "<group>"; };
+		E43EF0BC101E2312007A9CE7 /* NptMessaging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptMessaging.h; sourceTree = "<group>"; };
+		E43EF0BD101E2312007A9CE7 /* NptNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptNetwork.cpp; sourceTree = "<group>"; };
+		E43EF0BE101E2312007A9CE7 /* NptNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptNetwork.h; sourceTree = "<group>"; };
+		E43EF0BF101E2312007A9CE7 /* NptQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptQueue.cpp; sourceTree = "<group>"; };
+		E43EF0C0101E2312007A9CE7 /* NptQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptQueue.h; sourceTree = "<group>"; };
+		E43EF0C1101E2312007A9CE7 /* NptReferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptReferences.h; sourceTree = "<group>"; };
+		E43EF0C2101E2312007A9CE7 /* NptResults.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptResults.cpp; sourceTree = "<group>"; };
+		E43EF0C3101E2312007A9CE7 /* NptResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptResults.h; sourceTree = "<group>"; };
+		E43EF0C4101E2312007A9CE7 /* NptRingBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptRingBuffer.cpp; sourceTree = "<group>"; };
+		E43EF0C5101E2312007A9CE7 /* NptRingBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptRingBuffer.h; sourceTree = "<group>"; };
+		E43EF0C6101E2312007A9CE7 /* NptSelectableMessageQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptSelectableMessageQueue.h; sourceTree = "<group>"; };
+		E43EF0C7101E2312007A9CE7 /* NptSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptSerialPort.h; sourceTree = "<group>"; };
+		E43EF0C8101E2312007A9CE7 /* NptSimpleMessageQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptSimpleMessageQueue.cpp; sourceTree = "<group>"; };
+		E43EF0C9101E2312007A9CE7 /* NptSimpleMessageQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptSimpleMessageQueue.h; sourceTree = "<group>"; };
+		E43EF0CA101E2312007A9CE7 /* NptSockets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptSockets.cpp; sourceTree = "<group>"; };
+		E43EF0CB101E2312007A9CE7 /* NptSockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptSockets.h; sourceTree = "<group>"; };
+		E43EF0CC101E2312007A9CE7 /* NptStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptStack.h; sourceTree = "<group>"; };
+		E43EF0CD101E2312007A9CE7 /* NptStreams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptStreams.cpp; sourceTree = "<group>"; };
+		E43EF0CE101E2312007A9CE7 /* NptStreams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptStreams.h; sourceTree = "<group>"; };
+		E43EF0CF101E2312007A9CE7 /* NptStrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptStrings.cpp; sourceTree = "<group>"; };
+		E43EF0D0101E2312007A9CE7 /* NptStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptStrings.h; sourceTree = "<group>"; };
+		E43EF0D1101E2312007A9CE7 /* NptSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptSystem.cpp; sourceTree = "<group>"; };
+		E43EF0D2101E2312007A9CE7 /* NptSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptSystem.h; sourceTree = "<group>"; };
+		E43EF0D3101E2312007A9CE7 /* NptThreads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptThreads.cpp; sourceTree = "<group>"; };
+		E43EF0D4101E2312007A9CE7 /* NptThreads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptThreads.h; sourceTree = "<group>"; };
+		E43EF0D5101E2312007A9CE7 /* NptTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptTime.cpp; sourceTree = "<group>"; };
+		E43EF0D6101E2312007A9CE7 /* NptTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptTime.h; sourceTree = "<group>"; };
+		E43EF0D7101E2312007A9CE7 /* NptTls.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptTls.cpp; sourceTree = "<group>"; };
+		E43EF0D8101E2312007A9CE7 /* NptTls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptTls.h; sourceTree = "<group>"; };
+		E43EF0D9101E2312007A9CE7 /* NptTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptTypes.h; sourceTree = "<group>"; };
+		E43EF0DA101E2312007A9CE7 /* NptUri.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptUri.cpp; sourceTree = "<group>"; };
+		E43EF0DB101E2312007A9CE7 /* NptUri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptUri.h; sourceTree = "<group>"; };
+		E43EF0DC101E2312007A9CE7 /* NptUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptUtils.cpp; sourceTree = "<group>"; };
+		E43EF0DD101E2312007A9CE7 /* NptUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptUtils.h; sourceTree = "<group>"; };
+		E43EF0DE101E2312007A9CE7 /* NptVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptVersion.h; sourceTree = "<group>"; };
+		E43EF0DF101E2312007A9CE7 /* NptXml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptXml.cpp; sourceTree = "<group>"; };
+		E43EF0E0101E2312007A9CE7 /* NptXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptXml.h; sourceTree = "<group>"; };
+		E43EF0E1101E2312007A9CE7 /* NptZip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptZip.cpp; sourceTree = "<group>"; };
+		E43EF0E2101E2312007A9CE7 /* NptZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NptZip.h; sourceTree = "<group>"; };
+		E43EF0E7101E2312007A9CE7 /* NptBsdNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptBsdNetwork.cpp; sourceTree = "<group>"; };
+		E43EF0E8101E2312007A9CE7 /* NptBsdSockets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptBsdSockets.cpp; sourceTree = "<group>"; };
+		E43EF0F4101E2312007A9CE7 /* NptPosixDynamicLibraries.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptPosixDynamicLibraries.cpp; sourceTree = "<group>"; };
+		E43EF0F5101E2312007A9CE7 /* NptPosixFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptPosixFile.cpp; sourceTree = "<group>"; };
+		E43EF0F6101E2312007A9CE7 /* NptPosixNetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptPosixNetwork.cpp; sourceTree = "<group>"; };
+		E43EF0F7101E2312007A9CE7 /* NptPosixQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptPosixQueue.cpp; sourceTree = "<group>"; };
+		E43EF0F8101E2312007A9CE7 /* NptPosixSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptPosixSystem.cpp; sourceTree = "<group>"; };
+		E43EF0F9101E2312007A9CE7 /* NptPosixThreads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptPosixThreads.cpp; sourceTree = "<group>"; };
+		E43EF0FA101E2312007A9CE7 /* NptSelectableMessageQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptSelectableMessageQueue.cpp; sourceTree = "<group>"; };
+		E43EF106101E2312007A9CE7 /* NptStdcDebug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptStdcDebug.cpp; sourceTree = "<group>"; };
+		E43EF107101E2312007A9CE7 /* NptStdcEnvironment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptStdcEnvironment.cpp; sourceTree = "<group>"; };
+		E43EF108101E2312007A9CE7 /* NptStdcFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NptStdcFile.cpp; sourceTree = "<group>"; };
 		E45AAECE0F1C64FA009CEE37 /* PltAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltAction.cpp; path = src/Platinum/Source/Core/PltAction.cpp; sourceTree = "<group>"; };
 		E45AAECF0F1C64FA009CEE37 /* PltAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltAction.h; path = src/Platinum/Source/Core/PltAction.h; sourceTree = "<group>"; };
 		E45AAED00F1C64FA009CEE37 /* PltArgument.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltArgument.cpp; path = src/Platinum/Source/Core/PltArgument.cpp; sourceTree = "<group>"; };
@@ -241,7 +242,6 @@
 		E45AAEFC0F1C64FA009CEE37 /* PltUPnP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltUPnP.cpp; path = src/Platinum/Source/Core/PltUPnP.cpp; sourceTree = "<group>"; };
 		E45AAEFD0F1C64FA009CEE37 /* PltUPnP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltUPnP.h; path = src/Platinum/Source/Core/PltUPnP.h; sourceTree = "<group>"; };
 		E45AAEFE0F1C64FA009CEE37 /* PltUPnPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltUPnPHelper.h; path = src/Platinum/Source/Core/PltUPnPHelper.h; sourceTree = "<group>"; };
-		E45AAEFF0F1C64FA009CEE37 /* PltVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltVersion.h; path = src/Platinum/Source/Core/PltVersion.h; sourceTree = "<group>"; };
 		E45AAF000F1C64FA009CEE37 /* PltXmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltXmlHelper.h; path = src/Platinum/Source/Core/PltXmlHelper.h; sourceTree = "<group>"; };
 		E45AAF1A0F1C652A009CEE37 /* PltDidl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltDidl.cpp; path = src/Platinum/Source/Devices/MediaServer/PltDidl.cpp; sourceTree = "<group>"; };
 		E45AAF1B0F1C652A009CEE37 /* PltDidl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltDidl.h; path = src/Platinum/Source/Devices/MediaServer/PltDidl.h; sourceTree = "<group>"; };
@@ -348,114 +348,153 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E43EEF56101E221F007A9CE7 /* Platinum */ = {
+			isa = PBXGroup;
+			children = (
+				E43EEF57101E221F007A9CE7 /* Platinum.h */,
+				E43EEF58101E221F007A9CE7 /* PltSvnVersion.h */,
+				E43EEF59101E221F007A9CE7 /* PltVersion.h */,
+			);
+			name = Platinum;
+			path = src/Platinum/Source/Platinum;
+			sourceTree = "<group>";
+		};
+		E43EF09B101E2312007A9CE7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E43EF09C101E2312007A9CE7 /* Neptune.cpp */,
+				E43EF09D101E2312007A9CE7 /* Neptune.h */,
+				E43EF09E101E2312007A9CE7 /* NptArray.h */,
+				E43EF09F101E2312007A9CE7 /* NptBase64.cpp */,
+				E43EF0A0101E2312007A9CE7 /* NptBase64.h */,
+				E43EF0A1101E2312007A9CE7 /* NptBufferedStreams.cpp */,
+				E43EF0A2101E2312007A9CE7 /* NptBufferedStreams.h */,
+				E43EF0A3101E2312007A9CE7 /* NptCommon.cpp */,
+				E43EF0A4101E2312007A9CE7 /* NptCommon.h */,
+				E43EF0A5101E2312007A9CE7 /* NptConfig.h */,
+				E43EF0A6101E2312007A9CE7 /* NptConsole.cpp */,
+				E43EF0A7101E2312007A9CE7 /* NptConsole.h */,
+				E43EF0A8101E2312007A9CE7 /* NptConstants.h */,
+				E43EF0A9101E2312007A9CE7 /* NptDataBuffer.cpp */,
+				E43EF0AA101E2312007A9CE7 /* NptDataBuffer.h */,
+				E43EF0AB101E2312007A9CE7 /* NptDebug.cpp */,
+				E43EF0AC101E2312007A9CE7 /* NptDebug.h */,
+				E43EF0AD101E2312007A9CE7 /* NptDefs.h */,
+				E43EF0AE101E2312007A9CE7 /* NptDynamicCast.h */,
+				E43EF0AF101E2312007A9CE7 /* NptDynamicLibraries.cpp */,
+				E43EF0B0101E2312007A9CE7 /* NptDynamicLibraries.h */,
+				E43EF0B1101E2312007A9CE7 /* NptFile.cpp */,
+				E43EF0B2101E2312007A9CE7 /* NptFile.h */,
+				E43EF0B3101E2312007A9CE7 /* NptHttp.cpp */,
+				E43EF0B4101E2312007A9CE7 /* NptHttp.h */,
+				E43EF0B5101E2312007A9CE7 /* NptInterfaces.h */,
+				E43EF0B6101E2312007A9CE7 /* NptList.cpp */,
+				E43EF0B7101E2312007A9CE7 /* NptList.h */,
+				E43EF0B8101E2312007A9CE7 /* NptLogging.cpp */,
+				E43EF0B9101E2312007A9CE7 /* NptLogging.h */,
+				E43EF0BA101E2312007A9CE7 /* NptMap.h */,
+				E43EF0BB101E2312007A9CE7 /* NptMessaging.cpp */,
+				E43EF0BC101E2312007A9CE7 /* NptMessaging.h */,
+				E43EF0BD101E2312007A9CE7 /* NptNetwork.cpp */,
+				E43EF0BE101E2312007A9CE7 /* NptNetwork.h */,
+				E43EF0BF101E2312007A9CE7 /* NptQueue.cpp */,
+				E43EF0C0101E2312007A9CE7 /* NptQueue.h */,
+				E43EF0C1101E2312007A9CE7 /* NptReferences.h */,
+				E43EF0C2101E2312007A9CE7 /* NptResults.cpp */,
+				E43EF0C3101E2312007A9CE7 /* NptResults.h */,
+				E43EF0C4101E2312007A9CE7 /* NptRingBuffer.cpp */,
+				E43EF0C5101E2312007A9CE7 /* NptRingBuffer.h */,
+				E43EF0C6101E2312007A9CE7 /* NptSelectableMessageQueue.h */,
+				E43EF0C7101E2312007A9CE7 /* NptSerialPort.h */,
+				E43EF0C8101E2312007A9CE7 /* NptSimpleMessageQueue.cpp */,
+				E43EF0C9101E2312007A9CE7 /* NptSimpleMessageQueue.h */,
+				E43EF0CA101E2312007A9CE7 /* NptSockets.cpp */,
+				E43EF0CB101E2312007A9CE7 /* NptSockets.h */,
+				E43EF0CC101E2312007A9CE7 /* NptStack.h */,
+				E43EF0CD101E2312007A9CE7 /* NptStreams.cpp */,
+				E43EF0CE101E2312007A9CE7 /* NptStreams.h */,
+				E43EF0CF101E2312007A9CE7 /* NptStrings.cpp */,
+				E43EF0D0101E2312007A9CE7 /* NptStrings.h */,
+				E43EF0D1101E2312007A9CE7 /* NptSystem.cpp */,
+				E43EF0D2101E2312007A9CE7 /* NptSystem.h */,
+				E43EF0D3101E2312007A9CE7 /* NptThreads.cpp */,
+				E43EF0D4101E2312007A9CE7 /* NptThreads.h */,
+				E43EF0D5101E2312007A9CE7 /* NptTime.cpp */,
+				E43EF0D6101E2312007A9CE7 /* NptTime.h */,
+				E43EF0D7101E2312007A9CE7 /* NptTls.cpp */,
+				E43EF0D8101E2312007A9CE7 /* NptTls.h */,
+				E43EF0D9101E2312007A9CE7 /* NptTypes.h */,
+				E43EF0DA101E2312007A9CE7 /* NptUri.cpp */,
+				E43EF0DB101E2312007A9CE7 /* NptUri.h */,
+				E43EF0DC101E2312007A9CE7 /* NptUtils.cpp */,
+				E43EF0DD101E2312007A9CE7 /* NptUtils.h */,
+				E43EF0DE101E2312007A9CE7 /* NptVersion.h */,
+				E43EF0DF101E2312007A9CE7 /* NptXml.cpp */,
+				E43EF0E0101E2312007A9CE7 /* NptXml.h */,
+				E43EF0E1101E2312007A9CE7 /* NptZip.cpp */,
+				E43EF0E2101E2312007A9CE7 /* NptZip.h */,
+			);
+			name = Core;
+			path = src/Neptune/Source/Core;
+			sourceTree = "<group>";
+		};
+		E43EF0E3101E2312007A9CE7 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				E43EF0E6101E2312007A9CE7 /* Bsd */,
+				E43EF0F3101E2312007A9CE7 /* Posix */,
+				E43EF104101E2312007A9CE7 /* StdC */,
+			);
+			name = System;
+			path = src/Neptune/Source/System;
+			sourceTree = "<group>";
+		};
+		E43EF0E6101E2312007A9CE7 /* Bsd */ = {
+			isa = PBXGroup;
+			children = (
+				E43EF0E7101E2312007A9CE7 /* NptBsdNetwork.cpp */,
+				E43EF0E8101E2312007A9CE7 /* NptBsdSockets.cpp */,
+			);
+			path = Bsd;
+			sourceTree = "<group>";
+		};
+		E43EF0F3101E2312007A9CE7 /* Posix */ = {
+			isa = PBXGroup;
+			children = (
+				E43EF0F4101E2312007A9CE7 /* NptPosixDynamicLibraries.cpp */,
+				E43EF0F5101E2312007A9CE7 /* NptPosixFile.cpp */,
+				E43EF0F6101E2312007A9CE7 /* NptPosixNetwork.cpp */,
+				E43EF0F7101E2312007A9CE7 /* NptPosixQueue.cpp */,
+				E43EF0F8101E2312007A9CE7 /* NptPosixSystem.cpp */,
+				E43EF0F9101E2312007A9CE7 /* NptPosixThreads.cpp */,
+				E43EF0FA101E2312007A9CE7 /* NptSelectableMessageQueue.cpp */,
+			);
+			path = Posix;
+			sourceTree = "<group>";
+		};
+		E43EF104101E2312007A9CE7 /* StdC */ = {
+			isa = PBXGroup;
+			children = (
+				E43EF106101E2312007A9CE7 /* NptStdcDebug.cpp */,
+				E43EF107101E2312007A9CE7 /* NptStdcEnvironment.cpp */,
+				E43EF108101E2312007A9CE7 /* NptStdcFile.cpp */,
+			);
+			path = StdC;
+			sourceTree = "<group>";
+		};
 		E45AAE490F1C6391009CEE37 /* Neptune */ = {
 			isa = PBXGroup;
 			children = (
-				E45AAE4B0F1C640C009CEE37 /* System */,
-				E45AAE4A0F1C6399009CEE37 /* Core */,
+				E43EF09B101E2312007A9CE7 /* Core */,
+				E43EF0E3101E2312007A9CE7 /* System */,
 			);
 			name = Neptune;
-			sourceTree = "<group>";
-		};
-		E45AAE4A0F1C6399009CEE37 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				E45AAE4C0F1C642A009CEE37 /* Neptune.cpp */,
-				E45AAE4D0F1C642A009CEE37 /* Neptune.h */,
-				E45AAE4E0F1C642A009CEE37 /* NptArray.h */,
-				E45AAE4F0F1C642A009CEE37 /* NptBase64.cpp */,
-				E45AAE500F1C642A009CEE37 /* NptBase64.h */,
-				E45AAE510F1C642A009CEE37 /* NptBufferedStreams.cpp */,
-				E45AAE520F1C642A009CEE37 /* NptBufferedStreams.h */,
-				E45AAE530F1C642A009CEE37 /* NptCommon.cpp */,
-				E45AAE540F1C642A009CEE37 /* NptCommon.h */,
-				E45AAE550F1C642A009CEE37 /* NptConfig.h */,
-				E45AAE560F1C642A009CEE37 /* NptConsole.cpp */,
-				E45AAE570F1C642A009CEE37 /* NptConsole.h */,
-				E45AAE580F1C642A009CEE37 /* NptConstants.h */,
-				E45AAE590F1C642A009CEE37 /* NptDataBuffer.cpp */,
-				E45AAE5A0F1C642A009CEE37 /* NptDataBuffer.h */,
-				E45AAE5B0F1C642A009CEE37 /* NptDebug.cpp */,
-				E45AAE5C0F1C642A009CEE37 /* NptDebug.h */,
-				E45AAE5D0F1C642A009CEE37 /* NptDefs.h */,
-				E45AAE5E0F1C642A009CEE37 /* NptDynamicLibraries.cpp */,
-				E45AAE5F0F1C642A009CEE37 /* NptDynamicLibraries.h */,
-				E45AAE600F1C642A009CEE37 /* NptFile.cpp */,
-				E45AAE610F1C642A009CEE37 /* NptFile.h */,
-				E45AAE620F1C642A009CEE37 /* NptHttp.cpp */,
-				E45AAE630F1C642A009CEE37 /* NptHttp.h */,
-				E45AAE640F1C642A009CEE37 /* NptInterfaces.h */,
-				E45AAE650F1C642A009CEE37 /* NptList.cpp */,
-				E45AAE660F1C642A009CEE37 /* NptList.h */,
-				E45AAE670F1C642A009CEE37 /* NptLogging.cpp */,
-				E45AAE680F1C642A009CEE37 /* NptLogging.h */,
-				E45AAE690F1C642A009CEE37 /* NptMap.h */,
-				E45AAE6A0F1C642A009CEE37 /* NptMessaging.cpp */,
-				E45AAE6B0F1C642A009CEE37 /* NptMessaging.h */,
-				E45AAE6C0F1C642A009CEE37 /* NptNetwork.cpp */,
-				E45AAE6D0F1C642A009CEE37 /* NptNetwork.h */,
-				E45AAE6E0F1C642A009CEE37 /* NptQueue.cpp */,
-				E45AAE6F0F1C642A009CEE37 /* NptQueue.h */,
-				E45AAE700F1C642A009CEE37 /* NptReferences.h */,
-				E45AAE710F1C642A009CEE37 /* NptResults.cpp */,
-				E45AAE720F1C642A009CEE37 /* NptResults.h */,
-				E45AAE730F1C642A009CEE37 /* NptRingBuffer.cpp */,
-				E45AAE740F1C642A009CEE37 /* NptRingBuffer.h */,
-				E45AAE750F1C642A009CEE37 /* NptSelectableMessageQueue.h */,
-				E45AAE760F1C642A009CEE37 /* NptSerialPort.h */,
-				E45AAE770F1C642A009CEE37 /* NptSimpleMessageQueue.cpp */,
-				E45AAE780F1C642A009CEE37 /* NptSimpleMessageQueue.h */,
-				E45AAE790F1C642A009CEE37 /* NptSockets.cpp */,
-				E45AAE7A0F1C642A009CEE37 /* NptSockets.h */,
-				E45AAE7B0F1C642A009CEE37 /* NptStack.h */,
-				E45AAE7C0F1C642A009CEE37 /* NptStreams.cpp */,
-				E45AAE7D0F1C642A009CEE37 /* NptStreams.h */,
-				E45AAE7E0F1C642A009CEE37 /* NptStrings.cpp */,
-				E45AAE7F0F1C642A009CEE37 /* NptStrings.h */,
-				E45AAE800F1C642A009CEE37 /* NptSystem.cpp */,
-				E45AAE810F1C642A009CEE37 /* NptSystem.h */,
-				E45AAE820F1C642A009CEE37 /* NptThreads.cpp */,
-				E45AAE830F1C642A009CEE37 /* NptThreads.h */,
-				E45AAE840F1C642A009CEE37 /* NptTime.cpp */,
-				E45AAE850F1C642A009CEE37 /* NptTime.h */,
-				E45AAE860F1C642A009CEE37 /* NptTls.cpp */,
-				E45AAE870F1C642A009CEE37 /* NptTls.h */,
-				E45AAE880F1C642A009CEE37 /* NptTypes.h */,
-				E45AAE890F1C642A009CEE37 /* NptUri.cpp */,
-				E45AAE8A0F1C642A009CEE37 /* NptUri.h */,
-				E45AAE8B0F1C642A009CEE37 /* NptUtils.cpp */,
-				E45AAE8C0F1C642A009CEE37 /* NptUtils.h */,
-				E45AAE8D0F1C642A009CEE37 /* NptVersion.h */,
-				E45AAE8E0F1C642A009CEE37 /* NptXml.cpp */,
-				E45AAE8F0F1C642A009CEE37 /* NptXml.h */,
-				E45AAE900F1C642A009CEE37 /* NptZip.cpp */,
-				E45AAE910F1C642A009CEE37 /* NptZip.h */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		E45AAE4B0F1C640C009CEE37 /* System */ = {
-			isa = PBXGroup;
-			children = (
-				E45AAEC20F1C64AE009CEE37 /* NptStdcDebug.cpp */,
-				E45AAEC30F1C64AE009CEE37 /* NptStdcEnvironment.cpp */,
-				E45AAEC40F1C64AE009CEE37 /* NptStdcFile.cpp */,
-				E45AAEBD0F1C647E009CEE37 /* NptBsdNetwork.cpp */,
-				E45AAEBE0F1C647E009CEE37 /* NptBsdSockets.cpp */,
-				E45AAEAF0F1C6444009CEE37 /* NptPosixDynamicLibraries.cpp */,
-				E45AAEB00F1C6444009CEE37 /* NptPosixFile.cpp */,
-				E45AAEB10F1C6444009CEE37 /* NptPosixNetwork.cpp */,
-				E45AAEB20F1C6444009CEE37 /* NptPosixQueue.cpp */,
-				E45AAEB30F1C6444009CEE37 /* NptPosixSystem.cpp */,
-				E45AAEB40F1C6444009CEE37 /* NptPosixThreads.cpp */,
-				E45AAEB50F1C6444009CEE37 /* NptSelectableMessageQueue.cpp */,
-			);
-			name = System;
 			sourceTree = "<group>";
 		};
 		E45AAECA0F1C64DE009CEE37 /* Platinum */ = {
 			isa = PBXGroup;
 			children = (
+				E43EEF56101E221F007A9CE7 /* Platinum */,
 				E45AAF190F1C6508009CEE37 /* Devices */,
 				E45AAECB0F1C64E4009CEE37 /* Core */,
 			);
@@ -468,8 +507,6 @@
 				E4E0A0650FE9FE5B00CA6E83 /* PltConstants.cpp */,
 				E4E0A0660FE9FE5B00CA6E83 /* PltConstants.h */,
 				E4E0A0670FE9FE5B00CA6E83 /* PltIconsData.cpp */,
-				E45AAECC0F1C64FA009CEE37 /* Platinum.cpp */,
-				E45AAECD0F1C64FA009CEE37 /* Platinum.h */,
 				E45AAECE0F1C64FA009CEE37 /* PltAction.cpp */,
 				E45AAECF0F1C64FA009CEE37 /* PltAction.h */,
 				E45AAED00F1C64FA009CEE37 /* PltArgument.cpp */,
@@ -519,7 +556,6 @@
 				E45AAEFC0F1C64FA009CEE37 /* PltUPnP.cpp */,
 				E45AAEFD0F1C64FA009CEE37 /* PltUPnP.h */,
 				E45AAEFE0F1C64FA009CEE37 /* PltUPnPHelper.h */,
-				E45AAEFF0F1C64FA009CEE37 /* PltVersion.h */,
 				E45AAF000F1C64FA009CEE37 /* PltXmlHelper.h */,
 			);
 			name = Core;
@@ -644,48 +680,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E45AAE920F1C642A009CEE37 /* Neptune.cpp in Sources */,
-				E45AAE930F1C642A009CEE37 /* NptBase64.cpp in Sources */,
-				E45AAE940F1C642A009CEE37 /* NptBufferedStreams.cpp in Sources */,
-				E45AAE950F1C642A009CEE37 /* NptCommon.cpp in Sources */,
-				E45AAE960F1C642A009CEE37 /* NptConsole.cpp in Sources */,
-				E45AAE970F1C642A009CEE37 /* NptDataBuffer.cpp in Sources */,
-				E45AAE980F1C642A009CEE37 /* NptDebug.cpp in Sources */,
-				E45AAE990F1C642A009CEE37 /* NptDynamicLibraries.cpp in Sources */,
-				E45AAE9A0F1C642A009CEE37 /* NptFile.cpp in Sources */,
-				E45AAE9B0F1C642A009CEE37 /* NptHttp.cpp in Sources */,
-				E45AAE9C0F1C642A009CEE37 /* NptList.cpp in Sources */,
-				E45AAE9D0F1C642A009CEE37 /* NptLogging.cpp in Sources */,
-				E45AAE9E0F1C642A009CEE37 /* NptMessaging.cpp in Sources */,
-				E45AAE9F0F1C642A009CEE37 /* NptNetwork.cpp in Sources */,
-				E45AAEA00F1C642A009CEE37 /* NptQueue.cpp in Sources */,
-				E45AAEA10F1C642A009CEE37 /* NptResults.cpp in Sources */,
-				E45AAEA20F1C642A009CEE37 /* NptRingBuffer.cpp in Sources */,
-				E45AAEA30F1C642A009CEE37 /* NptSimpleMessageQueue.cpp in Sources */,
-				E45AAEA40F1C642A009CEE37 /* NptSockets.cpp in Sources */,
-				E45AAEA50F1C642A009CEE37 /* NptStreams.cpp in Sources */,
-				E45AAEA60F1C642A009CEE37 /* NptStrings.cpp in Sources */,
-				E45AAEA70F1C642A009CEE37 /* NptSystem.cpp in Sources */,
-				E45AAEA80F1C642A009CEE37 /* NptThreads.cpp in Sources */,
-				E45AAEA90F1C642A009CEE37 /* NptTime.cpp in Sources */,
-				E45AAEAA0F1C642A009CEE37 /* NptTls.cpp in Sources */,
-				E45AAEAB0F1C642A009CEE37 /* NptUri.cpp in Sources */,
-				E45AAEAC0F1C642A009CEE37 /* NptUtils.cpp in Sources */,
-				E45AAEAD0F1C642A009CEE37 /* NptXml.cpp in Sources */,
-				E45AAEAE0F1C642A009CEE37 /* NptZip.cpp in Sources */,
-				E45AAEB60F1C6444009CEE37 /* NptPosixDynamicLibraries.cpp in Sources */,
-				E45AAEB70F1C6444009CEE37 /* NptPosixFile.cpp in Sources */,
-				E45AAEB80F1C6444009CEE37 /* NptPosixNetwork.cpp in Sources */,
-				E45AAEB90F1C6444009CEE37 /* NptPosixQueue.cpp in Sources */,
-				E45AAEBA0F1C6444009CEE37 /* NptPosixSystem.cpp in Sources */,
-				E45AAEBB0F1C6444009CEE37 /* NptPosixThreads.cpp in Sources */,
-				E45AAEBC0F1C6444009CEE37 /* NptSelectableMessageQueue.cpp in Sources */,
-				E45AAEBF0F1C647E009CEE37 /* NptBsdNetwork.cpp in Sources */,
-				E45AAEC00F1C647E009CEE37 /* NptBsdSockets.cpp in Sources */,
-				E45AAEC60F1C64AE009CEE37 /* NptStdcDebug.cpp in Sources */,
-				E45AAEC70F1C64AE009CEE37 /* NptStdcEnvironment.cpp in Sources */,
-				E45AAEC80F1C64AE009CEE37 /* NptStdcFile.cpp in Sources */,
-				E45AAF010F1C64FA009CEE37 /* Platinum.cpp in Sources */,
 				E45AAF020F1C64FA009CEE37 /* PltAction.cpp in Sources */,
 				E45AAF030F1C64FA009CEE37 /* PltArgument.cpp in Sources */,
 				E45AAF040F1C64FA009CEE37 /* PltCtrlPoint.cpp in Sources */,
@@ -727,6 +721,47 @@
 				E4E0A0680FE9FE5B00CA6E83 /* PltConstants.cpp in Sources */,
 				E4E0A0690FE9FE5B00CA6E83 /* PltIconsData.cpp in Sources */,
 				E4EA44720FF0BADE00EE694B /* ScreenSplitrScreenView.mm in Sources */,
+				E43EF122101E2312007A9CE7 /* Neptune.cpp in Sources */,
+				E43EF123101E2312007A9CE7 /* NptBase64.cpp in Sources */,
+				E43EF124101E2312007A9CE7 /* NptBufferedStreams.cpp in Sources */,
+				E43EF125101E2312007A9CE7 /* NptCommon.cpp in Sources */,
+				E43EF126101E2312007A9CE7 /* NptConsole.cpp in Sources */,
+				E43EF127101E2312007A9CE7 /* NptDataBuffer.cpp in Sources */,
+				E43EF128101E2312007A9CE7 /* NptDebug.cpp in Sources */,
+				E43EF129101E2312007A9CE7 /* NptDynamicLibraries.cpp in Sources */,
+				E43EF12A101E2312007A9CE7 /* NptFile.cpp in Sources */,
+				E43EF12B101E2312007A9CE7 /* NptHttp.cpp in Sources */,
+				E43EF12C101E2312007A9CE7 /* NptList.cpp in Sources */,
+				E43EF12D101E2312007A9CE7 /* NptLogging.cpp in Sources */,
+				E43EF12E101E2312007A9CE7 /* NptMessaging.cpp in Sources */,
+				E43EF12F101E2312007A9CE7 /* NptNetwork.cpp in Sources */,
+				E43EF130101E2312007A9CE7 /* NptQueue.cpp in Sources */,
+				E43EF131101E2312007A9CE7 /* NptResults.cpp in Sources */,
+				E43EF132101E2312007A9CE7 /* NptRingBuffer.cpp in Sources */,
+				E43EF133101E2312007A9CE7 /* NptSimpleMessageQueue.cpp in Sources */,
+				E43EF134101E2312007A9CE7 /* NptSockets.cpp in Sources */,
+				E43EF135101E2312007A9CE7 /* NptStreams.cpp in Sources */,
+				E43EF136101E2312007A9CE7 /* NptStrings.cpp in Sources */,
+				E43EF137101E2312007A9CE7 /* NptSystem.cpp in Sources */,
+				E43EF138101E2312007A9CE7 /* NptThreads.cpp in Sources */,
+				E43EF139101E2312007A9CE7 /* NptTime.cpp in Sources */,
+				E43EF13A101E2312007A9CE7 /* NptTls.cpp in Sources */,
+				E43EF13B101E2312007A9CE7 /* NptUri.cpp in Sources */,
+				E43EF13C101E2312007A9CE7 /* NptUtils.cpp in Sources */,
+				E43EF13D101E2312007A9CE7 /* NptXml.cpp in Sources */,
+				E43EF13E101E2312007A9CE7 /* NptZip.cpp in Sources */,
+				E43EF140101E2312007A9CE7 /* NptBsdNetwork.cpp in Sources */,
+				E43EF141101E2312007A9CE7 /* NptBsdSockets.cpp in Sources */,
+				E43EF149101E2312007A9CE7 /* NptPosixDynamicLibraries.cpp in Sources */,
+				E43EF14A101E2312007A9CE7 /* NptPosixFile.cpp in Sources */,
+				E43EF14B101E2312007A9CE7 /* NptPosixNetwork.cpp in Sources */,
+				E43EF14C101E2312007A9CE7 /* NptPosixQueue.cpp in Sources */,
+				E43EF14D101E2312007A9CE7 /* NptPosixSystem.cpp in Sources */,
+				E43EF14E101E2312007A9CE7 /* NptPosixThreads.cpp in Sources */,
+				E43EF14F101E2312007A9CE7 /* NptSelectableMessageQueue.cpp in Sources */,
+				E43EF158101E2312007A9CE7 /* NptStdcDebug.cpp in Sources */,
+				E43EF159101E2312007A9CE7 /* NptStdcEnvironment.cpp in Sources */,
+				E43EF15A101E2312007A9CE7 /* NptStdcFile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,7 +772,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sylvain Rebaud (6P38YKF298)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -761,7 +796,7 @@
 					"-F/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk/System/Library/PrivateFrameworks",
 				);
 				PRODUCT_NAME = ScreenSplitr;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "3E183889-6E77-40EC-8ABE-60E470989983";
 				SDKROOT = iphoneos3.0;
 			};
 			name = Debug;

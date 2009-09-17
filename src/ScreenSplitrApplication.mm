@@ -206,6 +206,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
     PLT_DeviceHostReference device(new PLT_FrameServer(frame_buffer, 
                                                        NPT_String([[[NSBundle mainBundle] bundlePath] UTF8String]), 
                                                        NPT_String([[[UIDevice currentDevice] name] UTF8String]),
+                                                       "screensplitr",
                                                        false,
                                                        NULL,
                                                        8099,

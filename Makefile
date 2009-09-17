@@ -4,7 +4,7 @@ PROJECTNAME = ScreenSplitr
 APPFOLDER=$(PROJECTNAME).app
 INSTALLFOLDER=$(PROJECTNAME).app
 
-IPHONE_IP=192.168.1.200
+IPHONE_IP=192.168.15.121
 SDKVER=2.0
 
 DEV = /Developer/Platforms/iPhoneOS.platform/Developer
@@ -49,15 +49,16 @@ OBJS += $(patsubst %.c,%.o,$(wildcard $(SRCDIR)/*.c))
 OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/Source/Core/*.cpp))
 OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/Source/Devices/MediaServer/*.cpp))
 OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/Source/Devices/FrameStreamer/*.cpp))
-OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/ThirdParty/Neptune/Source/Core/*.cpp))
-OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/ThirdParty/Neptune/Source/System/Bsd/*.cpp))
-OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/ThirdParty/Neptune/Source/System/Posix/*.cpp))
-OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/ThirdParty/Neptune/Source/System/StdC/NptStdcFile.cpp))
-OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/ThirdParty/Neptune/Source/System/StdC/NptStdcEnvironment.cpp))
-OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Platinum/ThirdParty/Neptune/Source/System/StdC/NptStdcDebug.cpp))
+OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Neptune/Source/Core/*.cpp))
+OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Neptune/Source/System/Bsd/*.cpp))
+OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Neptune/Source/System/Posix/*.cpp))
+OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Neptune/Source/System/StdC/NptStdcFile.cpp))
+OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Neptune/Source/System/StdC/NptStdcEnvironment.cpp))
+OBJS += $(patsubst %.cpp,%.o,$(wildcard $(SRCDIR)/Neptune/Source/System/StdC/NptStdcDebug.cpp))
 RESOURCES = $(wildcard $(RESDIR)/*)
 
-CFLAGS += -I"$(SRCDIR)/Platinum/ThirdParty/Neptune/Source/Core"
+CFLAGS += -I"$(SRCDIR)/Neptune/Source/Core"
+CFLAGS += -I"$(SRCDIR)/Platinum/Source/Platinum"
 CFLAGS += -I"$(SRCDIR)/Platinum/Source/Core"
 CFLAGS += -I"$(SRCDIR)/Platinum/Source/Devices/MediaServer"
 CFLAGS += -I"$(SRCDIR)/Platinum/Source/Devices/FrameStreamer"
