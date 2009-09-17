@@ -272,9 +272,9 @@
 		E45AB0D50F1CAC7B009CEE37 /* PltFrameServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltFrameServer.h; path = src/Platinum/Source/Devices/FrameStreamer/PltFrameServer.h; sourceTree = "<group>"; };
 		E45AB0D60F1CAC7B009CEE37 /* PltFrameStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltFrameStream.cpp; path = src/Platinum/Source/Devices/FrameStreamer/PltFrameStream.cpp; sourceTree = "<group>"; };
 		E45AB0D70F1CAC7B009CEE37 /* PltFrameStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltFrameStream.h; path = src/Platinum/Source/Devices/FrameStreamer/PltFrameStream.h; sourceTree = "<group>"; };
-		E47F20550FF0DA6F0051A77C /* UIModalViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIModalViewDelegate-Protocol.h"; path = "../../../Headers/Frameworks/UIKit/UIModalViewDelegate-Protocol.h"; sourceTree = SOURCE_ROOT; };
-		E47F205C0FF0DA970051A77C /* UIModalView-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIModalView-Private.h"; path = "../../../Headers/Frameworks/UIKit/UIModalView-Private.h"; sourceTree = SOURCE_ROOT; };
-		E47F20D40FF0E1360051A77C /* UIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIAlertView.h; path = ../../../Headers/Frameworks/UIKit/UIAlertView.h; sourceTree = SOURCE_ROOT; };
+		E47F20550FF0DA6F0051A77C /* UIModalViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIModalViewDelegate-Protocol.h"; path = "../../Headers/Frameworks/UIKit/UIModalViewDelegate-Protocol.h"; sourceTree = SOURCE_ROOT; };
+		E47F205C0FF0DA970051A77C /* UIModalView-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIModalView-Private.h"; path = "../../Headers/Frameworks/UIKit/UIModalView-Private.h"; sourceTree = SOURCE_ROOT; };
+		E47F20D40FF0E1360051A77C /* UIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIAlertView.h; path = ../../Headers/Frameworks/UIKit/UIAlertView.h; sourceTree = SOURCE_ROOT; };
 		E48CB3B10F0C3A170074D25B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		E4D4F9C00F0EB60C001B3381 /* MPTVOutWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPTVOutWindow.h; path = src/MPTVOutWindow.h; sourceTree = "<group>"; };
 		E4D4F9C10F0EB60C001B3381 /* ScreenSplitrApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScreenSplitrApplication.h; path = src/ScreenSplitrApplication.h; sourceTree = "<group>"; };
@@ -283,7 +283,7 @@
 		E4E0A0660FE9FE5B00CA6E83 /* PltConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PltConstants.h; path = src/Platinum/Source/Core/PltConstants.h; sourceTree = "<group>"; };
 		E4E0A0670FE9FE5B00CA6E83 /* PltIconsData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PltIconsData.cpp; path = src/Platinum/Source/Core/PltIconsData.cpp; sourceTree = "<group>"; };
 		E4EA43FB0FF0B26900EE694B /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = home.html; path = resources/home.html; sourceTree = "<group>"; };
-		E4EA452F0FF0D75700EE694B /* UIModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIModalView.h; path = ../../../Headers/Frameworks/UIKit/UIModalView.h; sourceTree = SOURCE_ROOT; };
+		E4EA452F0FF0D75700EE694B /* UIModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIModalView.h; path = ../../Headers/Frameworks/UIKit/UIModalView.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

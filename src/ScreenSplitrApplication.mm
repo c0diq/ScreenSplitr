@@ -137,9 +137,6 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
     [self setStatusBarHidden:YES animated:NO];
    	struct CGRect rect = [UIHardware fullScreenApplicationContentRect];
     NSLog(@"Original size: %f, %f, %f, %f", rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
-    /* Make sure the rectangle is aligned correctly */
-	//rect.origin.x = 0.0f;
-	//rect.origin.y = 0.0f;
  
     // create view
     screenView = [[ScreenSplitrScreenView alloc] initWithFrame: rect];
@@ -152,9 +149,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 #endif
     
 	// Create window
-	//window = [[UIWindow alloc] initWithContentRect: rect];
     window = [[UIWindow alloc] initWithFrame: rect];
-    //[window setContentView:screenView];
     
     // Splash screen
     splashView = [[UIImageView alloc] initWithFrame:rect];
@@ -291,7 +286,6 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
             break;
     }
 
-    //[actionSheet removeFromSuperview];
     [alertView release];
     
     // suspend app again
