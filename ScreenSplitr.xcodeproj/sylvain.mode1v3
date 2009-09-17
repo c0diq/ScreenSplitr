@@ -282,7 +282,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>2</integer>
+									<integer>8</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -323,7 +323,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Bonjour.h</string>
+								<string>ScreenSplitrApplication.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -331,21 +331,15 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Bonjour.h</string>
+										<string>ScreenSplitrApplication.h</string>
 										<key>_historyCapacity</key>
 										<integer>20</integer>
 										<key>bookmark</key>
-										<string>E4A3DB6210621163004F0475</string>
+										<string>E4A3DB74106211A8004F0475</string>
 										<key>history</key>
 										<array>
 											<string>E4A3DAE210620FBD004F0475</string>
 											<string>E4A3DAE310620FBD004F0475</string>
-											<string>E4A3DB2E1062110B004F0475</string>
-											<string>E4A3DB2F1062110B004F0475</string>
-											<string>E4A3DB351062110B004F0475</string>
-											<string>E4A3DB361062110B004F0475</string>
-											<string>E4A3DB371062110B004F0475</string>
-											<string>E4A3DB4A10621163004F0475</string>
 											<string>E4A3DB4B10621163004F0475</string>
 											<string>E4A3DB4C10621163004F0475</string>
 											<string>E4A3DB4D10621163004F0475</string>
@@ -355,9 +349,15 @@
 											<string>E4A3DB5110621163004F0475</string>
 											<string>E4A3DB5210621163004F0475</string>
 											<string>E4A3DB5310621163004F0475</string>
-											<string>E4A3DB5410621163004F0475</string>
 											<string>E4A3DB5510621163004F0475</string>
-											<string>E4A3DB311062110B004F0475</string>
+											<string>E4A3DB65106211A8004F0475</string>
+											<string>E4A3DB66106211A8004F0475</string>
+											<string>E4A3DB67106211A8004F0475</string>
+											<string>E4A3DB68106211A8004F0475</string>
+											<string>E4A3DB69106211A8004F0475</string>
+											<string>E4A3DB6A106211A8004F0475</string>
+											<string>E4A3DB6B106211A8004F0475</string>
+											<string>E4A3DB351062110B004F0475</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -401,6 +401,14 @@
 											<string>E4A3DB5F10621163004F0475</string>
 											<string>E4A3DB6010621163004F0475</string>
 											<string>E4A3DB6110621163004F0475</string>
+											<string>E4A3DB6C106211A8004F0475</string>
+											<string>E4A3DB6D106211A8004F0475</string>
+											<string>E4A3DB6E106211A8004F0475</string>
+											<string>E4A3DB6F106211A8004F0475</string>
+											<string>E4A3DB70106211A8004F0475</string>
+											<string>E4A3DB71106211A8004F0475</string>
+											<string>E4A3DB72106211A8004F0475</string>
+											<string>E4A3DB73106211A8004F0475</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

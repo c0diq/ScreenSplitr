@@ -1,6 +1,6 @@
 /*****************************************************************
 |
-|   ScreenSplitr - ScreenSplitr.mm
+|   ScreenSplitr - ScreenSplitrApplication.mm
 |
 | Copyright (c) 2004-2009, Plutinosoft, LLC.
 | All rights reserved.
