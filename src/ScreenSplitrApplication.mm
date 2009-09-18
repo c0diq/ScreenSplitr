@@ -30,9 +30,7 @@
 #import "PltFrameServer.h"
 #import "AVSystemController.h"
 #import <Foundation/Foundation.h>
-//#import "UIModalView.h"
 #import "UIHardware.h"
-//#import "UIAlertView.h"
 
 typedef enum {
     SS_CLIENT_ON_HOLD,
@@ -44,7 +42,7 @@ typedef enum {
 
 /* globals */
 static PLT_FrameBuffer frame_buffer;
-PLT_UPnP upnp;
+static NPT_Reference<PLT_FrameServer> frame_server;
 static ScreenSplitrApplication* instance = NULL;
 PLT_FrameBuffer* frame_buffer_ref = NULL;
 NPT_SharedVariable action_(SS_CLIENT_ON_HOLD);
@@ -66,14 +64,18 @@ class StreamValidator : public PLT_StreamValidator
 public:
     virtual ~StreamValidator() {}
     bool OnNewRequestAccept(const NPT_HttpRequestContext& context) {
-        NSLog(@"Received stream request from %s", context.GetRemoteAddress().GetIpAddress().ToString().GetChars());
+        NSLog(@"Received stream request from %s", 
+            context.GetRemoteAddress().GetIpAddress().ToString().GetChars());
         if (!instance) return false;
         
         {
-            NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
+            NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
             
-            NSString* ip_ = [[NSString stringWithFormat:@"%s", context.GetRemoteAddress().GetIpAddress().ToString().GetChars()] retain];
-            [instance performSelectorOnMainThread:@selector(askForConnection:) withObject:ip_ waitUntilDone:NO];
+            NSString* ip_ = [[NSString stringWithFormat:@"%s", 
+                context.GetRemoteAddress().GetIpAddress().ToString().GetChars()] retain];
+            [instance performSelectorOnMainThread:@selector(askForConnection:) 
+                                       withObject:ip_ 
+                                    waitUntilDone:NO];
             action_.WaitWhileEquals(SS_CLIENT_ON_HOLD, 40000);
 
             int action = action_.GetValue();
@@ -120,6 +122,10 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 
 @synthesize watchdog;
 
+- (void)cancelWatchdog {
+    [watchdog invalidate];
+}
+
 - (void)dealloc {
     [watchdog invalidate];
     [watchdog release];
@@ -152,10 +158,10 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
     [UIHardware _setStatusBarHeight: 0.0];
     //[self setStatusBarMode:2 duration: 0];
     [self setStatusBarHidden:YES animated:NO];
-   	struct CGRect rect = [UIHardware fullScreenApplicationContentRect];
-    NSLog(@"Original size: %f, %f, %f, %f", rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
- 
+
     // create view
+    struct CGRect rect = [UIHardware fullScreenApplicationContentRect];
+    NSLog(@"Original size: %f, %f, %f, %f", rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
     screenView = [[ScreenSplitrScreenView alloc] initWithFrame: rect];
     _tvWindow  = nil;
     
@@ -176,7 +182,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 	// Show window
 	[window makeKeyAndVisible];
 
-    // start UPnP & Bonjour
+    // start Server & Bonjour
     [self startNetwork];
     
 #ifdef TV_OUTPUT
@@ -210,31 +216,38 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
         [self setApplicationBadge:@"On"];
     }
     
-	[self performSelector: @selector(suspendApp) withObject: nil afterDelay: 2 ];
+	[self performSelector: @selector(suspendApp) withObject: nil afterDelay: 2];
 }
 
 - (void) startNetwork {
-    // create our UPnP device
-    PLT_DeviceHostReference device(new PLT_FrameServer(frame_buffer, 
-                                                       NPT_String([[[NSBundle mainBundle] bundlePath] UTF8String]), 
-                                                       NPT_String([[[UIDevice currentDevice] name] UTF8String]),
-                                                       "screensplitr",
-                                                       false,
-                                                       NULL,
-                                                       8099,
-                                                       &validator));
-    upnp.AddDevice(device);
-    upnp.Start();
+    // create our http server that will push frames as mjpeg
+    frame_server = new PLT_FrameServer(frame_buffer,
+                                       NPT_String([[[UIDevice currentDevice] name] UTF8String]),
+                                       NPT_String([[[NSBundle mainBundle] bundlePath] UTF8String]),
+                                       "screensplitr",
+                                       8099,
+                                       &validator);
+    frame_server->Start();
     
+    // just log to console IPs & port
+    NPT_List<NPT_IpAddress> ips;
+    PLT_UPnPMessageHelper::GetIPAddresses(ips);
+    for (NPT_List<NPT_IpAddress>::Iterator ip = ips.GetFirstItem();
+         ip;
+         ip++) {
+        NSLog(@"Screensplitr listening @ http://%s:%d", 
+            (const char*)ip->ToString(), frame_server->GetPort());
+    }
+    
+    // clean up & start bonjour
 	[advertiser release];
 	advertiser = nil;
     
 	advertiser = [Advertiser new];
 	[advertiser setDelegate:self];
-   
-    // start bonjour
+    
 	NSError* error;
-	if (advertiser == nil || ![advertiser start:device->GetPort()]) {
+	if (advertiser == nil || ![advertiser start:frame_server->GetPort()]) {
 		NSLog(@"Failed creating upnp server: %@", error);
 		return;
 	}
@@ -245,7 +258,8 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
     NPT_Result result = socket.Bind(NPT_SocketAddress(localhost, 5900), false);
     NSLog(@"Binding to 127.0.0.1:5900 returned %d", result);*/
 	
-	//Start advertising to clients, passing nil for the name to tell Bonjour to pick use default name
+	// Start advertising to bonjour clients
+    // passing nil to tell Bonjour to use default name
 	if (![advertiser enableBonjourWithDomain:@"local" 
                          applicationProtocol:[Advertiser bonjourTypeFromIdentifier:@"http"] 
                                         name:nil
@@ -257,13 +271,17 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 
 - (void) askForConnection:(NSString *)ip {
     NSLog(@"AskForConnection");
+    
+    // mark that we're relaunching not to quit but to
+    // ask for connection authorization
     self.askForConnectionPending = YES;
     
-    // relaunch ourselves so the actionsheet can be seen
+    // relaunch ourselves so the alert view can be seen
     NSString *identifier = [[NSBundle mainBundle] bundleIdentifier];
     NSLog(@"Launching ourselves %s", identifier);
     [[UIApplication sharedApplication] launchApplicationWithIdentifier:identifier suspended:NO];
             
+    // create the alertview
     ScreenSplitrAlertView *view = [[ScreenSplitrAlertView alloc] initWithFrame:CGRectMake(0, 240, 320, 240)];
     [view setTitle:@"Remote View Request"];
     [view setMessage:[NSString stringWithFormat:@"\nAccept connection from\n%s?\n\nScreenSplitr\nby c0diq\nc0diq@screensplitr.com\nhttp://www.screensplitr.com\n", [ip UTF8String]]];
@@ -271,7 +289,8 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
     [view addButtonWithTitle:@"Reject"];
     [view setDelegate: self];
     
-    // init watchdog timer
+    // create a watchdog timer to close the alert view after 30 secs
+    // if user doesn't answer
 	id aSignature;
 	id anInvocation;
 	aSignature = [self methodSignatureForSelector:@selector(dismissAlert:)];
@@ -284,7 +303,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 		invocation:anInvocation 
 		repeats:NO];
     
-    // show alert
+    // show alert view
     [view show];
     [ip release];
 }
@@ -303,18 +322,23 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
             break;
     }
 
+    // cancel alert view watchdog
+	[alertView performSelector: @selector(cancelWatchdog) withObject: nil afterDelay: 0];
     [alertView release];
     
-    // suspend app again
+    // suspend app again now that user has clicked on something
     self.askForConnectionPending = NO;
 	[self performSelector: @selector(suspendApp) withObject: nil afterDelay: 0];
 }
 
 - (void)dismissAlert:(UIAlertView *)alertView
 {
+    // watchdog called us, automatically close alert view
     [alertView dismissWithClickedButtonIndex:1 animated:NO];
     action_.SetValue(SS_CLIENT_REFUSE);
     [alertView release];
+    
+    // suspend app again
     self.askForConnectionPending = NO;
 	[self performSelector: @selector(suspendApp) withObject: nil afterDelay: 0];
 }
@@ -364,11 +388,12 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 }
 
 - (void)suspendApp {
-    // Remove splash screen before suspending
+    // hide splash screen before suspending
     if (splashView) {
         [splashView setHidden: true];
     }
     
+    // Firmware 2.2 vs 3.0 handling
 	NSLog(@"Got suspendApp:");
     if ([self respondsToSelector:@selector(suspend)]) {
         [self suspend];
@@ -387,6 +412,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 // Overridden to prevent terminate (Allows the app to continue to run in the background)
 - (void)applicationSuspend:(struct __GSEvent *)fp8 {
 	NSLog(@"Got applicationSuspend:");
+    // only suspend if it's intentional
     if (self.abort) [super applicationSuspend:fp8];
 }
 
@@ -394,7 +420,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
 	NSLog(@"Got applicationDidResume:");
     
     // make sure we're not resuming because of pending connection
-    // request to display alert view before suspending for good
+    // request to display alert view
     if (self.askForConnectionPending == NO) {
         // On the second launch terminate to turn ScreenSplitr off
         self.abort = YES;
@@ -412,7 +438,7 @@ static void callback(CFNotificationCenterRef center, void *observer, CFStringRef
         frame_buffer_ref->SetNextFrame(NULL, 0);
         
         // abort all upnp stuff / http connections
-        upnp.Stop();
+        frame_server->Stop();
         
         // suspend for good
         [self performSelector: @selector(suspendApp) withObject: nil afterDelay: 2 ];

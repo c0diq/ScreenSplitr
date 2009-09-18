@@ -29,14 +29,14 @@
 #import "Bonjour.h"
 
 @interface ScreenSplitrApplication : UIApplication {
-    UIWindow *window;
-    MPTVOutWindow *_tvWindow;
-    UIImageView *splashView;
+    UIWindow*               window;
+    MPTVOutWindow*          _tvWindow;
+    UIImageView*            splashView;
     ScreenSplitrScreenView* screenView;
-    NSTimer* timer;
-	Advertiser* advertiser;
-    BOOL abort;
-    BOOL askForConnectionPending;
+    NSTimer*                timer;
+	Advertiser*             advertiser;
+    BOOL                    abort;
+    BOOL                    askForConnectionPending;
 }
 
 - (void)routeChange:(NSNotification *)notification;
@@ -53,14 +53,16 @@
 @property (nonatomic, retain) UIImageView *splashView;
 @property (nonatomic, retain) ScreenSplitrScreenView* screenView;
 @property (nonatomic, retain) NSTimer* timer;
-@property (nonatomic) BOOL abort;
-@property (nonatomic) BOOL askForConnectionPending;
+@property (nonatomic)         BOOL abort;
+@property (nonatomic)         BOOL askForConnectionPending;
 
 @end
 
 @interface ScreenSplitrAlertView : UIAlertView {
     NSTimer* watchdog;
 }
+
+- (void)cancelWatchdog;
 
 @property (nonatomic, retain) NSTimer* watchdog;
 

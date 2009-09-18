@@ -4,7 +4,7 @@ PROJECTNAME = ScreenSplitr
 APPFOLDER=$(PROJECTNAME).app
 INSTALLFOLDER=$(PROJECTNAME).app
 
-IPHONE_IP=192.168.15.121
+IPHONE_IP=192.168.1.45
 SDKVER=2.0
 
 DEV = /Developer/Platforms/iPhoneOS.platform/Developer

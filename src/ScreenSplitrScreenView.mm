@@ -96,6 +96,8 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
     UIView* superview = [self superview];
     if (superview) {
         int orientation = [self getOrientation];
+        
+        // HACK: somehow on my HDTV, the view is too big so try to adjust the output a bit
         if (orientation == kOrientationHorizontalLeft || orientation == kOrientationHorizontalRight) {
             self.frame = CGRectMake(superview.frame.origin.x+30, superview.frame.origin.y+80, superview.frame.size.width-60, superview.frame.size.height-160);
         } else {
@@ -108,7 +110,7 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
     struct timeval now, bench1, bench2;
     gettimeofday(&now, NULL);
 #endif
-    // only convert to jpeg if we have a connection (net or TV)
+    // only grab screen if we have a connection (net or TV) to not waste CPU
     if (frame_buffer_ref->GetNbReaders() > 0 || tvOutputEnabled) {
         CGImageRef screen = UIGetScreenImage();
         UIImage*   image  = [UIImage imageWithCGImage:screen];
@@ -129,7 +131,6 @@ static struct timeval CalculateTimeinterval(struct timeval t) {
             frame_buffer_ref->SetNextFrame((const NPT_Byte*)jpg.bytes, (NPT_Size)jpg.length);
         }
                 
-        //[self dumpImage:image];
         CFRelease(screen);
     }
     
